@@ -1,0 +1,25 @@
+<html>
+
+    {% include head.html %}
+
+    <body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#660066" alink="#660066">
+        <!-- Layers 1-3: Footer; Layer 10: Content; Layers 4-9, 11-17: Sidebar; Layer 19: Header -->
+
+        <div class="header">
+            {% include header.html %}
+        </div>
+
+        <div class="sidebar">
+            {% include sidebar.html %}
+        </div>
+        
+        <div class="content"> 
+            {{ content }}
+        </div>
+
+        <div class="footer">
+            {% include footer.html %}
+        </div>
+
+    </body>
+</html>
