@@ -1,0 +1,25 @@
+.Main {  
+	font-family: Garamond; 
+	font-size: 14px; 
+	font-style: normal; 
+	line-height: normal; 
+	font-weight: normal; 
+	font-variant: normal; 
+	text-transform: none; 
+	color: #009966;
+	background-color: #FFFFFF; 
+	letter-spacing: normal; 
+	text-align: left; 
+	vertical-align: top; 
+	word-spacing: normal; 
+	white-space: normal
+}
+
+.Titles {  font-family: Garamond; 
+	font-size: 36px; 
+	font-style: normal; 
+	font-weight: bolder; 
+	font-variant: normal; 
+	text-transform: capitalize; 
+	color: #660099
+}
