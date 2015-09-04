@@ -1,26 +1,29 @@
 <!DOCTYPE HTML>
 <html>
 
-    {% include head.html %}
+	<head>
+		<title>Dahlquist Lab</title>
+	    <meta charset="UTF-8">
+	    <link rel="stylesheet" href="assets/css/reset.css" type="text/css">
+	    <link rel="stylesheet" href="assets/css/main.css" type="text/css">
+	</head>
 
     <body>
 
     	<div class="titlebar">
-            {% include titlebar.html %}
+			<a href="http://www.lmu.edu" target="_blank">
+				<img src="assets/images/LMULogoHQ2.png" alt="LMU logo" width="200" height="118" id="logo" />
+			</a>
+			<p id="title">
+				<a href="">Dahlquist Lab</a>
+			</p>
         </div>
 
         <div class="homepageContent">
-
-            {{ content }}
-
-            <div class="footer">
-                {% include footer.html %}
-            </div>
-
+{{ content }}
         </div>
-
-        {% include scripts.html %}
-        <script src="../../assets/js/homepage.js"></script>
+		<script src="assets/js/jquery-1.11.3.min.js"></script>
+        <script src="assets/js/homepage.js"></script>
 
     </body>
 

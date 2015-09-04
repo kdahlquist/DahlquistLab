@@ -1,30 +1,30 @@
 <!DOCTYPE HTML>
 <html>
 
-    {% include head.html %}
+{% include head.html %}
 
     <body>
 
         <div class="titlebar">
-            {% include titlebar.html %}
+{% include titlebar.html %}
         </div>
 
         <div class="sidebar">
-           {% include sidebar.html %}
+{% include sidebar.html %}
         </div>
         
         <div class="content"> 
             <p id="pageTitle">{{ page.title }}</p>
             <br /> 
             <div id="pageText">
-                {{ content }}
+{{ content }}
             </div>
             <div class="footer">
-                {% include footer.html %}
+{% include footer.html %}
             </div>
         </div>
 
-        {% include scripts.html %}
+{% include scripts.html %}
 
     </body>
     
