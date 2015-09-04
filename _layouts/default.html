@@ -3,25 +3,28 @@
 
     {% include head.html %}
 
-    <body bgcolor="#FFFFFF" text="#000000" link="#0000FF" vlink="#660066" alink="#660066">
+    <body>
 
-        <div class="header">
-            {% include header.html %}
+        <div class="titlebar">
+            {% include titlebar.html %}
         </div>
 
         <div class="sidebar">
-            {% include sidebar.html %}
+           {% include sidebar.html %}
         </div>
         
         <div class="content"> 
-            {{ content }}
+            <p id="pageTitle">{{ page.title }}</p>
+            <br /> 
+            <div id="pageText">
+                {{ content }}
+            </div>
+            <div class="footer">
+                {% include footer.html %}
+            </div>
         </div>
 
-        <div class="footer">
-            {% include footer.html %}
-        </div>
-
-    {% include scripts.html %}
+        {% include scripts.html %}
 
     </body>
     

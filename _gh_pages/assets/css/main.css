@@ -1,25 +1,199 @@
-.Main {  
-	font-family: Garamond; 
-	font-size: 14px; 
-	font-style: normal; 
-	line-height: normal; 
-	font-weight: normal; 
-	font-variant: normal; 
-	text-transform: none; 
-	color: #009966;
-	background-color: #FFFFFF; 
-	letter-spacing: normal; 
-	text-align: left; 
-	vertical-align: top; 
-	word-spacing: normal; 
-	white-space: normal
+body {
+	font-family: 'Georgia', serif;
 }
 
-.Titles {  font-family: Garamond; 
-	font-size: 36px; 
-	font-style: normal; 
-	font-weight: bolder; 
-	font-variant: normal; 
-	text-transform: capitalize; 
-	color: #660099
+.titlebar {
+	left: 0; 
+	right: 0;
+	height: 118px;
+	background: -webkit-linear-gradient(left, #2B3088 , #CAC8E4); /* For Safari 5.1 to 6.0 */
+  	background: -o-linear-gradient(right, #2B3088, #CAC8E4); /* For Opera 11.1 to 12.0 */
+  	background: -moz-linear-gradient(right, #2B3088, #CAC8E4); /* For Firefox 3.6 to 15 */
+  	background: linear-gradient(to right, #2B3088 , #CAC8E4); /* Standard syntax */
+}
+
+#title {
+	font-family: "URW Chancery L", cursive;
+	color: #FFFFFF;
+	font-size: 34px;
+	padding: 40px 0 0 20px;
+}
+
+#title a {
+	text-decoration: none;
+	color: #FFFFFF;
+}
+
+#logo {
+	position: relative;
+	float: right;
+	width: 200px;
+}
+
+.sidebar {
+	padding-top: 1px;
+	width: 160px;
+	height: 325px;
+	position: absolute;
+	margin-top: 20px;
+}
+
+#sidebarMenu {
+	list-style-type: none;
+	line-height: 2;
+	font-size: 16px;
+	border-right: 1px solid #DDDDDD;
+	width: 160px;
+	padding-left: 20px;
+}
+
+#sidebarMenu a {
+	text-decoration: none;
+	color: #5158C8;
+}
+
+#sidebarMenu a:hover {
+	color: #373EAF;
+}
+
+#sidebarMenu a:active {
+	color: #2B3088;
+}
+
+.homepageContent {
+	text-align: center;
+	margin-top: 30px;
+}
+
+#homepageMenu {
+	margin-right: auto;
+	margin-left: auto;
+	text-align: center;
+	table-layout: fixed;
+}
+
+#homepageMenu td {
+	width: 150px;
+	height: 100px;
+	vertical-align: middle;
+	overflow: hidden;
+}
+
+#textRow td {
+	height: 30px;
+}
+
+.content {
+	left: 0;
+	right: 0;
+	margin: 20px 0px 0px 200px; 
+	padding: 5px 5px 5px 5px;
+}
+
+#pageTitle {
+	font-size: 25px;
+}
+
+
+#pageText {
+	font-size: 15px;
+	padding: 0px 5px 5px 10px;
+}
+
+#pageText p {
+	width: 90%;
+}
+
+#pageText > .researchTitle {
+	font-weight: bold;
+	text-align: center;	
+	margin-left: auto;
+	margin-right: auto;
+	width: 700px;
+	font-size: 16px;
+}
+
+#lastModified {
+	font-size: 12px;
+	text-align: center;
+}
+
+.subsectionHeader {
+	font-size: 18px;
+	font-weight: bold;
+}
+
+.unorderedList {
+	list-style-type: disc;
+	padding-left: 40px;
+	width: 90%;
+}
+
+.unorderedList ul {
+	list-style-type: circle;
+	padding-left: 45px;
+}
+
+#table {
+	margin-left: auto;
+	margin-right: auto;
+	border-collapse: collapse;
+	text-align: center;
+	border: 1px solid #000000;
+	padding: 15px;
+	table-layout: fixed;
+}
+
+#table td, th {
+	width: 125px;
+	height: 70px;
+	border: 1px solid #000000;
+	vertical-align: middle;
+	overflow: hidden;
+}
+
+#table th {
+	font-weight: bold;
+}
+
+.italics {
+	font-style: italic;
+}
+
+.underline {
+	text-decoration: underline;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.courseName {
+	font-weight: bold;
+	line-height: 1.3;
+}
+
+.footer {
+	text-align: center;
+}
+
+#separatingLine {
+	width: 90%;
+	border-top: 1px solid #DDDDDD;
+}
+
+#footerMenu {
+	padding-top: 5px;
+	list-style-type: none;
+	font-size: 12px;
+	text-align: center;
+}
+
+#footerMenu li {
+	display:inline;
+	padding: 15px 15px;
+}
+
+#disclaimer {
+	padding-top: 10px;
 }
