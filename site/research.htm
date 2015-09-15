@@ -1,73 +1,11 @@
-<!DOCTYPE HTML>
-<html>
+---
+layout: default
+title: Research
+lastModified: 9/15/15
+---
 
-	<head>
-		<title>Dahlquist Lab - Research</title>
-	    <meta charset="UTF-8">
-	    <link rel="stylesheet" href="../assets/css/reset.css" type="text/css">
-	    <link rel="stylesheet" href="../assets/css/main.css" type="text/css">
-	</head>
-
-    <body>
-
-        <div class="titlebar">
-			<a href="http://www.lmu.edu" target="_blank">
-				<img src="../assets/images/LMULogoHQ2.png" alt="LMU logo" width="200" height="118" id="logo" />
-			</a>
-			<p id="title">
-				<a href="../">Dahlquist Lab</a>
-			</p>
-        </div>
-
-        <div class="sidebar">
-			<div id="sidebarMenu">
-                    <ul>
-                        <li>
-                            <a href="../"> Home </a>
-                        </li>
-                        <li>
-                            <a href="http://xmlpipedb.cs.lmu.edu" target="_blank">XMLPipeDB</a>
-                        </li>
-                        <li>
-                            <a href="http://dondi.github.io/GRNsight/" target="_blank">GRNsight</a>
-                        </li>
-                        <li>
-                            <a href="http://kdahlquist.github.io/GRNmap/" target="_blank">GRNmap</a>
-                        </li>
-                        <li>
-                            <a href="../research/">Research</a>
-                        </li>
-                        <li>
-                            <a href="../courses/">Courses</a>
-                        </li>
-                        <li>
-                            <a href="../people/">People</a>
-                        </li>
-                        <li>
-                            <a href="../publications/">Publications</a>
-                        </li>
-                        <li>
-                            <a href="../women/">Women in Science</a>
-                        </li>
-                        <li>
-                            <a href="http://cse.lmu.edu/department/biology/">Biology Department</a>
-                        </li>
-                        <li>
-                            <a href="../links/">Links</a>
-                        </li>
-                        <li>
-                            <a href="../contact/">Contact Us</a>
-                        </li>
-                    </ul>
-			</div>
-        </div>
-        
-        <div class="content"> 
-            <p id="pageTitle">Research</p>
-            <br /> 
-            <div id="pageText">
                 <p>
-                    The Dahlquist Lab performes three distinct, but related research projects. The common thread amongst these projects is that they employ the techniques of bioinformatics and genomics and the perspective of systems biology. All of these projects involve undergraduate or Master's level students and most involve interdisciplinary collaborations with other faculty at LMU (see: <a href="../people">People</a>). These research projects have also been brought into the classroom (see: <a href="../courses">Courses</a>). For lab protocols see the <a href="http://www.openwetware.org/wiki/Dahlquist" target="_blank">Dahlquist Lab site</a> at <a href="http://www.openwetware.org/wiki/Main_Page" target="_blank">OpenWetware.org</a>.
+                    The Dahlquist Lab performes three distinct, but related research projects. The common thread amongst these projects is that they employ the techniques of bioinformatics and genomics and the perspective of systems biology. All of these projects involve undergraduate or Master's level students and most involve interdisciplinary collaborations with other faculty at LMU (see: <a href="people.htm">People</a>). These research projects have also been brought into the classroom (see: <a href="courses.htm">Courses</a>). For lab protocols see the <a href="http://www.openwetware.org/wiki/Dahlquist" target="_blank">Dahlquist Lab site</a> at <a href="http://www.openwetware.org/wiki/Main_Page" target="_blank">OpenWetware.org</a>.
                 </p>
                 <br />
                 <br />
@@ -110,61 +48,4 @@
                 </p>
                 <br />
                 <br />
-                <p id="lastModified">Last modified: 9/3/15</p>
-            </div>
-            <div class="footer">
-				<hr id="separatingLine">
-				<div id="footerMenu">
-                    <ul>
-                        <li>
-                            <a href="../"> Home </a>
-                        </li>
-                        <li>
-                            <a href="http://xmlpipedb.cs.lmu.edu" target="_blank">XMLPipeDB</a>
-                        </li>
-                        <li>
-                            <a href="http://dondi.github.io/GRNsight/" target="_blank">GRNsight</a>
-                        </li>
-                        <li>
-                            <a href="http://kdahlquist.github.io/GRNmap/" target="_blank">GRNmap</a>
-                        </li>
-                        <li>
-                            <a href="../research/">Research</a>
-                        </li>
-                        <li>
-                            <a href="../courses/">Courses</a>
-                        </li>
-                        <li>
-                            <a href="../people/">People</a>
-                        </li>
-                        <li>
-                            <a href="../publications/">Publications</a>
-                        </li>
-                        <li>
-                            <a href="../women/">Women in Science</a>
-                        </li>
-                        <li>
-                            <a href="http://cse.lmu.edu/department/biology/">Biology Department</a>
-                        </li>
-                        <li>
-                            <a href="../links/">Links</a>
-                        </li>
-                        <li>
-                            <a href="../contact/">Contact Us</a>
-                        </li>
-                    </ul>
-
-				    <p id="disclaimer">
-				        This web page is not an official Loyola Marymount University web page. Comments on this page should be directed to kdahlquist[at]lmu[dot]edu.
-				    </p>
-				</div>
-            </div>
-        </div>
-
-		<script src="../assets/js/jquery-1.11.3.min.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
-		<script src="../assets/js/main.js"></script>
-
-    </body>
-    
-</html>
+                <p id="lastModified">Last modified: {{ page.lastModified }}</p>
