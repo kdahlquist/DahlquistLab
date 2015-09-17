@@ -1,0 +1,13 @@
+# Dependencies
+markdown:         rdiscount
+highlighter:      pygments
+
+# Permalinks
+permalink:        none
+
+# Server
+destination:      _gh_pages
+host:             127.0.0.1
+port:             9001
+baseurl:          /
+encoding:         UTF-8
