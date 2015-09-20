@@ -6,7 +6,7 @@ highlighter:      pygments
 permalink:        none
 
 # Server
-destination:      _gh_pages
+destination:      _static_site
 host:             127.0.0.1
 port:             9001
 baseurl:          /

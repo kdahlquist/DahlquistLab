@@ -1,22 +1,12 @@
 <!DOCTYPE HTML>
 <html>
 
-	<head>
-		<title>Dahlquist Lab</title>
-	    <meta charset="UTF-8">
-	    <link rel="stylesheet" href="assets/css/reset.css" type="text/css">
-	    <link rel="stylesheet" href="assets/css/main.css" type="text/css">
-	</head>
+	{% include head.html %}
 
     <body>
 
     	<div class="titlebar">
-			<a href="http://www.lmu.edu" target="_blank">
-				<img src="assets/images/LMULogoHQ2.png" alt="LMU logo" width="200" height="118" id="logo" />
-			</a>
-			<p id="title">
-				<a href="">Dahlquist Lab</a>
-			</p>
+			{% include titlebar.html %}
         </div>
 
         <div class="homepageContent">
