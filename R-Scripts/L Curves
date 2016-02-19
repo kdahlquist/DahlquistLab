@@ -1,0 +1,6 @@
+cat("Provide a Pathway to the Dataset: ")
+    Data <- readLines(con=stdin(),1)
+lcurve=read.table(Data,header=T)
+ cat("Provide a Title: ")
+    Title <- readLines(con=stdin(),1) 
+plot(lcurve$Penalty,lcurve$LSE,main=Title,xlab="Penalty Term",ylab="LSE",xlim=c(0,max(lcurve$Penalty)*1.1)); text(lcurve$Penalty,lcurve$LSE,label=paste("α =",lcurve$Alpha,sep=" "),cex=0.5,pos=4,offset=1); lines(lcurve$Penalty,lcurve$LSE)
