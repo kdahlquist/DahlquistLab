@@ -1,6 +1,6 @@
 # normalization
 
-This directory contains files and scripts needed to normalize the Dahlquist Lab microarray data.
+This directory contains files and scripts needed to normalize the Dahlquist Lab microarray data.  A full description is found on the OpenWetWare protocol page: [Dahlquist:Microarray Data Analysis Worflow](http://www.openwetware.org/wiki/Dahlquist:Microarray_Data_Analysis_Workflow).
 
 ## Contents
 
