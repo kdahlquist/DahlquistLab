@@ -6,9 +6,11 @@ offsetLevel  <- 20;
 
 # Replace this filename with the filename of your Ontario chip type Targets file
 ontFile      <- "Ontario_Targets_wt-dCIN5-dGLN3-dHAP4-dHMO1-dSWI4-dZAP1_20160616.csv";
+
 # Replace this filename with the filename of your GCAT chip type Targets file
 gcatFile     <- "GCAT_Targets_20160616.csv";
 
+# Make sure that this list of strains corresponds to the strains listed in the GCAT and Ontario Targets files above
 strains      <- c("wt","dCIN5","dGLN3","dHMO1","dHAP4","dZAP1","dSWI4")
 
 library(limma)
