@@ -4,11 +4,11 @@ This directory contains files and scripts needed to normalize the Dahlquist Lab 
 
 ## Contents
 
-* GCAT_Targets.csv
-* GCAT_Targets_new-filenames-only_20160616.csv
-* GCAT_Targets_old-and-new-filenames_20160616.csv
-* Ontario_Targets_wt-dCIN5-dGLN3-dHAP4-dHMO1-dSWI4-dZAP1_Spar_new-filenames-only_20160616.csv
-* Ontario_Targets_wt-dCIN5-dGLN3-dHAP4-dHMO1-dSWI4-dZAP1_Spar_old-and-new-filenames_20160616.csv
-* Ontario_Targets_wt-dCIN5-dGLN3-dHAP4-dHMO1-dSWI4-dZAP1-Spar_20150514.csv
-* bigFatNormalization2.R
-* generatePlots1.R
+* old_versions: directory, see README inside directory for contents and description
+* GCAT-and-Ontario\_normalization_script.R
+* GCAT\_Targets_20160616.csv
+* Limma_3.20.1.zip
+* Ontario\_Targets_wt-Spar_20160616.csv
+* Ontario\_Targets\_wt-dCIN5-dGLN3-dHAP4-dHMO1-dSWI4-dZAP1-Spar_20160616.csv
+* Ontario\_Targets\_wt-dCIN5-dGLN3-dHAP4-dHMO1-dSWI4-dZAP1_20160616.csv
+* generate\_MA\_and\_box_plots.R
