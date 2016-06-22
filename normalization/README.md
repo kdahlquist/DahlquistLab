@@ -15,6 +15,7 @@ This directory contains files and scripts needed to normalize the Dahlquist Lab 
   * The Targets file for the GCAT chip type, required by the normalization script.
 * Limma_3.20.1.zip
   * R package required for the the normalization script.  Reference: Smyth, G. K., 2005, Limma: linear models for microarray data. In _Bioinformatics and computational biology solutions using R and Bioconductor_, pp. 397-420, Springer New York.
+  * It is included in this repository because I cannot find a link to this version in the Bioconductor repository.
 * Ontario\_Targets_wt-Spar_20160616.csv
   * The Targets file for the Ontario chip type, to be used when normalizing the _Saccharomyces cerevisiae_ wild type strain and _Saccharomyces paradoxus_ microarray data only.
 * Ontario\_Targets\_wt-dCIN5-dGLN3-dHAP4-dHMO1-dSWI4-dZAP1-Spar_20160616.csv
