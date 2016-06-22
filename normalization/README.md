@@ -23,4 +23,4 @@ This directory contains files and scripts needed to normalize the Dahlquist Lab 
 * Ontario\_Targets\_wt-dCIN5-dGLN3-dHAP4-dHMO1-dSWI4-dZAP1_20160616.csv
   * The Targets file for the Ontario chip type, to be used when normalizing the _Saccharomyces cerevisiae_ wild type and deletion strains microarray data together.  This is the filename hardcoded into the normalization script.
 * generate\_MA\_and\_box_plots.R
-  * A script to automatically generate MA and box plots showing the results of the normalization.  Put it in the same directory as the `GCAT-and-Ontario\_normalization_script.R`, Ontario and GCAT Targets files, and `*gpr` files.  Run immediately after running the normalization script.
+  * A script to automatically generate MA and box plots showing the results of the normalization.  Put it in the same directory as the GCAT-and-Ontario\_normalization_script.R, Ontario and GCAT Targets files, and `*gpr` files.  Run immediately after running the normalization script.
