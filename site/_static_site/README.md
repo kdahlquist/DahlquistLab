@@ -1,2 +1,3 @@
-# DahlquistLab
-Code repository for the Kam Dahlquist Lab in the Department of Biology at Loyola Marymount University
+# site
+
+This directory contains code for the [Dahlquist Lab web site](http://myweb.lmu.edu/kdahlqui).
