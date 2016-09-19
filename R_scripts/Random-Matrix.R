@@ -88,7 +88,7 @@ random.network = function(genes.affected, genes.controlling, edges) {
 	
 	# Creates a name for the CSV file that will contain the network.
 	
-	filename=paste(max.genes,"-genes_",edges,"-edges_","RandomNetwork",format(Sys.time(),"_%Y%m%d_%H.%M.%S"),".csv",sep="")
+	filename=paste(max.genes,"-genes_",edges,"-edges_","random-network",format(Sys.time(),"_%Y%m%d_%H.%M.%S"),".csv",sep="")
 	
 	# Creates the CSV file.
 
