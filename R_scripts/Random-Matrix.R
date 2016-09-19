@@ -83,7 +83,7 @@ random.network = function(genes.affected, genes.controlling, edges) {
 	
 	# Creates the CSV file.
 
-	write.table(data.frame("rows affected/cols controlling"=rownames(network),network,check.names=FALSE), file=filename, 
+	write.table(data.frame("cols regulators/rows targets"=rownames(network),network,check.names=FALSE), file=filename, 
 	row.names=FALSE, sep=",")
 	
 	# Ends the function by displaying the network.
