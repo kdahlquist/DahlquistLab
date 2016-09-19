@@ -4,15 +4,15 @@
 
 # INTRODUCTION:
 # This script encodes the function "random.network", which will generate a random gene regulatory network with the number of 
-# controlling genes, affected genes, and edges specified by the user. This function is written to only output networks in which 
-# all genes are connected to the network by at least one edge. The random network will be displayed in R and output as a CSV 
-# file. To specify where you would like the file to be output: go to line 21, replace DIRECTORY NAME with your desired output 
-# directory, and uncomment it.
+# regulators (genes controlling), targets (genes affected), and edges (regulatory relationships) specified by the user. This 
+# function is written to only output networks in which all genes are connected to the network by at least one edge. The random network
+# will be displayed in R and output as a CSV file. To specify where you would like the file to be output: go to line 21, replace
+# DIRECTORY NAME with your desired output directory, and uncomment it.
 
 # USING THIS FUNCTION FOR GRNmap:
 # To generate a random network in R, type in the following:	random.network(genes.affected,genes.controlling,EDGES)
-# Sample: random.network(20,20,31)
-# Note: Only symmetric networks (where genes affected = genes controlling) will be accepted by GRNmap.
+# Sample: random.network(21,21,31)
+# Note: Only symmetric networks (where regulators = targets) will be accepted by GRNmap.
 
 
 random.network = function(genes.affected, genes.controlling, edges) {
@@ -51,7 +51,7 @@ random.network = function(genes.affected, genes.controlling, edges) {
 		
 		x=rowSums(network); y=colSums(network)
 		
-		# Sums up the number of edges connecting symmetric genes to the newtork. If an asymmetric network was
+		# Sums up the number of edges connecting symmetric genes to the network. If an asymmetric network was
 		# generated, values of 0 are added to the asymmetric genes. This is meant to determine if any genes
 		# are not connected to the network.
 		
@@ -68,12 +68,12 @@ random.network = function(genes.affected, genes.controlling, edges) {
 		if(0 %in% sums == FALSE) break
 	}	
 	
-	# Creates filler row and columns names.
+	# Creates header row and column with generic gene names.
 	
 	rownames(network)=paste("GENE","_",c(1:genes.affected),sep="")
 	colnames(network)=paste("GENE","_",c(1:genes.controlling),sep="")
 
-	# Determines whether there are more genes affected or controlling.
+	# Determines whether there are more targets (genes affected) or regulators (genes controlling).
 	
 	max.genes=ifelse(genes.affected>genes.controlling,genes.affected,genes.controlling)
 	
