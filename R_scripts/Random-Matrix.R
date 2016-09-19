@@ -1,6 +1,6 @@
 # Script written by Brandon J. Klein
 # Random-Network
-# 2016-09-19
+# Last modified: 2016-09-19
 
 # INTRODUCTION:
 # This script encodes the function "random.network", which will generate a random gene regulatory network with the number of 
