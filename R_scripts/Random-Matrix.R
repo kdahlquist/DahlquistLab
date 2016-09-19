@@ -10,9 +10,18 @@
 # DIRECTORY NAME with your desired output directory, and uncomment it.
 
 # USING THIS FUNCTION FOR GRNmap:
-# To generate a random network in R, type in the following:	random.network(genes.affected,genes.controlling,EDGES)
-# Sample: random.network(21,21,31)
-# Note: Only symmetric networks (where regulators = targets) will be accepted by GRNmap.
+# To generate a random network in R, do the following
+# Launch RGui (Windows)
+# Select the "Change dir..." menu item to navigate to the directory where the "Random-Matrix.R" function is saved
+# Select the "Source R code..." menu item and select the file "Random-Matrix.R" to load it in the current session
+# Then at the command prompt, type the following:	random.network(genes.affected,genes.controlling,EDGES)
+# where you substitute an integer for "genes.affected", i.e., the number of target genes in the network,
+# "genes.controlling", i.e., the number of regulators in the network, and
+# "EDGES" the number of edges or regulatory relationships.
+# For example, the command: random.network(21,21,31)
+# specifies a symmetric network with 21 genes and 31 edges.
+# Note: Only symmetric networks (where regulators = targets) will be accepted as input by GRNmap.
+# GRNsight can accept assymetric networks.
 
 
 random.network = function(genes.affected, genes.controlling, edges) {
