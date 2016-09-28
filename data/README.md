@@ -1,1 +1,1 @@
-This directory contains data files from the Dahlquist Lab.
+This directory contains directories to organize data files from the Dahlquist Lab.
