@@ -4,7 +4,7 @@ This procedure is for deriving degradation rates from the RNA half-life data fro
 
 [Neymotin, B., Athanasiadou, R., & Gresham, D. (2014). Determination of in vivo RNA kinetics using RATE-seq. Rna, 20(10), 1645-1652. DOI: 10.1261/rna.045104.114](http://rnajournal.cshlp.org/content/20/10/1645.full)
 
-1. I downloaded the supplemental data (Table S5) from Neymotin et al
+1. I downloaded the [supplemental data (Table S5)](http://rnajournal.cshlp.org/content/suppl/2014/08/08/rna.045104.114.DC1/TableS5.xls) from Neymotin et al. (2014).  Note that the key to the data can be found in the [ReadMe](http://rnajournal.cshlp.org/content/suppl/2014/08/08/rna.045104.114.DC1/REVreadme_Table.txt).
 2. From Neymotin's data, I edited the following
    * Alphabetized: Gene names were used for the alphabetization
       1. For alphabetization, I selected the entire sheet
