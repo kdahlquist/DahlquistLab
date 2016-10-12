@@ -1,6 +1,8 @@
 From @Nwilli31's [notebook](http://www.openwetware.org/wiki/Natalie_Williams:_Electronic_Notebook#September_21.2C_2016) on OpenWetWare.
 
-For the completion of my task with the degradation rates, the following was done:
+This procedure is for deriving degradation rates from the RNA half-life data from:
+
+[Neymotin, B., Athanasiadou, R., & Gresham, D. (2014). Determination of in vivo RNA kinetics using RATE-seq. Rna, 20(10), 1645-1652. DOI: 10.1261/rna.045104.114](http://rnajournal.cshlp.org/content/20/10/1645.full)
 
 1. I downloaded the supplemental data (Table S5) from Neymotin et al
 2. From Neymotin's data, I edited the following
