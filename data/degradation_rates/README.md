@@ -19,6 +19,7 @@ From: [Neymotin, B., Athanasiadou, R., & Gresham, D. (2014). Determination of in
         * Excel converted YKL134C/OCT1 to 1-Oct.
         * ADE5,7; ARG5,6; and DUR1,2 had the commas in their names converted to "%2C".
         * IMP2' did not have an issue with the apostrophe in its name.
+        * See [Zeeberg, B. R., Riss, J., Kane, D. W., Bussey, K. J., Uchio, E., Linehan, W. M., ... & Weinstein, J. N. (2004). Mistaken identifiers: gene name errors can be introduced inadvertently when using Excel in bioinformatics. BMC bioinformatics, 5(1), 80.](http://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-5-80) and [Ziemann, M., Eren, Y., & El-Osta, A. (2016). Gene name errors are widespread in the scientific literature. Genome Biology, 17(1), 177.](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1044-7) for discussion of this phenomenon.
     * 72 gene names were listed as "NA".  These were replaced with what was in the "Syst" column. 
    * Alphabetized: Gene names were used for the alphabetization
       1. For alphabetization, I selected the entire sheet
