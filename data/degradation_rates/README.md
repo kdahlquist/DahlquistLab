@@ -4,9 +4,9 @@ From: [Neymotin, B., Athanasiadou, R., & Gresham, D. (2014). Determination of in
 
 ### List of Files
 
-1. Neymotin_2014_REVreadme_Table.txt (Copy of [REVreadme_Table.txt](http://rnajournal.cshlp.org/content/suppl/2014/08/08/rna.045104.114.DC1/REVreadme_Table.txt)
+1. Neymotin_2014_REVreadme_Table.txt (Copy of [REVreadme_Table.txt](http://rnajournal.cshlp.org/content/suppl/2014/08/08/rna.045104.114.DC1/REVreadme_Table.txt))
 2. Neymotin_2014_RNA_degradation_rates_processed.xlsx (contains processed data)
-3. Neymotin_2014_TableS5.xls (Copy of [TableS5.xls](http://rnajournal.cshlp.org/content/suppl/2014/08/08/rna.045104.114.DC1/TableS5.xls)
+3. Neymotin_2014_TableS5.xls (Copy of [TableS5.xls](http://rnajournal.cshlp.org/content/suppl/2014/08/08/rna.045104.114.DC1/TableS5.xls))
 
 ### Processing Steps
 
