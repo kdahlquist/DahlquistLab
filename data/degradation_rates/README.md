@@ -7,7 +7,7 @@ From: [Neymotin, B., Athanasiadou, R., & Gresham, D. (2014). Determination of in
 1. Neymotin_2014_REVreadme_Table.txt (Copy of [REVreadme_Table.txt](http://rnajournal.cshlp.org/content/suppl/2014/08/08/rna.045104.114.DC1/REVreadme_Table.txt))
 2. Neymotin_2014_RNA_degradation_rates_processed.xlsx (contains processed data)
 3. Neymotin_2014_TableS5.xls (Copy of [TableS5.xls](http://rnajournal.cshlp.org/content/suppl/2014/08/08/rna.045104.114.DC1/TableS5.xls))
-4. Neymotin_Harbison_linking_database.accdb (Microsoft Access database used to extract the list of transcription factors from [Harbison, C. T., Gordon, D. B., Lee, T. I., Rinaldi, N. J., Macisaac, K. D., Danford, T. W., ... & Jennings, E. G. (2004). Transcriptional regulatory code of a eukaryotic genome. Nature, 431(7004), 99-104.](http://www.nature.com/nature/journal/v431/n7004/abs/nature02800.html) from the Neymotin et al. (2014) data)
+4. Neymotin_Harbison_linking_database.accdb (Microsoft Access database used to extract the list of transcription factors from [Harbison, C. T., Gordon, D. B., Lee, T. I., Rinaldi, N. J., Macisaac, K. D., Danford, T. W., ... & Jennings, E. G. (2004). Transcriptional regulatory code of a eukaryotic genome. Nature, 431(7004), 99-104](http://www.nature.com/nature/journal/v431/n7004/abs/nature02800.html) from the Neymotin et al. (2014) data)
 
 ### Processing Steps
 
