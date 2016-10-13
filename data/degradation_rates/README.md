@@ -15,7 +15,7 @@ From: [Neymotin, B., Athanasiadou, R., & Gresham, D. (2014). Determination of in
 
 1. The first worksheet in the workbook, `Neymotin_2014_supp_TableS5_raw`, corresponds to a copy of the [supplemental data Table S5](http://rnajournal.cshlp.org/content/suppl/2014/08/08/rna.045104.114.DC1/TableS5.xls) from Neymotin et al. (2014).  Note that the key to the data can be found in the [ReadMe](http://rnajournal.cshlp.org/content/suppl/2014/08/08/rna.045104.114.DC1/REVreadme_Table.txt).
 2. All the data were copied over to the next worksheet, entitled `names-corrected_sorted-by-gene`.
-    * The data were sorted A-->Z by column B, "Gene", which is the Standard Name for the gene in the Saccharomyces Gene Database.
+    * The data were sorted A-->Z by column B, "Gene", which is the Standard Name for the gene in the Saccharomyces Genome Database.
     * There were problems with 4 gene names, that were corrected.
         * Excel converted YKL134C/OCT1 to 1-Oct.
         * ADE5,7; ARG5,6; and DUR1,2 had the commas in their names converted to "%2C".
