@@ -21,16 +21,14 @@ From: [Neymotin, B., Athanasiadou, R., & Gresham, D. (2014). Determination of in
         * IMP2' did not have an issue with the apostrophe in its name.
         * See [Zeeberg, B. R., Riss, J., Kane, D. W., Bussey, K. J., Uchio, E., Linehan, W. M., ... & Weinstein, J. N. (2004). Mistaken identifiers: gene name errors can be introduced inadvertently when using Excel in bioinformatics. BMC bioinformatics, 5(1), 80.](http://bmcbioinformatics.biomedcentral.com/articles/10.1186/1471-2105-5-80) and [Ziemann, M., Eren, Y., & El-Osta, A. (2016). Gene name errors are widespread in the scientific literature. Genome Biology, 17(1), 177.](https://genomebiology.biomedcentral.com/articles/10.1186/s13059-016-1044-7) for discussion of this phenomenon.
     * 72 gene names were listed as "NA".  These were replaced with what was in the "Syst" column. 
-   * Alphabetized: Gene names were used for the alphabetization
-      1. For alphabetization, I selected the entire sheet
-      2. Next, I clicked the Sort button that looks like a funnel, and selected "Custom sort"
-      3. For custom sort, I selected the column with the gene names, for me, Column 1
-      4. I, then, sorted from descending order from A -> to Z
-   * Isolated Half Lives: Created a separate sheet with only Systematic & Gene Names and the thalf life
-      1. On this new sheet, I copied the Gene names and the thalf lifes corresponding to those genes
-      2. I calculated the median half life, which will used to calculate the degradation rate of any gene with missing data
-      3. The following Excel equation was used           
-            =MEDIAN("Column Containing thalf lives")            
+3. Columns A (Syst), B (Gene), and J (thalf) were copied over to a new worksheet entitled `degradation_rate_all`.
+    * These columns were renamed "systematic_name", "standard_name", and "t_half", respectively.
+    * Column D was entitled "degradation_rate".
+    * Degradation rates for all genes were computed using the equation `=(LN(0.5))/<t_half>`
+    * Column E was entitled "degradation_rate_rounded".
+    * The degradation rates from column D were rounded to four digits past the decimal using the equation `=ROUND(<degradation_rate>,4)`
+    * The median t_half and degradation_rate were computed for all 5380 genes; note that this value should not be used for degradation rate values missing for transcription factors, see the next section.
+  
    * Degradation Rates: Created an additional sheet for calculating the degradation rate from the half lives
       1. Again, the Gene names and the thalf lives were pasted into this new sheet so that the calculations could be carried out on a single page without interfering with other information or formats
       2. The following equation was used to calculate the degradation rate      
