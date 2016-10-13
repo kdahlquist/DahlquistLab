@@ -1,3 +1,15 @@
+## mRNA degradation rates for use with GRNmap input workbooks
+
+From: [Neymotin, B., Athanasiadou, R., & Gresham, D. (2014). Determination of in vivo RNA kinetics using RATE-seq. Rna, 20(10), 1645-1652. DOI: 10.1261/rna.045104.114](http://rnajournal.cshlp.org/content/20/10/1645.full)
+
+### List of Files
+
+1. Neymotin_2014_REVreadme_Table.txt (Copy of [REVreadme_Table.txt](http://rnajournal.cshlp.org/content/suppl/2014/08/08/rna.045104.114.DC1/REVreadme_Table.txt)
+2. Neymotin_2014_RNA_degradation_rates_processed.xlsx (contains processed data)
+3. Neymotin_2014_TableS5.xls (Copy of [TableS5.xls](http://rnajournal.cshlp.org/content/suppl/2014/08/08/rna.045104.114.DC1/TableS5.xls)
+
+### Processing Steps
+
 From @Nwilli31's [notebook](http://www.openwetware.org/wiki/Natalie_Williams:_Electronic_Notebook#September_21.2C_2016) on OpenWetWare.
 
 This procedure is for deriving degradation rates from the RNA half-life data from:
@@ -44,3 +56,7 @@ This procedure is for deriving degradation rates from the RNA half-life data fro
       * Now you can drag and drop the headings with the data that you want into the field below. For my query, I selected the names of Harbison's 203 TFs and then dragged down Neymotin's Systematic names as well as the calculated degradation rate to see if any genes were missing.
       * Now that the field is full, click Run to run your query.
     4. A table should appear now with the data you wanted beside the heading - for me, I have the Systematic names paired together and their corresponding degradation rates in the column beside them.
+
+### Contributors
+
+@Nwilli31, @kdahlquist, and @bklein7 contributed to these files.
