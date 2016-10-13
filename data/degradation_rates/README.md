@@ -10,14 +10,16 @@ From: [Neymotin, B., Athanasiadou, R., & Gresham, D. (2014). Determination of in
 
 ### Processing Steps
 
-From @Nwilli31's [notebook](http://www.openwetware.org/wiki/Natalie_Williams:_Electronic_Notebook#September_21.2C_2016) on OpenWetWare.
+@Nwilli31's documented her preliminary work on her [notebook](http://www.openwetware.org/wiki/Natalie_Williams:_Electronic_Notebook#September_21.2C_2016) on OpenWetWare.  The description below corresponds to the final version of the file on this repository: `Neymotin_2014_RNA_degradation_rates_processed.xlsx`.
 
-This procedure is for deriving degradation rates from the RNA half-life data from:
-
-[Neymotin, B., Athanasiadou, R., & Gresham, D. (2014). Determination of in vivo RNA kinetics using RATE-seq. Rna, 20(10), 1645-1652. DOI: 10.1261/rna.045104.114](http://rnajournal.cshlp.org/content/20/10/1645.full)
-
-1. I downloaded the [supplemental data (Table S5)](http://rnajournal.cshlp.org/content/suppl/2014/08/08/rna.045104.114.DC1/TableS5.xls) from Neymotin et al. (2014).  Note that the key to the data can be found in the [ReadMe](http://rnajournal.cshlp.org/content/suppl/2014/08/08/rna.045104.114.DC1/REVreadme_Table.txt).
-2. From Neymotin's data, I edited the following
+1. The first worksheet in the workbook, `Neymotin_2014_supp_TableS5_raw`, corresponds to a copy of the [supplemental data Table S5](http://rnajournal.cshlp.org/content/suppl/2014/08/08/rna.045104.114.DC1/TableS5.xls) from Neymotin et al. (2014).  Note that the key to the data can be found in the [ReadMe](http://rnajournal.cshlp.org/content/suppl/2014/08/08/rna.045104.114.DC1/REVreadme_Table.txt).
+2. All the data were copied over to the next worksheet, entitled `names-corrected_sorted-by-gene`.
+    * The data were sorted A-->Z by column B, "Gene", which is the Standard Name for the gene in the Saccharomyces Gene Database.
+    * There were problems with 4 gene names, that were corrected.
+        * Excel converted YKL134C/OCT1 to 1-Oct.
+        * ADE5,7; ARG5,6; and DUR1,2 had the commas in their names converted to "%2C".
+        * IMP2' did not have an issue with the apostrophe in its name.
+    * 72 gene names were listed as "NA".  These were replaced with what was in the "Syst" column. 
    * Alphabetized: Gene names were used for the alphabetization
       1. For alphabetization, I selected the entire sheet
       2. Next, I clicked the Sort button that looks like a funnel, and selected "Custom sort"
