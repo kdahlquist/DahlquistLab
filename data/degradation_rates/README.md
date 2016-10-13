@@ -7,6 +7,7 @@ From: [Neymotin, B., Athanasiadou, R., & Gresham, D. (2014). Determination of in
 1. Neymotin_2014_REVreadme_Table.txt (Copy of [REVreadme_Table.txt](http://rnajournal.cshlp.org/content/suppl/2014/08/08/rna.045104.114.DC1/REVreadme_Table.txt))
 2. Neymotin_2014_RNA_degradation_rates_processed.xlsx (contains processed data)
 3. Neymotin_2014_TableS5.xls (Copy of [TableS5.xls](http://rnajournal.cshlp.org/content/suppl/2014/08/08/rna.045104.114.DC1/TableS5.xls))
+4. Neymotin_Harbison_linking_database.accdb (Microsoft Access database used to extract the list of transcription factors from [Harbison, C. T., Gordon, D. B., Lee, T. I., Rinaldi, N. J., Macisaac, K. D., Danford, T. W., ... & Jennings, E. G. (2004). Transcriptional regulatory code of a eukaryotic genome. Nature, 431(7004), 99-104.](http://www.nature.com/nature/journal/v431/n7004/abs/nature02800.html) from the Neymotin et al. (2014) data)
 
 ### Processing Steps
 
@@ -27,36 +28,14 @@ From: [Neymotin, B., Athanasiadou, R., & Gresham, D. (2014). Determination of in
     * Degradation rates for all genes were computed using the equation `=(LN(0.5))/<t_half>`
     * Column E was entitled "degradation_rate_rounded".
     * The degradation rates from column D were rounded to four digits past the decimal using the equation `=ROUND(<degradation_rate>,4)`
-    * The median t_half and degradation_rate were computed for all 5380 genes; note that this value should not be used for degradation rate values missing for transcription factors, see the next section.
-  
-   * Degradation Rates: Created an additional sheet for calculating the degradation rate from the half lives
-      1. Again, the Gene names and the thalf lives were pasted into this new sheet so that the calculations could be carried out on a single page without interfering with other information or formats
-      2. The following equation was used to calculate the degradation rate      
-            = (ln (0.5)/ half life of specific gene)
-      3. For genes with missing data, the equation would be the following
-            = (ln (0.5)/ median half life)
-3. I used a previous file shared with me from Dr. Dahlquist to make the comparison between this work (Neymotin) and Harbison's list of 203 TFs
-4. I used Microsoft Access to pair the two data sets together using the systematic names in order to identify if there was missing data for the genes
-   1. First open a new blank database.
-   2. I imported my two excel files that contained my data
-      * This act can be achieved by selecting the External Data tab and clicking the Excel icon
-           + I then went through a series of instructions
-           + I browsed my computer for the file that I needed and selected it
-           + I chose the sheet that I would import, for me, this was Harbison's list of 203 TFs and the sheet with Neymotin's calculated degradation rates
-           + Depending on your sheet's format, the first row may either include headings or go directly into your data; select the box if your first row contains column headings
-            + I skipped the next question, asking about field names and the index, clicking next
-            + I then chose my own primary key - setting it to the first column with Systematic Names (not all genes have universal Gene names)
-            + I then clicked finish and import.
-      Now your data should be seen as a table in Access
-   3. To pair the data sets together, I selected the Create tab and hit Query Design.
-      * When you selected Query Design, a pop-up window appears and shows all the tables within your current database. Choose the tables that you wish to pair the data for. Exit out of that pop-up window and now you should see your tables with their heading under them.
-      * Select the heading that has the information you want to pair with the other file. For me it was the Systematic Names from Neymotin's data with the Systematic Names from Harbison's data
-      * Drag the heading and match it to the heading for the other data. Right click on the link that forms between the two headings
-      * Because I only want the data from Neymotin's that matches with Harbison's data, I would select the option that states: "Include ALL records from 'Harbison 203' and only those records from 'Neymotin degradation rates' where the joined fields are equal."
-      * Press ok and you should now see a pointed arrow head towards Neymotin deg rate heading
-      * Now you can drag and drop the headings with the data that you want into the field below. For my query, I selected the names of Harbison's 203 TFs and then dragged down Neymotin's Systematic names as well as the calculated degradation rate to see if any genes were missing.
-      * Now that the field is full, click Run to run your query.
-    4. A table should appear now with the data you wanted beside the heading - for me, I have the Systematic names paired together and their corresponding degradation rates in the column beside them.
+        * The values in this column were copied and Paste special > Paste values to get rid of the formula underneath.
+    * The median t_half and degradation_rate were computed for all 5380 genes; note that this value should **not** be used for degradation rate values missing for transcription factors, see the next section.
+4. The `degradation_rate_all` worksheet was imported into a Microsoft Access database entitled `Neymotin_Harbison_linking_database.accdb`.
+    * A query was run to pull out the data corresponding to the 202 regulatory transcription factors from [Harbison et al. (2004)](http://www.nature.com/nature/journal/v431/n7004/abs/nature02800.html).  Note that Harbison describes 203, but we left out MATA1 which is not in the systematic sequence of *Saccharomyces cerevisiae* S288C and does not appear in the Neymotin (2014) data either.
+    * The results of the query were pasted into a new worksheet entitled `degradation_rate_Harbison202`.
+    * The median t_half and degradation_rate were computed for the 202 transcription factors; note that this value **should** be used for degradation rate values missing for transcription factors.
+    * Rows with missing degradation rate values are highlighed in yellow.
+    * The values in the degradation_rate and degradation_rate_rounded were copied and Paste special > Paste values to get rid of the formulas underneath.
 
 ### Contributors
 
