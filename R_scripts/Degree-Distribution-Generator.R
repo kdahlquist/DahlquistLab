@@ -6,11 +6,14 @@
 # See if the code can be easily broken.
 # Address nomenclature issues (e.g. genes.controlling).
 # Address setting wd.
-
-degree.distribution = function(random.network,chart.title) {
+			
+degree.distribution = function(random.network,title) {
 	
-	# Set working directory (change as desired)
+	# Set working directory to Desktop (uncomment to use)
 	setwd("~/Desktop")
+	
+	# Save column sums.
+	cSums=colSums(random.network)
 	
 	# Save row sums.
 	rSums=rowSums(random.network)
@@ -41,11 +44,11 @@ degree.distribution = function(random.network,chart.title) {
 
 	# Save the transpose of the degree distribution table.
 	Degree.Distribution.Transpose=t(Labeled.Degree.Distribution.Table)
-	
+
 	# Calculate maximum value to be displayed on y-axis
 	all.y=c(Degree.Distribution.Table$"In-Degree",Degree.Distribution.Table$"Out-Degree")
 	max.y=max(all.y)
-	
+		
 	# Find out maximum number of genes in network
 	genes.affected=length(rowSums(random.network))
 	genes.controlling=length(colSums(random.network))	
@@ -56,40 +59,42 @@ degree.distribution = function(random.network,chart.title) {
 	
 	# Create a name for the .jpeg file
 	filename=paste(max.genes,"-genes_",edges,"-edges_","degree-distribution",format(Sys.time(),"_%Y%m%d_%H.%M.%S"),".jpg",sep="")
-
+	
 	# Save subsequent plotting to a .jpeg file
 	jpeg(filename)
 	
 	# Plot the degree distribution table.
 	barplot=barplot(Degree.Distribution.Transpose,
-			beside=TRUE,
-			col=c("black","gray"),
-			axes=FALSE,
-			xlab="Degree of Gene", font.lab=2,
-			ylab="Number of Genes with Given Degree",
-			yaxt="n",
-			main=chart.title)
-	
+					beside=TRUE,
+					col=c("black","gray"),
+					axes=FALSE,
+					xlab="Degree of Gene", font.lab=2,
+					ylab="Number of Genes with Given Degree",
+					yaxt="n",
+					main=title)
+					
+			# Consider: xaxt="n" and drawing axis separately
+			
 	# Draw y-axis
 	axis(2,at=c(0:max.y),las=1,pos=0.3)
-	
+			
 	# Draw grid lines, scaled to y-axis
 	abline(h=c(0:max.y-1),lty="solid",col="lightgray")
 	
 	# Redraw bars on top of grid lines
 	barplot(Degree.Distribution.Transpose,
-		beside=TRUE,
-		col=c("black","gray"),
-		yaxt="n",
-		add=T)
-	
+			beside=TRUE,
+			col=c("black","gray"),
+			yaxt="n",
+			add=T)
+			
 	# Add legend on top of grid lines
 	legend("topright",
-		legend=c("In-Degree","Out-Degree"),
-		fill=c("black","gray"),
-		border="black",
-		bg="white")
-	
+			legend=c("In-Degree","Out-Degree"),
+			fill=c("black","gray"),
+			border="black",
+			bg="white")
+			
 	# Saves plotted chart as .jpeg file
 	dev.off()
 }
