@@ -10,7 +10,7 @@
 degree.distribution = function(random.network,title) {
 	
 	# Set working directory to Desktop (uncomment to use)
-	setwd("~/Desktop")
+	# setwd("~/Desktop")
 	
 	# Save column sums.
 	cSums=colSums(random.network)
