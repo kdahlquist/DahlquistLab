@@ -9,7 +9,14 @@ Scripts created by @bklein7
   3. *L-Curves.R*: [OpenWetWare Notebook Description](http://openwetware.org/wiki/Graphing_L-Curves_in_R)
   4. *Random-Matrix.R*
  
-### How to use Random.Matrix.R
+### How to use Random-Matrix.R
+
+1. Download the script Random.Matrix.R
+2. Launch R.
+3. Select the menu item File > Change dir... and select the directory in which the script is saved.
+4. Select the menu item File > Sourc R code... and select the script.
+5. To run the script, type `random.network=random.network(TARGETS,REGULATORS,EDGES)` where `TARGETS` and `REGULATORS` are replaced with integer numbers representing the number of nodes (use the same number for a symmetrix matrix or different numbers for an asymmetric matrix) and `EDGES` is replaced with an integer representing the number of edges.
+6. The matrix should appear in the results window and will be saved to the working directory as a .csv file.
 
 ### How to use Degree-Distribution-Generator.R
 
