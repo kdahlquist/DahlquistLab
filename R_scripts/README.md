@@ -29,7 +29,7 @@ Scripts created by @bklein7
     * Select the menu item File > Sourc R code... and select the Random.Matrix.R script.
     * Run the script, saving the output to a variable.  For example `network1=random.network(21,21,31)` where the variable network1 is storing a random network with 21 nodes and 31 edges.
 6. Then type `degree.distribution(network1,"title")` which will plot the matrix stored in the variable `network1`, giving the chart the title enclosed in the quotes.
-7. The chart will e saved as a .jpg file in the working directory.
+7. The chart will be saved as a .jpg file in the working directory.
 8. To use a different adjacency matrix other than one created by the Random-Matrix.R generator, do the following:
     * Save your adjacency matrix as a .csv file with nothing (null) in cell A1
     * Test the import by typing `read.csv("filename",row.names=1,header=TRUE,sep=",")`
