@@ -4,10 +4,15 @@ Scripts created by @bklein7
 
 ## Contents
 
-  1. *Adjacency-Matrix-to-Edge-List-Conversion*: [OpenWetWare Notebook Description](http://openwetware.org/wiki/Converting_Adjacency_Matrices_to_Edge_Lists_in_R)
-  2. *L-Curves*: [OpenWetWare Notebook Description](http://openwetware.org/wiki/Graphing_L-Curves_in_R)
+  1. *Adjacency-Matrix-to-Edge-List-Conversion.R*: [OpenWetWare Notebook Description](http://openwetware.org/wiki/Converting_Adjacency_Matrices_to_Edge_Lists_in_R)
+  2. *Degree-Distribution-Generator.R*
+  3. *L-Curves.R*: [OpenWetWare Notebook Description](http://openwetware.org/wiki/Graphing_L-Curves_in_R)
+  4. *Random-Matrix.R*
  
- 
+### How to use Random.Matrix.R
+
+### How to use Degree-Distribution-Generator.R
+
 0. Change directory
 1. Sourc R code, choose random network generator
 2. test code by random.network(21,21,31) and it should produce a matrix
