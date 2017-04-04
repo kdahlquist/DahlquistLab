@@ -1,0 +1,1 @@
+This directory should not contain "raw" data from GRNmap or Gephi. Please move those files to their respective folders.  This directory should only contain derived data files that compile or analyze the raw data.

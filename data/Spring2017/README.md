@@ -1,0 +1,1 @@
+I made a first pass at organizing/renaming files.  I have questions/comments which are found in the README.md files in each directory.
