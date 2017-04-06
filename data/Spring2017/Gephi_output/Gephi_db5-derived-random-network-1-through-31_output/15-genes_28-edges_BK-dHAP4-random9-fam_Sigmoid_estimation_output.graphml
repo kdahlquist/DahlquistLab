@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<graphml xmlns="http://graphml.graphdrawing.org/xmlns" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://graphml.graphdrawing.org/xmlns http://graphml.graphdrawing.org/xmlns/1.0/graphml.xsd">
+  <!-- Exported by GRNsight v1.18  http://dondi.github.io/GRNsight/  https://github.com/dondi/GRNsight/releases/tag/v1.18 -->
+  <key id="name" for="node" attr.name="name" attr.type="string"/>
+  <key id="interaction" for="edge" attr.name="interaction" attr.type="string"/>
+  <key id="name" for="edge" attr.name="name" attr.type="string"/>
+  <key id="weight" for="edge" attr.name="weight" attr.type="double"/>
+  <graph edgedefault="directed" id="15-genes_28-edges_BK-dHAP4-random9-fam_Sigmoid_estimation_output.graphml">
+    <node id="ACE2">
+      <data key="name">ACE2</data>
+    </node>
+    <node id="ASH1">
+      <data key="name">ASH1</data>
+    </node>
+    <node id="CIN5">
+      <data key="name">CIN5</data>
+    </node>
+    <node id="GCR2">
+      <data key="name">GCR2</data>
+    </node>
+    <node id="GLN3">
+      <data key="name">GLN3</data>
+    </node>
+    <node id="HAP4">
+      <data key="name">HAP4</data>
+    </node>
+    <node id="HMO1">
+      <data key="name">HMO1</data>
+    </node>
+    <node id="MSN2">
+      <data key="name">MSN2</data>
+    </node>
+    <node id="SFP1">
+      <data key="name">SFP1</data>
+    </node>
+    <node id="STB5">
+      <data key="name">STB5</data>
+    </node>
+    <node id="SWI4">
+      <data key="name">SWI4</data>
+    </node>
+    <node id="SWI5">
+      <data key="name">SWI5</data>
+    </node>
+    <node id="YHP1">
+      <data key="name">YHP1</data>
+    </node>
+    <node id="YOX1">
+      <data key="name">YOX1</data>
+    </node>
+    <node id="ZAP1">
+      <data key="name">ZAP1</data>
+    </node>
+    <edge source="YHP1" target="ACE2">
+      <data key="interaction">pd</data>
+      <data key="name">YHP1 (pd) ACE2</data>
+      <data key="weight">0.7438100014136331</data>
+    </edge>
+    <edge source="CIN5" target="ASH1">
+      <data key="interaction">pd</data>
+      <data key="name">CIN5 (pd) ASH1</data>
+      <data key="weight">0.22562289198222643</data>
+    </edge>
+    <edge source="STB5" target="ASH1">
+      <data key="interaction">pd</data>
+      <data key="name">STB5 (pd) ASH1</data>
+      <data key="weight">-3.998321519618135</data>
+    </edge>
+    <edge source="ASH1" target="CIN5">
+      <data key="interaction">pd</data>
+      <data key="name">ASH1 (pd) CIN5</data>
+      <data key="weight">1.2605350828815343</data>
+    </edge>
+    <edge source="HAP4" target="CIN5">
+      <data key="interaction">pd</data>
+      <data key="name">HAP4 (pd) CIN5</data>
+      <data key="weight">-0.12989139660549243</data>
+    </edge>
+    <edge source="MSN2" target="CIN5">
+      <data key="interaction">pd</data>
+      <data key="name">MSN2 (pd) CIN5</data>
+      <data key="weight">2.0569842495039063</data>
+    </edge>
+    <edge source="SWI5" target="CIN5">
+      <data key="interaction">pd</data>
+      <data key="name">SWI5 (pd) CIN5</data>
+      <data key="weight">-3.3941737403281933</data>
+    </edge>
+    <edge source="ASH1" target="GCR2">
+      <data key="interaction">pd</data>
+      <data key="name">ASH1 (pd) GCR2</data>
+      <data key="weight">2.4009466079961856</data>
+    </edge>
+    <edge source="YHP1" target="GCR2">
+      <data key="interaction">pd</data>
+      <data key="name">YHP1 (pd) GCR2</data>
+      <data key="weight">-1.1537446256796788</data>
+    </edge>
+    <edge source="GLN3" target="HAP4">
+      <data key="interaction">pd</data>
+      <data key="name">GLN3 (pd) HAP4</data>
+      <data key="weight">-1.872684812247734</data>
+    </edge>
+    <edge source="ACE2" target="HMO1">
+      <data key="interaction">pd</data>
+      <data key="name">ACE2 (pd) HMO1</data>
+      <data key="weight">-0.9265013360754291</data>
+    </edge>
+    <edge source="CIN5" target="HMO1">
+      <data key="interaction">pd</data>
+      <data key="name">CIN5 (pd) HMO1</data>
+      <data key="weight">0.3586512926728439</data>
+    </edge>
+    <edge source="MSN2" target="HMO1">
+      <data key="interaction">pd</data>
+      <data key="name">MSN2 (pd) HMO1</data>
+      <data key="weight">1.3763883326872615</data>
+    </edge>
+    <edge source="YHP1" target="HMO1">
+      <data key="interaction">pd</data>
+      <data key="name">YHP1 (pd) HMO1</data>
+      <data key="weight">-0.7050535114152456</data>
+    </edge>
+    <edge source="YOX1" target="HMO1">
+      <data key="interaction">pd</data>
+      <data key="name">YOX1 (pd) HMO1</data>
+      <data key="weight">1.8673597493587006</data>
+    </edge>
+    <edge source="ACE2" target="MSN2">
+      <data key="interaction">pd</data>
+      <data key="name">ACE2 (pd) MSN2</data>
+      <data key="weight">-3.7231576883917934</data>
+    </edge>
+    <edge source="HMO1" target="SFP1">
+      <data key="interaction">pd</data>
+      <data key="name">HMO1 (pd) SFP1</data>
+      <data key="weight">0.030555126137598917</data>
+    </edge>
+    <edge source="SFP1" target="STB5">
+      <data key="interaction">pd</data>
+      <data key="name">SFP1 (pd) STB5</data>
+      <data key="weight">2.1406877325609015</data>
+    </edge>
+    <edge source="ZAP1" target="STB5">
+      <data key="interaction">pd</data>
+      <data key="name">ZAP1 (pd) STB5</data>
+      <data key="weight">0.10673195234692173</data>
+    </edge>
+    <edge source="ACE2" target="SWI4">
+      <data key="interaction">pd</data>
+      <data key="name">ACE2 (pd) SWI4</data>
+      <data key="weight">-2.668648302278979</data>
+    </edge>
+    <edge source="GLN3" target="SWI4">
+      <data key="interaction">pd</data>
+      <data key="name">GLN3 (pd) SWI4</data>
+      <data key="weight">0.1396407031571553</data>
+    </edge>
+    <edge source="CIN5" target="SWI5">
+      <data key="interaction">pd</data>
+      <data key="name">CIN5 (pd) SWI5</data>
+      <data key="weight">-0.0921017950814948</data>
+    </edge>
+    <edge source="SWI4" target="SWI5">
+      <data key="interaction">pd</data>
+      <data key="name">SWI4 (pd) SWI5</data>
+      <data key="weight">1.1770219051747903</data>
+    </edge>
+    <edge source="YHP1" target="SWI5">
+      <data key="interaction">pd</data>
+      <data key="name">YHP1 (pd) SWI5</data>
+      <data key="weight">-1.6559777699137994</data>
+    </edge>
+    <edge source="HAP4" target="YOX1">
+      <data key="interaction">pd</data>
+      <data key="name">HAP4 (pd) YOX1</data>
+      <data key="weight">0.7281247635170635</data>
+    </edge>
+    <edge source="STB5" target="YOX1">
+      <data key="interaction">pd</data>
+      <data key="name">STB5 (pd) YOX1</data>
+      <data key="weight">3.0464843477373327</data>
+    </edge>
+    <edge source="GLN3" target="ZAP1">
+      <data key="interaction">pd</data>
+      <data key="name">GLN3 (pd) ZAP1</data>
+      <data key="weight">1.5940887645139536</data>
+    </edge>
+    <edge source="HAP4" target="ZAP1">
+      <data key="interaction">pd</data>
+      <data key="name">HAP4 (pd) ZAP1</data>
+      <data key="weight">0.886174634897504</data>
+    </edge>
+  </graph>
+</graphml>
