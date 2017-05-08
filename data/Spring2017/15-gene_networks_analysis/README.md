@@ -1,4 +1,4 @@
-This directory should not contain "raw" data from GRNmap or Gephi. Please move those files to their respective folders.  This directory should only contain derived data files that compile or analyze the raw data.
+This directory contains derived data files that compile or analyze the raw data from db1-db6.
 
 * "Bar-Chart-Analysis_BK20161116.xlsx": Compiled data from db1-db6, all of outputs from GRNmap, production rates, threshold b, and MSE's with accompanying bar charts.
 * "Graph-Statistics-Comparison_BK20170315.pptx": Bar charts of Out-degree, in-degree, Eigen centrality, closeness centrality, betweenness centrality for db1-db6.
