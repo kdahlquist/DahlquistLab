@@ -6,3 +6,4 @@ This directory will contain the input and output workbooks for the L-curve analy
 * `15-genes_28-edges_db5_Sigmoid_estimation_missing-values_fixP.xlsx` on SEA120-12, starting on 6/9/17 at 4:14 PM.
 * `15-genes_28-edges_db5_Sigmoid_estimation_missing-values_fixb.xlsx` on SEA120-11, starting on 6/9/17 at 4:22 PM.
 * `15-genes_28-edges_db5_Sigmoid_estimation_missing-values_fixP-fixb.xlsx` on SEA120-10, starting on 6/9/17 at 4:27 PM.
+* `15-genes_28-edges_db5-random7-fam_Sigmoid_estimation_missing-values_L-curve.xlsx` on SEA120-09, starting on 6/9/17 at 4:30 PM.
