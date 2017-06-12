@@ -18,7 +18,7 @@ SEA120-11
 
 SEA120-10
 * Run1: `15-genes_28-edges_db5_Sigmoid_estimation_missing-values_fixP-fixb.xlsx` on SEA120-10, starting on 6/9/17 at 4:27 PM; finished 6/9/17 at 6:24 PM.
-* Run2:
+* Run2: `14-genes_27-edges_db5_Sigmoid_estimation_missing-values_delGLN3.xlsx` on SEA120-10, starting on 6/12/17 at 4:27 PM.
 
 SEA120-09
 * `15-genes_28-edges_db5-random7-fam_Sigmoid_estimation_missing-values_L-curve.xlsx` on SEA120-09, starting on 6/9/17 at 4:30 PM, finishing at 6/10/17 at 8:16 AM.
