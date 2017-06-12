@@ -12,3 +12,4 @@ This directory will contain the input and output workbooks for the L-curve analy
 * `15-genes_28-edges_db5_Sigmoid_estimation_missing-values_L-curve_no-GLN3-ZAP1-data.xlsx` on SEA120-14 starting on 6/12/17 at 2:50 PM.
 * `15-genes_28-edges_db5_Sigmoid_estimation_missing-values_L-curve_no-GLN3-ZAP1-HAP4-data.xlsx` on SEA120-15 starting on 6/12/17 at 2:57 PM.
 * `15-genes_28-edges_db5_Sigmoid_estimation_missing-values_L-curve_no-GLN3-ZAP1-HAP4-HMO1-data.xlsx` on SEA120-08 starting on 6/12/17 at 3:58 PM.
+* `15-genes_28-edges_db5_Sigmoid_estimation_missing-values_L-curve_no-GLN3-ZAP1-HAP4-HMO1-CIN5-data` on SEA120-09 starting on 6/12/17 at 4:06 PM.
