@@ -13,7 +13,7 @@ SEA120-14
 SEA120-12
 * Run1: `15-genes_28-edges_db5_Sigmoid_estimation_missing-values_fixP.xlsx` on SEA120-12, starting on 6/9/17 at 4:14 PM.
     * This run appeared to end with an error.  I.e., only got to output 15 and did not make input 16.
-* Run2: repeat of run above (after a clear all).
+* Run2: repeat of run above (after a clear all) starting at 6/12/17 at 4:42 PM.
 
 SEA120-11
 * Run1: `15-genes_28-edges_db5_Sigmoid_estimation_missing-values_fixb.xlsx` on SEA120-11, starting on 6/9/17 at 4:22 PM; finishing at 6/9/17 at 11:20 PM.
