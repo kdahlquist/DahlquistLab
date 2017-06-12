@@ -28,11 +28,12 @@ SEA120-09
 * `15-genes_28-edges_db5_Sigmoid_estimation_missing-values_L-curve_no-GLN3-ZAP1-HAP4-HMO1-CIN5-data` on SEA120-09 starting on 6/12/17 at 4:06 PM.
 
 SEA120-08
-* `15-genes_28-edges_db5-random24-fam_Sigmoid_estimation_missing-values_L-curve.xlsx` on SEA120-09, starting on 6/9/17 at 4:34 PM; finishing 6/10/17 at 4:44 PM.
-* `15-genes_28-edges_db5_Sigmoid_estimation_missing-values_L-curve_no-GLN3-ZAP1-HAP4-HMO1-data.xlsx` on SEA120-08 starting on 6/12/17 at 3:58 PM.
+* Run1: `15-genes_28-edges_db5-random24-fam_Sigmoid_estimation_missing-values_L-curve.xlsx` on SEA120-09, starting on 6/9/17 at 4:34 PM; finishing 6/10/17 at 4:44 PM.
+* Run2: `15-genes_28-edges_db5_Sigmoid_estimation_missing-values_L-curve_no-GLN3-ZAP1-HAP4-HMO1-data.xlsx` on SEA120-08 starting on 6/12/17 at 3:58 PM.
 
 SEA120-07
-* `15-genes_28-edges_db5_Sigmoid_estimation_missing-values_L-curve_no-GLN3-data.xlsx` on SEA120-07, starting on 6/9/17 at 4:39 PM; finished 6/10/17 at 4:44 PM.
+* Run1: `15-genes_28-edges_db5_Sigmoid_estimation_missing-values_L-curve_no-GLN3-data.xlsx` on SEA120-07, starting on 6/9/17 at 4:39 PM; finished 6/10/17 at 12:54 PM.
+* Run2: `12-genes_25-edges_db5_Sigmoid_estimation_missing-values_delGLN3--delZAP1-delGCR2.xlsx` on SEA120-07, starting on 6/12/17 at 4:49 PM.
 
 
 
