@@ -10,7 +10,7 @@ SEA120-15
 SEA120-14
 * Run1: Running `15-genes_28-edges_db5_Sigmoid_estimation_no-missing-values_L-curve.xlsx` on SEA120-14, starting on 6/5/17 at 4:34 PM.  Finished at 6/6/17 8:18 PM.
 * Run2: Running `15-genes_28-edges_db5_Sigmoid_estimation_missing-values_L-curve.xlsx` on SEA120-14, starting on 6/8/17 at 9:41 AM.  Run aborted due to power outage at ~10:15 AM; restarted at 6/8/17 at 4:35 PM; finished at 6/9/17 9:54 PM.
-* Run3: `15-genes_28-edges_db5_Sigmoid_estimation_missing-values_L-curve_no-GLN3-ZAP1-data.xlsx` on SEA120-14 starting on 6/12/17 at 2:50 PM.
+* Run3: `15-genes_28-edges_db5_Sigmoid_estimation_missing-values_L-curve_no-GLN3-ZAP1-data.xlsx` on SEA120-14 starting on 6/12/17 at 2:50 PM, finishing at 6/13/17 at 3:12 PM.
 
 SEA120-12
 * Run1: `15-genes_28-edges_db5_Sigmoid_estimation_missing-values_fixP.xlsx` on SEA120-12, starting on 6/9/17 at 4:14 PM.
