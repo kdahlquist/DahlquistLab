@@ -41,5 +41,6 @@ SEA120-06
 SEA120-05
 * Run1: `10-genes_22-edges_db5_Sigmoid_estimation_missing-values_delGLN3-delZAP1-delGCR2-delACE2-delSWI5.xlsx` on SEA120-05, starting at 6/12/17 at 5:00 PM.
 
-
+SEA120-04
+* Run1: `9-genes_20-edges_db5_Sigmoid_estimation_missing-values_delGLN3-delZAP1-delGCR2-delACE2-delSWI5-delASH1.xlsx` on SEA120-04 starting at 6/12/17 at 5:05 PM
 
