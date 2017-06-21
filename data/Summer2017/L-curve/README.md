@@ -28,7 +28,7 @@ SEA120-11
 * Run3: `16-genes_36-edges_db1_Sigmoid_estimation_missing-values_L-curve.xlsx` on SEA120-11, starting on 6/13/17 at 2:26 PM.
     * This run crashed at 6/14/14 at 2:26 AM; created input 14, but did not go further.  Will clear all and restart.
 * Run4: `16-genes_36-edges_db1_Sigmoid_estimation_missing-values_L-curve.xlsx` on SEA120-11, starting on 6/14/17 at 2:54 PM, finishing at 6/15/17 at 3:48 PM.
-* Run5: `15-genes_28-edges_db5-random12-fam_Sigmoid_estimation_missing-values_L-curve.xlsx` on SEA120-11 starting on 6/16/17 at 3:25 PM.
+* Run5: `15-genes_28-edges_db5-random12-fam_Sigmoid_estimation_missing-values_L-curve.xlsx` on SEA120-11 starting on 6/16/17 at 3:25 PM, finishing at 6/17/17 at 7:09 AM.
 
 SEA120-10
 * Run1: `15-genes_28-edges_db5_Sigmoid_estimation_missing-values_fixP-fixb.xlsx` on SEA120-10, starting on 6/9/17 at 4:27 PM; finished 6/9/17 at 6:24 PM.
