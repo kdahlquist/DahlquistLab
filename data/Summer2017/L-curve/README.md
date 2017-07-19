@@ -69,3 +69,6 @@ SEA120-03
 
 SEA120-02
 * Run1: `7-genes_14-edges_db5_Sigmoid_estimation_missing-values_delGLN3-delZAP1-delGCR2-delACE2-delSWI5-delASH1-delYOX1-delYHP1.xlsx` on SEA120-02 on 6/12/17 at 5:13 PM, finishing at 6/12/17 at 7:35 PM.
+
+*bayanus* (computer @bengfitzpatrick gave to @kdahlquist)
+* repeat of `15-genes_28-edges_db5_Sigmoid_estimation_missing-values_L-curve_no-GLN3-ZAP1-data.xlsx` start 7/17/17 4:06 PM, end 7/18/17 at 4:32 PM.  Data not uploaded yet because 7zip is not installed on that computer.  The results were identical to a previous run on a different computer.
