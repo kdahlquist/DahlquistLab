@@ -6,7 +6,7 @@ Scripts created by @bklein7
 
   1. *Adjacency-Matrix-to-Edge-List-Conversion.R*: [OpenWetWare Notebook Description](http://openwetware.org/wiki/Converting_Adjacency_Matrices_to_Edge_Lists_in_R)
   2. *Degree-Distribution-Generator.R*
-  3. *L-Curves.Rd*: [OpenWetWare Notebook Description](http://openwetware.org/wiki/Graphing_L-Curves_in_R)
+  3. *L-Curves.R*: [OpenWetWare Notebook Description](http://openwetware.org/wiki/Graphing_L-Curves_in_R)
   4. *Random-Matrix.R*
  
 ### How to use Random-Matrix.R
