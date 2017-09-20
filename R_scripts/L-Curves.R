@@ -56,9 +56,17 @@ cat("Would you like to Plot Further L-Curves on the Same Graph? (y/n)")
 if (replicates == "y") {
 	
 	counter=1; col1="black"; col2="red"; col3="blue"; col4="green"; col5="cyan"; col6="magenta"; col7="grey";
-	col8="black"; col9="red"; col10="blue"; col11="green"; col12="cyan"; col13="magenta"; col14="grey"; 
-	lty1="solid"; lty2="solid"; lty3="solid"; lty4="solid"; lty5="solid"; lty6="solid"; lty7="solid";
-	lty8="dashed"; lty9="dashed"; lty10="dashed"; lty11="dashed"; lty12="dashed"; lty13="dashed"; lty14="dashed" 
+	col8="black"; col9="red"; col10="blue"; col11="green"; col12="cyan"; col13="magenta"; col14="grey";
+	col15="black"; col16="red"; col17="blue"; col18="green"; col19="cyan"; col20="magenta"; col21="grey";
+	col22="black"; col23="red"; col24="blue"; col25="green"; col26="cyan"; col27="magenta"; col28="grey";
+	col29="black"; col30="red"; col31="blue"; col32="green"; col33="cyan"; col34="magenta"; col35="grey";
+	col36="black"; col37="red"; col38="blue"; col39="green"; col40="cyan"; col41="magenta"; col42="grey"; 
+	lty1=1; lty2=1; lty3=1; lty4=1; lty5=1; lty6=1; lty7=1;
+	lty8=2; lty9=2; lty10=2; lty11=2; lty12=2; lty13=2; lty14=2;
+	lty15=3; lty16=3; lty17=3; lty18=3; lty19=3; lty20=3; lty21=3;
+	lty22=4; lty23=4; lty24=4; lty25=4; lty26=4; lty27=4; lty28=4;
+	lty29=5; lty30=5; lty31=5; lty32=5; lty33=5; lty34=5; lty35=5;
+	lty36=6; lty37=6; lty38=6; lty39=6; lty40=6; lty41=6; lty42=6;
 	
 	cat("Provide a Label for the Existing L-Curve (will appear in figure legend): ")
     	Legend1 <- readLines(con=stdin(),1)
@@ -91,7 +99,7 @@ if (replicates == "y") {
 			final.color.count=paste("col",c(1:final.count),sep="")
 			final.colors=as.matrix(as.data.frame(mget(final.color.count)))
 			
-			legend("topright",legend=final.Legend,col=final.colors,lty=c(1,1,1,1,1,1,1,2,2,2,2,2,2,2),bg="white")
+			legend("topright",legend=final.Legend,col=final.colors,lty=c(1,1,1,1,1,1,1,2,2,2,2,2,2,2,3,3,3,3,3,3,3,4,4,4,4,4,4,4,5,5,5,5,5,5,5,6,6,6,6,6,6,6),bg="white",cex=0.5)
 			
 			break
 		}
