@@ -2,6 +2,7 @@ GRNmap Testing Report
 ## Test Conditions
 
 * Date: January 16, 2018
+* Run time: Started at 4:25pm | Ended at 7:28pm
 * Test Performed by: @maggie-oneil
 * Code Version: v1.8
 * MATLAB Version: R2014b
