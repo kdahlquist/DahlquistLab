@@ -4,7 +4,7 @@ The text below is a sample GRNmap model testing report.
 
 This is a template page for various GRNmap model tests. The name of the page should start with the phrase GRNmap Testing Report, then a description of the test, the date in the format yyyy-mm-dd, and the initials of the person who performed the test. 
 
-== Test Conditions ==
+## Test Conditions
 
 * Date: 
 * Test Performed by: <nowiki>[[link to user page]], [[link to electronic notebook]]</nowiki>
@@ -12,12 +12,12 @@ This is a template page for various GRNmap model tests. The name of the page sho
 * MATLAB Version:
 * Computer on which the model was run:
 
-== Purpose ==
+## Purpose
 
 * State the purpose of this particular test.
 * Link to Issue # on GRNmap @ GitHub.
 
-== Results ==
+## Results
 
 * Input sheet: [[Media:]]
 * Output sheet: [[Media:]]
@@ -31,7 +31,7 @@ This is a template page for various GRNmap model tests. The name of the page sho
 * GRNsight figure of unweighted network: [[Image:]]
 * GRNsight figure of weighted network: [[Image:*filename here*|thumb|center|400px]]
 
-== Discussion ==
+## Discussion
 
 * Discuss the results of the test with regards to the stated purpose.  Additionally, answer the relevant questions below:
 ** Examine the graphs that were output by each of the runs. Which genes in the model have the closest fit between the model data and actual data? Which genes have the worst fit between the model and actual data? Why do you think that is? (Hint: how many inputs do these genes have?) How does this help you to interpret the microarray data?
