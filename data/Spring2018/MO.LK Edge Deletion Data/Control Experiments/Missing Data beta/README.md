@@ -1,6 +1,7 @@
 ## Test Conditions
 
-* Date: January 16, 2018 | Started at 4:44pm. Ended at 8:08pm
+* Date: January 16, 2018 
+* Run-time: Started at 4:44pm | Ended at 8:08pm
 * Test Performed by: @maggie-oneil
 * Code Version: beta
 * MATLAB Version: R2014b
