@@ -1,0 +1,1 @@
+In this folder lives all documentation related to the thesis written by Margaret ONeil of the Dahlquist Lab Data Analysis Team. This thesis details her work as a member of the Dahlquist Lab for 5 semesters, from Spring 2016 - Spring 2018. 
