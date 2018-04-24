@@ -13,15 +13,13 @@ To use as a control to determine how workbooks with missing data run on the beta
 
 ## Results
 
-* Input sheet: [[Media:]]
-* Output sheet: [[Media:]]
-* Output .mat file (zipped): [[Media:]]
-** LSE:
-** Penalty term:
-** Number of iterations (counter):
-* Figures (all expression graphs .jpg files zipped together): [[Media:]]
-* Save the progress figure containing the counts manually: [[Media:]]
-* analysis.xlsx containing bar graphs: [[Media:]]
-* GRNsight figure of unweighted network: [[Image:]]
-* GRNsight figure of weighted network: [[Image:*filename here*|thumb|center|400px]]
+* Input sheet: 15-genes_28-edges_db5-MO-LK_Sigmoid_estimation_missing-values.xlsx
+* Output sheet: 15-genes_28-edges_db5-MO-LK_Sigmoid_estimation_missing-values_output.xlsx
+** LSE: 0.700272594
+** Penalty term: 2.50652055
+** Number of iterations (counter):111242
+* Figures (all expression graphs .jpg files zipped together): See Images folder 
+* Save the progress figure containing the counts manually: See Images folder
 
+## Discussion
+It was determined we can run the v1.8 beta model using the missing data file as a baseline, and this is the type of run which will be performed for the entirety of the edge deletion experiments 
