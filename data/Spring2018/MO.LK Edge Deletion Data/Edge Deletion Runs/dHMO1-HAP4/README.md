@@ -9,17 +9,16 @@
 * Computer on which the model was run: paradoxus CPU9
 
 ## Purpose
+ To determine the importance of the HMO1 --> HAP4 edge by deleting the edge as a part of the larger db5 edge deletion experiment
 
+## Results 
+* Input sheet: dHMO1-HAP4_15-genes_27-edges_db5-MO-LK_Sigmoid_estimation.xlsx
+* Output sheet: dHMO1-HAP4_15-genes_27-edges_db5-MO-LK_Sigmoid_estimation_output.xlsx
+* LSE: 0.705904393
+* Penalty term: 1.97819833
+* Number of iterations (counter): 64530
+* Figures (all expression graphs .jpg files zipped together): See Images folder 
+* Save the progress figure containing the counts manually: See Images folder
 
-
-* Input sheet: [[Media:]]
-* Output sheet: [[Media:]]
-* Output .mat file (zipped): [[Media:]]
-** LSE:
-** Penalty term:
-** Number of iterations (counter):
-* Figures (all expression graphs .jpg files zipped together): [[Media:]]
-* Save the progress figure containing the counts manually: [[Media:]]
-* analysis.xlsx containing bar graphs: [[Media:]]
-* GRNsight figure of unweighted network: [[Image:]]
-* GRNsight figure of weighted network: [[Image:*filename here*|thumb|center|400px]]
+## Discussion
+This model run will be used for the HMO1—>HAP4 data for model performance  comparison for all analyses done in the Analysis of Edge Deletion Runs folder
