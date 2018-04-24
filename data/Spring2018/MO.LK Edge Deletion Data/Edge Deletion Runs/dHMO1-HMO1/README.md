@@ -9,18 +9,17 @@
 * Computer on which the model was run: paradoxus CPU10
 
 ## Purpose
-
+To determine the importance of the HMO1-->HMO1 edge by deleting the edge as a part of the larger db5 edge deletion experiment
 
 ## Results
 
-* Input sheet: [[Media:]]
-* Output sheet: [[Media:]]
-* Output .mat file (zipped): [[Media:]]
-** LSE:
-** Penalty term:
-** Number of iterations (counter):
-* Figures (all expression graphs .jpg files zipped together): [[Media:]]
-* Save the progress figure containing the counts manually: [[Media:]]
-* analysis.xlsx containing bar graphs: [[Media:]]
-* GRNsight figure of unweighted network: [[Image:]]
-* GRNsight figure of weighted network: [[Image:*filename here*|thumb|center|400px]]
+* Input sheet: dHMO1-HMO1_15-genes_27-edges_db5-MO-LK_Sigmoid_estimation.xlsx
+* Output sheet: dHMO1-HMO1_15-genes_27-edges_db5-MO-LK_Sigmoid_estimation_output.xlsx
+* LSE: 0.704482508
+* Penalty term: 3.082463626
+* Number of iterations (counter): 122528
+* Figures (all expression graphs .jpg files zipped together): See Images folder
+* Save the progress figure containing the counts manually: See Images folder
+
+## Discussion
+This model run will be used for the HMO1—>HMO1 data for model performance  comparison for all analyses done in the Analysis of Edge Deletion Runs folder
