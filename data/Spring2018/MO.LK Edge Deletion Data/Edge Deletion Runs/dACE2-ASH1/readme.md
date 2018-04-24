@@ -22,4 +22,4 @@ To determine the importance of the ACE2 --> ASH1 edge by deleting the edge as a 
 * Save the progress figure containing the counts manually: See Images folder
 
 ## Discussion 
-This model run will be used as a baseline for model performance for all analyses done in the Analysis of Edge Deletion Runs folder
+This model run will be used for the ACE2-->ASH1 data for comparison of model performance for all analyses done in the Analysis of Edge Deletion Runs folder
