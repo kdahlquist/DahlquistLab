@@ -1,1 +1,1 @@
-This directory contains model runs for db1-7 with missing data.
+This directory contains model runs for db1-7 with missing data. The purpose of these runs was to generate model results for db1-7 with missing expression data to compare with the results where the missing data was filled in with averages. P's, b's, and w's were all estimated. Thes runs were conducted on the _bayanus_ computer using the v1.10 draft release version of the executable on 10/18/18 and 10/19/18.
