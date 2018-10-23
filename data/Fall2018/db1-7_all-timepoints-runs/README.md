@@ -1,1 +1,2 @@
-This directory will contain model runs for db1-7 networks with all cold shock/recovery timepoints (t15, t30, t60, t90, and t120), instead of just the cold shock timepoints (t15, t30, t60).
+This directory will contain model runs for db1-7 networks with all cold shock/recovery timepoints (t15, t30, t60, t90, and t120), instead of just the cold shock timepoints (t15, t30, t60).  The purpose of these runs was to generate model results for db1-7 with all timepoints to compare with the results where just the cold shock timepoints were used.
+These runs were conducted on the _bayanus_ computer using the v1.10 draft release version of the executable on 10/23/18.
