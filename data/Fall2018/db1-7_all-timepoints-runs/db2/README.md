@@ -1,1 +1,1 @@
-Input and output files for db1.
+Input and output files for db2.
