@@ -1,1 +1,1 @@
-I made a first pass at organizing/renaming files.  I have questions/comments which are found in the README.md files in each directory.
+These are the data analysis files generated in the Spring 2017 semester.
