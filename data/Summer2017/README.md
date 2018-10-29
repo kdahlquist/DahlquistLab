@@ -1,1 +1,1 @@
-Stubbing out a directory for Summer 2017 work.
+This directory contains data analysis work from Summer 2017 by @kdahlquist.
