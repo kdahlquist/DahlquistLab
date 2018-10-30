@@ -1,1 +1,3 @@
 This directory contains model runs for db1-7 with missing data. The purpose of these runs was to generate model results for db1-7 with missing expression data to compare with the results where the missing data was filled in with averages. P's, b's, and w's were all estimated. Thes runs were conducted on the _bayanus_ computer using the v1.10 draft release version of the executable on 10/18/18 and 10/19/18.
+
+Run a replicate of the db5 no-missing-values input workbook on 10/30/18 for direct comparison with the db5 no-missing-values runs, which is being run at the same time on _bayanus_ starting at 2:32 and 2:33 PM, respectively.  Need to know if the results are the same or similar when missing values are there.
