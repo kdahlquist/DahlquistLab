@@ -1,0 +1,1 @@
+Based on db2 input, but with wt-only expression data.  For each time point there are three replicates, but the replicates are filled in with the same average value from the original workbook.  Two values are missing for CIN5 at t15 (the second and third).
