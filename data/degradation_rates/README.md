@@ -36,8 +36,9 @@ From: [Neymotin, B., Athanasiadou, R., & Gresham, D. (2014). Determination of in
     * The median t_half and degradation_rate were computed for the 202 transcription factors; note that this value **should** be used for degradation rate values missing for transcription factors.
     * Rows with missing degradation rate values are highlighed in yellow.
     * The values in the degradation_rate and degradation_rate_rounded were copied and Paste special > Paste values to get rid of the formulas underneath.
-
-TODO: added two new sheets: "deg_rate_Harb202_replacemissing" and "prod_rate_initial_guesses" on February 15, 2019 by @kdahlquist
+    * A new column called degradation_rate_rounded_forGRNmap takes the absolute value of the degradation_rate_rounded because the GRNmap input workbook expects a postitive number for the degradation rate.
+5. A new sheet was added called "deg_rate_Harb202_replacemissing" that has three columns, systematic_name, standard_name, and	degradation_rate copied and "paste values" from the previous sheet.  The degradation_rate column was the previous degradation_rate_forGRNmap column.  The missing values were filled in by the median value of 0.099 for DAL80, GAT3, HAC1, IME4, and WTM1.
+6. A new sheet was added called "prod_rate_initial_guesses" with three columns, systematic_name, standard_name, and	production_rate.  The production_rate value is 2* the degradation rate from the previous worksheet.
 
 ### Contributors
 
