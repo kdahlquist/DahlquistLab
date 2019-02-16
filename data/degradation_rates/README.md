@@ -37,6 +37,8 @@ From: [Neymotin, B., Athanasiadou, R., & Gresham, D. (2014). Determination of in
     * Rows with missing degradation rate values are highlighed in yellow.
     * The values in the degradation_rate and degradation_rate_rounded were copied and Paste special > Paste values to get rid of the formulas underneath.
 
+TODO: added two new sheets: "deg_rate_Harb202_replacemissing" and "prod_rate_initial_guesses" on February 15, 2019 by @kdahlquist
+
 ### Contributors
 
 @Nwilli31, @kdahlquist, and @bklein7 contributed to these files.
