@@ -3,10 +3,10 @@ filename = 'GCAT_and_Ontario_Between_Array_Normalization.xlsx'; % Name of input 
 sheetname  = 'GCAT_and_Ontario_Between_Array_'; % Name of sheet in input file containing data to analyze
 % % If one of the two strains you are working on is the wildtype, keep that
 % % wildtype as strain 1.
-strain1    = 'wt'; %Here should be wt, dCIN5, dGLN3, dHMO1, or dZAP1
+strain1    = 'wt'; %Here should be wt, dCIN5, dGLN3, dHAP4, dHMO1, or dZAP1
 % % Select strain 2 to be one of the other strains you would like to
 % % compare with the first strain.
-strain2    = 'dZAP1'; %Here should be dCIN5, dGLN3, dHMO1, or dZAP1
+strain2    = 'dZAP1'; %Here should be dCIN5, dGLN3, dHAP4, dHMO1, or dZAP1
 
 %% User no longer has to adjust any code from here on
 
