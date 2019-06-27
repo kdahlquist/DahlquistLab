@@ -1,0 +1,1 @@
+This directory contains @alicekfinton's downstream analysis of the model runs with variable inclusion of strain dataThis directory is the repository for the dHAP4 stem results; see her [OpenWetWare notebook](https://openwetware.org/wiki/Alice_Finton_Online_Lab_Notebook) for details.
