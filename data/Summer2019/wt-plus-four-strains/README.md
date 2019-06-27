@@ -1,1 +1,1 @@
-placeholder to create directory
+This directory contains input and output for model runs of db5 including microarray data for the wild type strain and all permutations of four other strains.  See her [OpenWetWare notebook](https://openwetware.org/wiki/Alice_Finton_Online_Lab_Notebook) for details.
