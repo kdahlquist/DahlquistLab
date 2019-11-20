@@ -4,7 +4,7 @@ This directory will contain input/output files for re-running the Schade input f
 * 21-genes_31-edges_Schade-data_change-format-only_input.xlsx: input file re-formatted to be compatible with GRNmap v1.10, but no other changes made.
 
 Note that there are some ways we can update this model beyond the format:
-* Change the alpha to 0.02, MaxIter	to 1.00E+08, TolFun	to 1.00E-06, MaxFunEval to 1.00E+08, and TolX	1.00E-06, consistent with the runs we are not doing.
+* Change the alpha to 0.02, MaxIter	to 1.00E+08, TolFun	to 1.00E-06, MaxFunEval to 1.00E+08, and TolX	1.00E-06, consistent with the runs we are now doing.
 * Include replicate data.
 * Change the Belle et al. (2006) degradation rates (and initial guesses for production rates) to Neymotin et al. (2014).
 * Run the Schade _network_ with the Dahlquist Lab data (and Neymotin et al. degradation rates and initial guesses)
