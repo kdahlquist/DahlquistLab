@@ -11,5 +11,6 @@ Note that there are some ways we can update this model beyond the format:
 
 @alicekfinton should run the 21-genes_31-edges_Schade-data_change-format-only_input.xlsx file and create the other input files and run them.  
 * Finding the new degradation and production rates for this network and the Dahlquist Lab expression data can be done with this [MS Access Database](https://github.com/kdahlquist/DahlquistLab/blob/master/data/Spring2019/Expression-and-Degradation-rate-database_2019.accdb).
+    * [Here is a link to instructions for how to run the query to make the input workbook](https://xmlpipedb.cs.lmu.edu/biodb/fall2019/index.php/Week_10#Creating_the_GRNmap_Input_Workbook)
 * The Schade data spreadsheet with the replicate data, called wild type cold time curve_edited_20110113_KD.xls, can be found on [Box](https://lmu.box.com/s/au1u4qo3e6yu656ks8x0738w0xm4oxoq).
     * Note that you should round the expression data to four digits past the decimal as is the custom with the Dahlquist lab data.
