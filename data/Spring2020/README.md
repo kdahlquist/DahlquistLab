@@ -28,11 +28,13 @@ Table of contents on this readme should be comprehensive for all work done since
      - Neymotin et al. (2014) suppelementary table 5 modified to calculate production rates
      - Excel sheet containing Neymotin et al. (2014), initial guess, and model-estimated production rate comparison
    - **Fix/Estimate Weights, Thresholds, and Production Rates Model runs:**
+     - *Found in Data: Fall 2019*
      - Model input and output files
      - Excel sheets containing LSE:minLSE ratio analyses
      - Excel sheets containing the compiled parameters
      
 4. **Sensitivity Assessment of the Model to Manipulation of Optimization Parameters**
+   - *Found in Data: Fall 2019*
    - **Manipulation of Optimization Parameters:**
      - Contains model input and output files 
      - Compiled LSE:minLSE ratio and iteration count analyses
