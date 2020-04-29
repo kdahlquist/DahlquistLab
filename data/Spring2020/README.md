@@ -10,9 +10,9 @@ Contains PowerPoint file containing all ClueGO networks for the Gene Ontology an
 
 Assessment of Model Sensitivity:
 
--Manipulation of Optimization Parameters:
-    -Contains model input and output files 
-    -Compiled LSE:minLSE ratio and iteration count analyses
+*Manipulation of Optimization Parameters:
+**Contains model input and output files 
+**Compiled LSE:minLSE ratio and iteration count analyses
 
 -Fix/Estimate Weights, Thresholds, and Production Rates Model runs:
     -Contains model input and output files
