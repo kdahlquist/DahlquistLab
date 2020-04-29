@@ -1,6 +1,6 @@
 Table of contents on this readme should be comprehensive for all work done since Summer 2019.  Don't duplicate the files from summer and Fall, but just refer to them here and say they are stored in the other directories.
 
-1. **Gene Ontology Enrichment Analysis of Microarray Data Clusters Generated using STEM and k-means Clustering** 
+1. **STEM, k-means Clustering, and Gene Ontology** 
    - **DNA Microarray Data Workbooks:** 
      - Contains the DNA microarray data for the wild-type and five transcription factor deletion strains used in the data analysis.
    - **STEM Profiles**
