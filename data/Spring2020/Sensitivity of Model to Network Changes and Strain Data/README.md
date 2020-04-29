@@ -1,10 +1,11 @@
 2. **Sensitivity of the Model to Network Structure and Strain Data**
    - **Systematic Deletion of Edges from the Db5 Network**
-     - Model input and output found in
+     - Model input and output found on GitHub in [MO.LK Edge Deletion Data](https://github.com/kdahlquist/DahlquistLab/tree/master/data/Spring2018/MO.LK%20Edge%20Deletion%20Data)
      - PowerPoint of clustered heatmap
    - **Gcr2 and Zap1 Node Deletion Model Runs**
      - Excel sheet containing LSE:minLSE ratio analyses
    - **Variable Inclusion of Strain Data:**
+     - *Found in [Data: Summer 2019](https://github.com/kdahlquist/DahlquistLab/tree/master/data/Summer2019)*
      - Table of model runs
      - PowerPoint of all expression plots
      - Excel sheets containing bar graphs for production rates and thresholds
