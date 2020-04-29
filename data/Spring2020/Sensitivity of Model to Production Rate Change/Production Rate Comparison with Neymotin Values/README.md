@@ -1,3 +1,3 @@
 Contains: 
 - Neymotin et al. (2014) suppelementary table 5 modified to calculate production rates
-- Excel sheet containing Neymotin et al. (2014), initial guess, and model-estimated production rate comparison
+- PowerPoint containing Neymotin et al. (2014), initial guess, and model-estimated production rate comparison
