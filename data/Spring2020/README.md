@@ -1,5 +1,4 @@
-Table of contents on this readme should be comprehensive for all work done since Summer 2019.  Don't duplicate the files from summer and Fall, but just refer to them here and say they are stored in the other directories.
-
+Table of Contents:
 1. **STEM, k-means Clustering, and Gene Ontology** 
    - **DNA Microarray Data Workbooks:** 
      - *Found in [within-strain_ANOVA_results](https://github.com/kdahlquist/DahlquistLab/tree/master/data/within-strain_ANOVA_results)*
@@ -30,7 +29,7 @@ Table of contents on this readme should be comprehensive for all work done since
 3. **Sensitivity Assessment of the Model to Changing Production Rates**
    - **Production Rate Comparison with Neymotin et al. (2014) Values**
      - Neymotin et al. (2014) suppelementary table 5 modified to calculate production rates
-     - Excel sheet containing Neymotin et al. (2014), initial guess, and model-estimated production rate comparison
+     - PowerPoint containing Neymotin et al. (2014), initial guess, and model-estimated production rate comparison
    - **Fix/Estimate Weights, Thresholds, and Production Rates Model runs:**
      - *Found in [Data: Fall 2019](https://github.com/kdahlquist/DahlquistLab/tree/master/data/Fall2019)*
      - Model input and output files
