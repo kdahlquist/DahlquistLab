@@ -30,7 +30,7 @@
      
 3. **Sensitivity Assessment of the Model to Changing Production Rates**
    - **Production Rate Comparison with Neymotin et al. (2014) Values**
-     - Neymotin et al. (2014) suppelementary table 5 modified to calculate production rates
+     - Neymotin et al. (2014) supplementary table 5 modified to calculate production rates
      - PowerPoint containing Neymotin et al. (2014), initial guess, and model-estimated production rate comparison
    - **Fix/Estimate Weights, Thresholds, and Production Rates Model runs:**
      - *Found in [Data: Fall 2019](https://github.com/kdahlquist/DahlquistLab/tree/master/data/Fall2019)*
