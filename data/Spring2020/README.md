@@ -17,6 +17,7 @@ Table of contents on this readme should be comprehensive for all work done since
    - **Gcr2 and Zap1 Node Deletion Model Runs**
      - Excel sheet containing LSE:minLSE ratio analyses
    - **Variable Inclusion of Strain Data:**
+     - *Foundin [Data: Summer 2019] (https://github.com/kdahlquist/DahlquistLab/tree/master/data/Summer2019)*
      - Table of model runs
      - PowerPoint of all expression plots
      - Excel sheets containing bar graphs for production rates and thresholds
@@ -28,18 +29,18 @@ Table of contents on this readme should be comprehensive for all work done since
      - Neymotin et al. (2014) suppelementary table 5 modified to calculate production rates
      - Excel sheet containing Neymotin et al. (2014), initial guess, and model-estimated production rate comparison
    - **Fix/Estimate Weights, Thresholds, and Production Rates Model runs:**
-     - *Found in Data: Fall 2019*
+     - *Found in [Data: Fall 2019](https://github.com/kdahlquist/DahlquistLab/tree/master/data/Fall2019)*
      - Model input and output files
      - Excel sheets containing LSE:minLSE ratio analyses
      - Excel sheets containing the compiled parameters
      
 4. **Sensitivity Assessment of the Model to Manipulation of Optimization Parameters**
-   - *Found in Data: Fall 2019*
+   - *Found in [Data: Fall 2019](https://github.com/kdahlquist/DahlquistLab/tree/master/data/Fall2019)*
    - **Manipulation of Optimization Parameters:**
      - Contains model input and output files 
      - Compiled LSE:minLSE ratio and iteration count analyses
 
 5. **Revisiting the Dahlquist et al. (2015) GRN model**
-   - *Found on GitHub in Data: Fall 2019*
+   - *Found on GitHub in [Data: Fall 2019](https://github.com/kdahlquist/DahlquistLab/tree/master/data/Fall2019)*
    - **Schade Network Model Runs**
      - PowerPoint containing Schade model run gene regulatory networks.
