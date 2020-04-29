@@ -1,1 +1,12 @@
-Contains files for this
+2. **Sensitivity of the Model to Network Structure and Strain Data**
+   - **Systematic Deletion of Edges from the Db5 Network**
+     - Model input and output found in
+     - PowerPoint of clustered heatmap
+   - **Gcr2 and Zap1 Node Deletion Model Runs**
+     - Excel sheet containing LSE:minLSE ratio analyses
+   - **Variable Inclusion of Strain Data:**
+     - Table of model runs
+     - PowerPoint of all expression plots
+     - Excel sheets containing bar graphs for production rates and thresholds
+     - Excel sheets containing compiled production rates, thresholds, and weights for all model runs.
+     - PowerPoint of all Gene Regulatory Networks for the model runs
