@@ -38,5 +38,6 @@ Table of contents on this readme should be comprehensive for all work done since
      - Compiled LSE:minLSE ratio and iteration count analyses
 
 5. **Revisiting the Dahlquist et al. (2015) GRN model**
+   - *Found on GitHub in Data: Fall 2019*
    - **Schade Network Model Runs**
      - PowerPoint containing Schade model run gene regulatory networks.
