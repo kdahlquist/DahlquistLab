@@ -27,7 +27,7 @@
      - Excel sheets containing bar graphs for production rates and thresholds
      - Excel sheets containing compiled production rates, thresholds, and weights for all model runs.
      - Excel sheet containing LSE:minLSE ratio for the variable inclusion runs. (Figure 11)
-     - PowerPoint of all Gene Regulatory Networks for the model runs
+     - PowerPoint of all Gene Regulatory Networks for the model runs (Figures 12-14)
      
 3. **Sensitivity Assessment of the Model to Changing Production Rates**
    - **Production Rate Comparison with Neymotin et al. (2014) Values**
