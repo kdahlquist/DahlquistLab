@@ -1,0 +1,1 @@
+Files made from the sample "toy" network were edited with changes to tolerance and the alpha value. Runs were conducted where only tolfun, only tolx, and tolfun and tolx were changed. More runs were also conducted for a changed alpha with the above combinations. 
