@@ -1,0 +1,1 @@
+3 "toy" networks were chosen from the list of randomly generated networks for futher testing. Input workbooks were made for these networks. The data to fill the input workbooks came from the averages of the DB5 network. 
