@@ -1,0 +1,4 @@
+"cols regulators/rows targets","GENE_1","GENE_2","GENE_3"
+"GENE_1",1,0,0
+"GENE_2",0,1,0
+"GENE_3",0,1,1
