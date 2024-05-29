@@ -1,0 +1,6 @@
+The missing and no missing datasheets for the different GRNs (db1-db7) has significantly different output data with variences in P's, B's, expression data, and weights. When visualizing the data on GRNsight, comparisons of the different workbooks revealed that the weights were significantly different with some nodes changing from activators to repressors and vice versa. A series of runs were completed to try and remidy these differences and discover the cause of it. 
+Db5 was used as the primary workbook of analysis. 
+Initial runs revealed that the filled values of the no missing datasheets varried significantly from the expected values which should have been the averages of the other datapoints from the same timpoint. These values were then checked and manually repaced by the average value of the data rom each timepoint for db1-db7. 
+The outputs of these corrected workbooks still varied significantly, and it was found that the input workbook had an alpha value of 0.002 rather than 0.02 which was the expected alpha value. 
+Runs were then completed with a corrected alpha value. 
+With an lpha value of 0.02, the outputs between the missing and no missing data workbooks were more similar, but the repaining variance led to a sensitivity analysis for Spring 2024. 
