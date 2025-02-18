@@ -1,0 +1,1 @@
+Since c1 and c2 performed the best, I went ahead and tried to run all the combinations of 1s and 2s in those networks. While some performed well and others performed worse, some of them did not finish after a few hours of letting them run. If there is a missing combination, it is because tht one did not finish running. 
