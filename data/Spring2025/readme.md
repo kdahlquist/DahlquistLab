@@ -1,0 +1,1 @@
+Currently working on doing more sensitivity analysis woith more "toy" networks. Focusing specifically on the feed forward motif and breaking down the way the model behaves with the incoherent and coherent networks structures within this motif. 
