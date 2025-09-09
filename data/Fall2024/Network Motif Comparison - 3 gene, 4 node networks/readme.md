@@ -4,7 +4,7 @@
 - mutual out 2	-> trial 2
 - FBL	-> trial 3
 - mutual in 2 -> trial 4
-- mutual in 1	-> trial 5
+- mutual in 1	-> trial 5 (isomorph with trial 13)
 - FFL3 ->	trial 6
 - mutual out 1	-> trial 7
 - mutual cascade	-> trial 8
@@ -12,7 +12,7 @@
 - bimutual ->	trial 10
 - FFL1 ->	trial 11
 - 2.1	-> trial 12
-- 2.2	-> trial 13
+- 2.2	-> trial 13 (isomorph wiht trial 5)
 - 2.3	-> trial 14
 - 2.4	-> trial 15
 - 2.5	-> trial 16
