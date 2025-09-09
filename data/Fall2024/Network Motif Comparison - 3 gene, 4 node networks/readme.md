@@ -1,15 +1,15 @@
 3 gene, 4 node networks based on all possible connected network motifs
 - files were renamed once all possible networks had been run: 
-- regulating mutual -> trial 1
-- mutual out 2	-> trial 2
-- FBL	-> trial 3
-- mutual in 2 -> trial 4
-- mutual in 1	-> trial 5 
-- FFL3 ->	trial 6 (isomorph with trial 16)
-- mutual out 1	-> trial 7
-- mutual cascade	-> trial 8
-- regulated mutual ->	trial 9
-- bimutual ->	trial 10
+- NC trial 1 is "regulating mutual"
+- NC trial 2 is "mutual out 2"
+- NC trial 3 is "FBL" feedback loop
+- NC trial 4 is "mutual in 2"
+- NC trial 5 is "mutual in 1" 
+- NC trial 6 is "FFL3" feed-forward loop (isomorph with trial 16)
+- NC trial 7 is "mutual out 1"
+- NC trial 8 is "mutual cascade"
+- NC trial 9 is "regulated mutual"
+- NC trial 10 is "bimutual"
 - FFL1 ->	trial 11
 - 2.1	-> trial 12
 - 2.2	-> trial 13 
