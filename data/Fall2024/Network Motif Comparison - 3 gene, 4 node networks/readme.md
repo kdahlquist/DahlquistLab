@@ -5,7 +5,7 @@
 - NC trial 3 is "FBL" feedback loop
 - NC trial 4 is "mutual in 2"
 - NC trial 5 is "mutual in 1" 
-- NC trial 6 is "FFL3" feed-forward loop (isomorph with trial 16)
+- NC trial 6 is "FFL3" feed-forward loop (isomorph with trial 16). On 9/9/25, NC looked at the forward simulation input file and found that there is an extra edge, gene1 was also autoregulating to make 5 edges.  Likely can delete this trial because it was an isomorph with trial 16, and replace it with the network that is missing.
 - NC trial 7 is "mutual out 1"
 - NC trial 8 is "mutual cascade"
 - NC trial 9 is "regulated mutual"
