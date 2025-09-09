@@ -1,5 +1,5 @@
 3 gene, 4 node networks based on all possible connected network motifs
-files were renamed once all possible networks had been run: 
+- files were renamed once all possible networks had been run: 
 - regulating mutual -> trial 1
 - mutual out 2	-> trial 2
 - FBL	-> trial 3
