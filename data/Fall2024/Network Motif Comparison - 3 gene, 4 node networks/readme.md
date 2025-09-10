@@ -10,14 +10,14 @@
 - NC trial 8 is "mutual cascade"
 - NC trial 9 is "regulated mutual"
 - NC trial 10 is "bimutual"
-- FFL1 ->	trial 11
-- 2.1	-> trial 12
-- 2.2	-> trial 13 
-- 2.3	-> trial 14
-- 2.4	-> trial 15
-- 2.5	-> trial 16 (isomorph with trial 6)
-- 2.6	-> trial 17
-- 2.7	-> trial 18
-- 2.8	-> trial 19
-- 2.9	-> trial 20
-- 2.10	-> trial 21
+- NC trial 11 is "FFL1"
+- NC trial 12 is "2.1"
+- NC trial 13 is "2.2" 
+- NC trial 14 is "2.3"
+- NC trial 15 is "2.4"
+- NC trial 16 is "2.5" (isomorph with trial 6)
+- NC trial 17 is "2.6"
+- NC trial 18 is "2.7"
+- NC trial 19 is "2.8"
+- NC trial 20 is "2.9"
+- NC trial 21 is "2.10"
