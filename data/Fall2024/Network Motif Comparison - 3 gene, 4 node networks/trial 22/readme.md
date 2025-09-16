@@ -1,1 +1,1 @@
-9/16/25: Of the 21, 3 gene, 4 edge networks we realized that there were two in our original 21 that were isomorphs of each other, and thus, we were missing a trial. This trial is the missing network from the original 21 trials. 
+9/16/25: Of the 21, 3 gene, 4 edge networks we realized that there were two in our original 21 that were isomorphs of each other, and thus, we were missing a trial. This trial is the missing network from the original 21 trials.  It is classified as a mutual-in with autoregulation.
