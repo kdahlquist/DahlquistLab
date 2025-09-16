@@ -1,0 +1,1 @@
+This network had an extra weight in the network_weights sheet, but did not have an extra weight in the network sheet so even though there is an error, the expression data was checked against a corrected sheet and the same datawas obtatained. I corrected the data (9/16/25) and now the sheets are without errors. 
