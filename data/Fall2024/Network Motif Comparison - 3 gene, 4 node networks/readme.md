@@ -23,4 +23,4 @@
 - NC trial 19 is "2.8"
 - NC trial 20 is "2.9"
 - NC trial 21 is "2.10"
-- NC trial 22 is new trial being run (9/16/25) that was originally missing from the first set of runs 
+- NC trial 22 is new a trial run on 9/16/25 that was originally missing from the first set of runs. It is a type of "mutual in" with autoregulation.
