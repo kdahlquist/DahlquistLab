@@ -1,0 +1,1 @@
+Of the 3 gene, 4 edge networks we realized that there were two in our original 21 tht were isomorphs of each other, and thus, we were missing a trial. This trial is the missing network from the orgiginal 21 trials. 
