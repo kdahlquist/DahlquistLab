@@ -1,3 +1,7 @@
-__Figure 6.__ Log10 of the weight LSE of 21, 3-gene, 4-edge networks numbered how they are ranked in Fig. 4 and Table 13. Light gray represents LSE when all parameters are estimated and dark grey represents when only w is estimated. [KD65.1]Horizontal lines represent the median value of all of the LSEs.
+__Figure 7.__ Log10 of the weight LSE for the 24 weight assignment perturbations for the networks originally ranked 1st (A), 7th (B), and 19th (C) for all different combinations of parameters held constant. 
 
-Summary file from which the stacked bar chart was made. The sheet titles `stacked` has the bar chart used in the thesis. The data from the `.xlsx` file was compiled from the raw data which can be found in all of the folders for Fig. 4 which are linked [https://github.com/kdahlquist/DahlquistLab/tree/6c10bf804c672831b764d53d585f2ad2552be247/data/Spring2026/Thesis/Figure%204](here). 
+Task: link perm files
+
+`R_script_boxplot_perms.R` is the same script as for Fig. 5, but the input file needs to be changed. There is a comment in the code that explains what needs to be altered because the same R script can be run to make each of the three boxplots. The first letter in the file name correspond to the network (A is the network originally ranked 1st, B is the network originally ranked 7th, and C is the network originally ranked 19th) and the `xlsx ` file to input into the R script as well as the image generated are here. 
+
+The summary file was taken from the raw data which is avalible [](here). 
