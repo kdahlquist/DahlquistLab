@@ -1,6 +1,12 @@
+Page 18. 
+
 __Table 2.__ Optimized weight parameters for DB5 from input workbooks where expression values were missing (“missing”) versus input workbooks where the missing values were replaced by the average value for that gene and timepoint (“no missing”) when the alpha value was 0.002 or 0.02. Dark blue cells correspond to the largest magnitude negative weights, and dark red cells correspond to largest magnitude positive weights. White cells correspond to a weight value close to zero. “Absolute difference” is the absolute value of the difference between the weights for “missing” values and “no missing” values for alpha of 0.002 and 0.02. The rank for each alpha was determined by sorting the weights based on absolute difference. A small rank corresponds to a small absolute difference. 
 
+Page 20. 
+
 __Table 3.__ Optimized production rates for DB5 from input workbooks where expression values were missing (“missing”) versus input workbooks where the missing values were replaced by the average value for that gene and timepoint (“no missing”) when the alpha value was 0.002 as compared to an alpha value of 0.02. “Absolute difference” is the absolute value of the difference between the production rates for “missing” values and “no missing” values for alpha of 0.002 and 0.02. Cells with darker green indicate a larger difference in magnitude and lighter green indicates a smaller difference in magnitude.
+
+Page 21. 
 
 __Table 4.__ Optimized threshold b values for DB5 from input workbooks where expression values were missing (“missing”) versus input workbooks where the missing values were replaced by the average value for that gene and timepoint (“no missing”) when the alpha value was 0.002 as compared to an alpha value of 0.02. “Absolute difference” is the absolute value of the difference between the production rates for “missing” values and “no missing” values for alpha of 0.002 and 0.02. Cells with darker green indicate a larger difference in magnitude and lighter green indicates a smaller difference in magnitude.
 
