@@ -1,0 +1,26 @@
+file,folder,permutation,Weight 1,Weight 2,Weight 3,Weight 4,,,
+permuted_network_01.xlsx,perm_01,"-2, -1, 1, 2",-2,-1,1,2,0,24,number of -2's
+permuted_network_02.xlsx,perm_02,"-2, -1, 2, 1",-2,-1,2,1,0,24,number of 2's
+permuted_network_03.xlsx,perm_03,"-2, 1, -1, 2",-2,1,-1,2,0,24,number of -1's
+permuted_network_04.xlsx,perm_04,"-2, 1, 2, -1",-2,1,2,-1,0,24,number of 1's
+permuted_network_05.xlsx,perm_05,"-2, 2, -1, 1",-2,2,-1,1,0,,
+permuted_network_06.xlsx,perm_06,"-2, 2, 1, -1",-2,2,1,-1,0,,
+permuted_network_07.xlsx,perm_07,"-1, -2, 1, 2",-1,-2,1,2,0,,
+permuted_network_08.xlsx,perm_08,"-1, -2, 2, 1",-1,-2,2,1,0,,
+permuted_network_09.xlsx,perm_09,"-1, 1, -2, 2",-1,1,-2,2,0,,
+permuted_network_10.xlsx,perm_10,"-1, 1, 2, -2",-1,1,2,-2,0,,
+permuted_network_11.xlsx,perm_11,"-1, 2, -2, 1",-1,2,-2,1,0,,
+permuted_network_12.xlsx,perm_12,"-1, 2, 1, -2",-1,2,1,-2,0,,
+permuted_network_13.xlsx,perm_13,"1, -2, -1, 2",1,-2,-1,2,0,,
+permuted_network_14.xlsx,perm_14,"1, -2, 2, -1",1,-2,2,-1,0,,
+permuted_network_15.xlsx,perm_15,"1, -1, -2, 2",1,-1,-2,2,0,,
+permuted_network_16.xlsx,perm_16,"1, -1, 2, -2",1,-1,2,-2,0,,
+permuted_network_17.xlsx,perm_17,"1, 2, -2, -1",1,2,-2,-1,0,,
+permuted_network_18.xlsx,perm_18,"1, 2, -1, -2",1,2,-1,-2,0,,
+permuted_network_19.xlsx,perm_19,"2, -2, -1, 1",2,-2,-1,1,0,,
+permuted_network_20.xlsx,perm_20,"2, -2, 1, -1",2,-2,1,-1,0,,
+permuted_network_21.xlsx,perm_21,"2, -1, -2, 1",2,-1,-2,1,0,,
+permuted_network_22.xlsx,perm_22,"2, -1, 1, -2",2,-1,1,-2,0,,
+permuted_network_23.xlsx,perm_23,"2, 1, -2, -1",2,1,-2,-1,0,,
+permuted_network_24.xlsx,perm_24,"2, 1, -1, -2",2,1,-1,-2,0,,
+,,,0,0,0,0,,,
