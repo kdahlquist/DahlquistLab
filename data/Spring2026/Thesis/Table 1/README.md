@@ -1,5 +1,3 @@
-Tasks:
-1. In readme, link to source files of the DB1, DB2, and DB5 input workbooks with the missing data used to make the table.
-
 __Table 1.__ Number of missing gene expression values in the input workbooks for DB5, DB1, and DB2 per gene, strain, and timepoint, ordered alphabetically by gene. *Indicates that this gene should have had a missing value but the input workbook that was run had already been manually filled with the average value. NA indicates that the gene was not present in the network. 
 
+The original input files with missing expression data can be found here: [DB5](https://github.com/kdahlquist/DahlquistLab/tree/25576be39867ec31644fa03fa07ed81bc8619c04/data/Spring2026/Thesis/Appendix/Fig%201/Missing%2C%20a%200.002), [DB1](https://github.com/kdahlquist/DahlquistLab/tree/25576be39867ec31644fa03fa07ed81bc8619c04/data/Spring2026/Thesis/Appendix/Fig%202/Missing%2C%20a%200.002), and [DB2](https://github.com/kdahlquist/DahlquistLab/tree/25576be39867ec31644fa03fa07ed81bc8619c04/data/Spring2026/Thesis/Appendix/Fig%203/Missing%2C%20a%200.002). 
