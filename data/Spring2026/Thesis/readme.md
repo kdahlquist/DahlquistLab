@@ -1,1 +1,1 @@
-Add figure and table legends to all readmes.  Also, refer to page number in the thesis.
+Figure and table numbering correspond to the numbering in the thesis. All folders contain a `readme.md` file with more details about the files in each folder. 
