@@ -1,3 +1,5 @@
+Page 48. 
+
 __Figure 7.__ Log10 of the weight LSE for the 24 weight assignment perturbations for the networks originally ranked 1st (A), 7th (B), and 19th (C) for all different combinations of parameters held constant. 
 
 Task: link perm files
