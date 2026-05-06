@@ -1,3 +1,5 @@
+Page 65. 
+
 __Figure 2.__ Weighted GRN of DB1 as visualized with GRNsight. Model results from workbooks where missing expression data values were replaced with the average value for that gene and timepoint (“no missing values”, left) compared to results from workbooks with missing expression values (“missing values”, right) at two different alpha values, 0.002 (top) and 0.02 (bottom).. Node coloring depicts experimentally measured wild type log2 expression at 15, 30, and 60 minutes of cold shock with the log fold change max value set to 3 for color intensity where red is an increase in expression and blue is a decrease in expression. Blue, blunt arrows indicate repression and red, pointed arrows indicate activation with thicker arrows representing a larger magnitude weight. The edge weight normalization factor was set to 5, and edges with weights within 5% of zero are shown in grey. Asterisks (*) indicate weight values which changed sign between the different alpha value outputs and (#) indicate weight values that changed sign between missing and no missing values.
 
 
