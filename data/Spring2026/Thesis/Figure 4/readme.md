@@ -1,3 +1,5 @@
+Page 42. 
+
 __Figure 4.__ All 21 possible 3-gene, 4-edge networks with the type of motif labeled and grouped by type. Blue, blunt arrows indicate repression and red, pointed arrows indicate activation with thicker arrows representing the larger magnitude weight (-2, 2) and thinner arrows representing the smaller magnitude weight (-1, 1). The number of each network corresponds to the rank in Table 10. 
 
 `.png` files are the outputs from GRNsight that were used to make the figure. To get these outputs, any of the input files for the corresponding network can be run in GRNsight. 
