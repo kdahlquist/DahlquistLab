@@ -1,7 +1,3 @@
-<<<<<<< Updated upstream
-L curve was run on bi mutual network structure. The graphs for the figure were made in the L_curve_3gene_4egde_plots.xlsx file. The outputs for each run are also in this folder.
-- this should be figure 3 (Brandon's L-curve is figure 2)
-- The alphas that were hardcoded into the GRNmap code were changed.  Say what they were in the readme and then also upload the matlab code with the changed alphas.
-=======
-Input and output files for all 21 networks organized by network type. The numbers refer to the ranks of those networks. 
->>>>>>> Stashed changes
+__Figure 3.__ L-curve for the bimutual 3-gene, 4-edge network [KD63.1]to determine the alpha value. Values next to the datapoints indicate what alpha value the point corresponds to. Inset is zoomed in to show the elbow of the curve more clearly. 
+
+L curve was run on bi mutual network structure. The graphs for the figure were made in the `L_curve_3gene_4egde_plots.xlsx` file which is a compiled list of the alpha value, penalty, and LSE for each run. The `GRNLCurve_small_networks.m` file is the MatLab file that was run. Alpha values of 0.1, 0.01, 0.001, and 0.0001 are hardcoded into this file and they were changed to .2,.02,.002,.0002,.00002,.000002,.0000002,.00000002,.000000002,.0000000002,.00000000002,.000000000002,.0000000000002,.00000000000002,.000000000000002,.0000000000000002 for the small networks. All input and output files are in this folder. 
