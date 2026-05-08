@@ -6,4 +6,7 @@ Task: link perm files
 
 `R_script_boxplot_perms.R` is the same script as for Fig. 5, but the input file needs to be changed. There is a comment in the code that explains what needs to be altered because the same R script can be run to make each of the three boxplots. The first letter in the file name correspond to the network (A is the network originally ranked 1st, B is the network originally ranked 7th, and C is the network originally ranked 19th) and the `xlsx ` file to input into the R script as well as the image generated are here. 
 
-The summary file was taken from the raw data which is avalible [](here). 
+The summary file was taken from the raw data which is available:
+- A: https://github.com/kdahlquist/DahlquistLab/tree/master/data/Spring2026/Thesis/Appendix/Fig%204/Input%20and%20Output%20files/trial%2010%20(A)
+- B: https://github.com/kdahlquist/DahlquistLab/tree/master/data/Spring2026/Thesis/Appendix/Fig%204/Input%20and%20Output%20files/trial%208%20(B)
+- C: https://github.com/kdahlquist/DahlquistLab/tree/master/data/Spring2026/Thesis/Appendix/Fig%204/Input%20and%20Output%20files/trial%2019%20(C)
