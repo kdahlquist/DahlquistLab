@@ -6,3 +6,5 @@ __Figure 4.__ All 21 possible 3-gene, 4-edge networks with the type of motif lab
 _(If error occurs, download the file and delete ~10 rows below the last gene in the degradation_rates and production_rates sheets. Some of the sheets have lingering data that causes errors in GRNsight.)_
 
 The numbers of the folder and .png file names follow the ranking in Table 13. 
+
+Further information about the naming of the files can be found in [this directory](https://github.com/kdahlquist/DahlquistLab/tree/master/data/Fall2024/Network%20Motif%20Comparison%20-%203%20gene%2C%204%20node%20networks).
