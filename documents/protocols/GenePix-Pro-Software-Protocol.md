@@ -4,31 +4,31 @@ This page shows the hardware settings and protocol for finding and analyzing the
 
 ### Scanner Settings
 
-[[Image:Dahlquist_GenePixPro_versioninfo_20150506.jpg]]
-* Version information for the GenePix Pro software used to scan chips in the Dahlquist Lab.
+<img width="975" height="525" alt="image" src="https://github.com/user-attachments/assets/b23f782c-b440-4285-8699-020a5fa54842" /> <br>
+- Version information for the GenePix Pro software used to scan chips in the Dahlquist Lab. <br><br>
 
-[[Image:Dahlquist_GenePixPro_HardwareSettings_20150506.jpg]]
-* Hardware settings:
-** We use a pixel size of 10 microns.
-** We use two lines to average.
-** We use a focus position of 0 microns.
-** We use Auto PMT settings at 100% power (see below).
+<img width="264" height="510" alt="image" src="https://github.com/user-attachments/assets/d6ebd320-bbc1-4f6a-94f6-74e8589d5181" /> <br>
+- Hardware settings:
+  -  We use a pixel size of 10 microns.
+  -  We use two lines to average.
+  -  We use a focus position of 0 microns.
+  -  We use Auto PMT settings at 100% power (see below). <br><br>
 
-[[Image:Dahlquist_GenePixPro_AutoPMTSettings_20150506.jpg]]
-* Auto PMT settings:
-** Saturation tolerance is set to the default value of 0.05%.
+<img width="444" height="636" alt="image" src="https://github.com/user-attachments/assets/900d5d89-7898-4b8f-b08d-0ddacb59162a" /> <br>
+- Auto PMT settings:
+  - Saturation tolerance is set to the default value of 0.05%. <br><br>
 
-[[Image:Dahlquist_GenePixPro_ScanSettings_20150506.jpg]]
-* Alignment Options:
-** Find irregular features
-** Resize features during alignment to minimum diameter 33% and maximum diameter 200%
-** Flag features that fail background threshold criteria as Not Found
-** Estimate warping and rotation when finding blocks
-** Automatic Image Registration: Max translation 10 pixels.
-* Saving scanned images:
-** Create a folder on the C: drive called "MicroarrayData_yyyymmdd" where yyyymmdd is the current date.
-* Save images to this folder as "Single-image TIFF Files (*.tif)".  Do  '''not''' use TIFF LZW compression (lossless).
-** Name files with a Date prefix and Barcode prefix.
+<img width="589" height="906" alt="image" src="https://github.com/user-attachments/assets/c3f4ef9a-fb09-4c57-bd3d-dc816b491565" /> <br>
+- Alignment Options:
+  - Find irregular features
+  - Resize features during alignment to minimum diameter 33% and maximum diameter 200%
+  - Flag features that fail background threshold criteria as Not Found
+  - Estimate warping and rotation when finding blocks
+  - Automatic Image Registration: Max translation 10 pixels.
+- Saving scanned images:
+  - Create a folder on the C: drive called "MicroarrayData_yyyymmdd" where yyyymmdd is the current date.
+  - Save images to this folder as "Single-image TIFF Files (*.tif)".  Do  '''not''' use TIFF LZW compression (lossless).
+  - Name files with a Date prefix and Barcode prefix.
 
 ### Gridding and Generating Intensity Data
 
