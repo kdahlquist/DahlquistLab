@@ -33,40 +33,40 @@ The scripts and accessory files required to run the normalization are archived o
 
 The following protocol was developed to normalize GCAT and Ontario DNA microarray chip data from the Dahlquist Lab using the R Statistical Software and the limma package (part of the [Bioconductor Project](http://www.bioconductor.org).  
 
-'''''Note that if R x64 v3.1.0 and the limma v3.20.1 package are already installed on your computer, you can proceed to the next section.'''''
-* The normalization procedure has been verified to work with the 64-bit (x64) version 3.1.0 of R released in April 2014 ([http://cran.r-project.org/bin/windows/base/old/3.1.0/ link to download site]) and and version 3.20.1 of the limma package ([https://github.com/kdahlquist/DahlquistLab/blob/master/normalization/Limma_3.20.1.zip?raw=true direct link to download zipped file]]) on the Windows 7 platform.  
-** Note that using other versions of R or the limma package might give different results.
-** Note also that using the 32-bit versus the 64-bit versions of R 3.1.0 will give different results for the normalization out in the 10<sup>-13</sup> or 10<sup>-14</sup> decimal place.  The Dahlquist Lab has standardized on using the 64-bit version of R.
-* To install R for the first time, download and run the installer from the link above, accepting the default installation.
-* To use the limma package, unzip the file and place the contents into a folder called "limma" in the library directory of the R program.  If you accept the default location, that will be C:\Program Files\R\R-3.1.0\library (this will be different on the computers in S120 since you do not have administrator rights).
+_Note that if R x64 v3.1.0 and the limma v3.20.1 package are already installed on your computer, you can proceed to the next section._
+- The normalization procedure has been verified to work with the 64-bit (x64) version 3.1.0 of R released in April 2014 ([link to download site](http://cran.r-project.org/bin/windows/base/old/3.1.0/) and and version 3.20.1 of the limma package [direct link to download zipped file](https://github.com/kdahlquist/DahlquistLab/blob/master/normalization/Limma_3.20.1.zip?raw=true) on the Windows 7 platform.
+  - Note that using other versions of R or the limma package might give different results.
+  - Note also that using the 32-bit versus the 64-bit versions of R 3.1.0 will give different results for the normalization out in the 10<sup>-13</sup> or 10<sup>-14</sup> decimal place.  The Dahlquist Lab has standardized on using the 64-bit version of R.
+- To install R for the first time, download and run the installer from the link above, accepting the default installation.
+- To use the limma package, unzip the file and place the contents into a folder called "limma" in the library directory of the R program.  If you accept the default location, that will be C:\Program Files\R\R-3.1.0\library.
 
-=== Running the Normalization Script ===
+#### Running the Normalization Script
 
-This protocol describes the procedure for normalizing the microarray data for the wild type and transcription factor deletion strains ''Δcin5'', ''Δgln3'', ''Δhap4'', ''Δhmo1'', ''Δswi4'', and ''Δzap1'' which were hybridized on the GCAT and Ontario chip types.  It can also be used to normalize the ''Saccharomyces paradoxus'' data, which was hybridized to the Ontario chips.
+This protocol describes the procedure for normalizing the microarray data for the wild type and transcription factor deletion strains _Δcin5_, _Δgln3_, _Δhap4_, _Δhmo1_, _Δswi4_, and _Δzap1_ which were hybridized on the GCAT and Ontario chip types.  It can also be used to normalize the Dahlquist Lab _Saccharomyces paradoxus_ data (unpublished), which was hybridized to the Ontario chips.
 
-* Create a folder on your Desktop to store your files for the microarray analysis procedure.
-* Download the <!--[https://lionshare.lmu.edu/Users/kdahlqui/SURP%202015/wt-dCIN5-dGLN3-dHAP1-dHMO1-dSWI4-dZAP1-Spar_gpr-files.zip zipped file]--> zipped file that contains the <code>.gpr</code> files and save it to this folder (or move it if it saved in a different folder).
-** Unzip this file using [http://www.7-zip.org/download.html 7-zip].  Right-click on the file and select the menu item, "7-zip > Extract Here".
-* Download the following files by right-clicking on the link and choosing the menu item "Save Link As..."
-** Download the [https://github.com/kdahlquist/DahlquistLab/raw/master/normalization/GCAT_Targets_20160616.csv GCAT_Targets_20160616.csv] file and [https://github.com/kdahlquist/DahlquistLab/raw/master/normalization/Ontario_Targets_wt-dCIN5-dGLN3-dHAP4-dHMO1-dSWI4-dZAP1_20160616.csv Ontario_Targets_wt-dCIN5-dGLN3-dHAP4-dHMO1-dSWI4-dZAP1_20160616.csv] file and save them to this folder (or move them if they saved to a different folder).
-** Download the [https://github.com/kdahlquist/DahlquistLab/raw/master/normalization/GCAT-and-Ontario_normalization_script.R GCAT-and-Ontario_normalization_script.R] script and save (or move) it to this folder.
-** Download the [https://github.com/kdahlquist/DahlquistLab/raw/master/normalization/generate_MA_and_box_plots.R generate_MA_and_box_plots.R] script and save (or move) it to this folder.
-** ''Note that the filenames for the GCAT and Ontario Targets files and the strains are hardcoded into the normalization script.  They can be modified for use with other data by modifying the appropriate lines in the script.''
-* Launch R x64 3.1.0 (make sure you are using the 64-bit version). 
-* Change the directory to the folder containing the targets file and the <code>*.gpr</code> files for the chips by selecting the menu item File > Change dir... and clicking on the appropriate directory.  You will need to click on the + sign to drill down to the right directory.  Once you have selected it, click OK.
-* In R, select the menu item File > Source R code..., and select the GCAT-and-Ontario_normalization_script.R script.
-** Wait while R processes your files.
-* When the processing has finished, you will find three files called GCAT_and_Ontario_Unnormalized.csv, GCAT_and_Ontario_Within_Array_Normalization.csv, GCAT_and_Ontario_Between_Array_Normalization.csv.  The latter file is the one that you will need going forward.
-** Save back-ups of these files to to a flash drive.
-** Note that the GCAT_and_Ontario_Within_Array_Normalization.csv file is the source of, and should be identical to the processed data submitted to NCBI GEO as [https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE83656 series GSE83656].
+- Create a folder to store your files for the microarray analysis procedure.
+- Download the zipped file that contains the `.gpr` files and save it to this folder (or move it if it saved in a different folder).
+  - Unzip this file using [http://www.7-zip.org/download.html 7-zip].  Right-click on the file and select the menu item, "7-zip > Extract Here".
+- Download the following files by right-clicking on the link and choosing the menu item "Save Link As..."
+  - Download the [https://github.com/kdahlquist/DahlquistLab/raw/master/normalization/GCAT_Targets_20160616.csv GCAT_Targets_20160616.csv] file and [https://github.com/kdahlquist/DahlquistLab/raw/master/normalization/Ontario_Targets_wt-dCIN5-dGLN3-dHAP4-dHMO1-dSWI4-dZAP1_20160616.csv Ontario_Targets_wt-dCIN5-dGLN3-dHAP4-dHMO1-dSWI4-dZAP1_20160616.csv] file and save them to this folder (or move them if they saved to a different folder).
+  - Download the [https://github.com/kdahlquist/DahlquistLab/raw/master/normalization/GCAT-and-Ontario_normalization_script.R GCAT-and-Ontario_normalization_script.R] script and save (or move) it to this folder.
+  - Download the [https://github.com/kdahlquist/DahlquistLab/raw/master/normalization/generate_MA_and_box_plots.R generate_MA_and_box_plots.R] script and save (or move) it to this folder.
+  - ''Note that the filenames for the GCAT and Ontario Targets files and the strains are hardcoded into the normalization script.  They can be modified for use with other data by modifying the appropriate lines in the script.''
+- Launch R x64 3.1.0 (make sure you are using the 64-bit version). 
+- Change the directory to the folder containing the targets file and the <code>*.gpr</code> files for the chips by selecting the menu item File > Change dir... and clicking on the appropriate directory.  You will need to click on the + sign to drill down to the right directory.  Once you have selected it, click OK.
+- In R, select the menu item File > Source R code..., and select the GCAT-and-Ontario_normalization_script.R script.
+  - Wait while R processes your files.
+- When the processing has finished, you will find three files called GCAT_and_Ontario_Unnormalized.csv, GCAT_and_Ontario_Within_Array_Normalization.csv, GCAT_and_Ontario_Between_Array_Normalization.csv.  The latter file is the one that you will need going forward.
+  - Save back-ups of these files.
+  - Note that the GCAT_and_Ontario_Within_Array_Normalization.csv file is the source of, and should be identical to the processed data submitted to NCBI GEO as [series GSE83656](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE83656).
 
-=== Visualizing the Normalized Data ===
+#### Visualizing the Normalized Data
 
-* Immediately after running the normalization script, select the menu item File > Source R code..., and select the generate_MA_and_box_plots.R script.
-** Wait while R processes your files.  You will see the individual plots being created in a new window.  R will save them automatically to the same folder that contains the data and scripts.
-*** The box plots for each strain (comparison of the before, after within- and after between-chip normalization in the same file) are saved under the name of the strain, e.g., dCIN5.jpg.
-*** The MA plots are saved under a name for the individual chip, e.g., dCIN5_LogFC_t15-1.jpg, and show the plots both before and after normalization.
-* Zip the files of the plots together and save back-up copies of them to a flash drive.
+- Immediately after running the normalization script, select the menu item File > Source R code..., and select the generate_MA_and_box_plots.R script.
+  - Wait while R processes your files.  You will see the individual plots being created in a new window.  R will save them automatically to the same folder that contains the data and scripts.
+    - The box plots for each strain (comparison of the before, after within- and after between-chip normalization in the same file) are saved under the name of the strain, e.g., dCIN5.jpg.
+    - The MA plots are saved under a name for the individual chip, e.g., dCIN5_LogFC_t15-1.jpg, and show the plots both before and after normalization.
+- Zip the files of the plots together and save back-up copies of them.
 
 == Step 6: Statistical Analysis ==
 
