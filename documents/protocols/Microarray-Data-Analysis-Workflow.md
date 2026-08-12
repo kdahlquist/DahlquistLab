@@ -72,21 +72,21 @@ This protocol describes the procedure for normalizing the microarray data for th
 
 #### Preparing the Excel Workbook
 
-* For the statistical analysis, we will begin with the file `GCAT_and_Ontario_Between_Array_Normalization.csv` that you generated in the previous step.
-* Open this file in Excel and Save As an Excel Workbook `*.xlsx.  It is a good idea to add your initials and the date (yyyymmdd) to the filename as well.
-* Rename the worksheet with the data "Master_Sheet".
-** Type the header "ID" in cell A1.
-** Insert a new column after column A and name it "Standard Name".  Column B will contain the common names for the genes on the microarray.
-*** Copy the entire column of IDs from Column A.
-*** Paste the names into the "Value" field of the [http://www.yeastract.com/formorftogene.php ORF List <-> Gene List] tool in [http://www.yeastract.com YEASTRACT]. Then, click on the "Transform" button.
-*** Select all of the names in the "Gene Name" column of the resulting table.
-*** Copy and paste these names into column B of the <code>*.xlsx</code> file. Save your work.
-** Insert a new column on the very left and name it "MasterIndex".  We will create a numerical index of genes so that we can always sort them back into the same order.
-*** Type a "1" in cell A2 and a "2" in cell A3.
-*** Select both cells. Hover your mouse over the bottom-right corner of the selection until it makes a thin black + sign.  Double-click on the + sign to fill the entire column with a series of numbers from 1 to 6189 (the number of genes on the microarray).
-** Some cells in the worksheet have "NA" either because there was missing data for genes that existed on the Ontario chips, but not the GCAT chips or because that spot was flagged as "Not Found" by the GenePix Pro software.
-*** Select the menu item Find/Replace and Find all cells with "NA" and replace them with a single space character.  Record how many replacements were made to your electronic lab notebook.  Save your work.
-* This will be the starting point for our statistical analysis below.
+- For the statistical analysis, we will begin with the file `GCAT_and_Ontario_Between_Array_Normalization.csv` that you generated in the previous step.
+- Open this file in Excel and Save As an Excel Workbook `*.xlsx.  It is a good idea to add your initials and the date (yyyymmdd) to the filename as well.
+- Rename the worksheet with the data "Master_Sheet".
+  - Type the header "ID" in cell A1.
+  - Insert a new column after column A and name it "Standard Name".  Column B will contain the common names for the genes on the microarray.
+    -  Copy the entire column of IDs from Column A.
+    - Paste the names into the "Value" field of the [http://www.yeastract.com/formorftogene.php ORF List <-> Gene List] tool in [http://www.yeastract.com YEASTRACT]. Then, click on the "Transform" button.
+    - Select all of the names in the "Gene Name" column of the resulting table.
+    - Copy and paste these names into column B of the <code>*.xlsx</code> file. Save your work.
+  - Insert a new column on the very left and name it "MasterIndex".  We will create a numerical index of genes so that we can always sort them back into the same order.
+    -  Type a "1" in cell A2 and a "2" in cell A3.
+    - Select both cells. Hover your mouse over the bottom-right corner of the selection until it makes a thin black + sign.  Double-click on the + sign to fill the entire column with a series of numbers from 1 to 6189 (the number of genes on the microarray).
+  - Some cells in the worksheet have "NA" either because there was missing data for genes that existed on the Ontario chips, but not the GCAT chips or because that spot was flagged as "Not Found" by the GenePix Pro software.
+    -  Select the menu item Find/Replace and Find all cells with "NA" and replace them with a single space character.  Record how many replacements were made to your electronic lab notebook.  Save your work.
+- This will be the starting point for our statistical analysis below.
 
 #### Within-strain ANOVA
 
