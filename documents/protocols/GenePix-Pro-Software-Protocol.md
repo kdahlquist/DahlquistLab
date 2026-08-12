@@ -1,14 +1,8 @@
-[GenePix Pro Software Protocol](https://openwetware.org/wiki/Dahlquist:GenePix_Pro_Software_Protocol)
+## GenePix Pro Software Protocol (originally posted on [this page](https://openwetware.org/wiki/Dahlquist:GenePix_Pro_Software_Protocol))
 
-== Using GenePix Pro ==
+This page shows the hardware settings and protocol for finding and analyzing the features of the GCAT and Ontario type microarrays after completing this [DNA Microarray Protocol](https://dx.doi.org/10.17504/protocols.io.3byl4mjojlo5/v1). This protocol was used in the Dahlquist Lab at Loyola Marymount University for the DNA microarray hybridizations reported in [GEO Series GSE83656](https://ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE83656).
 
-This page shows the hardware settings and protocol for finding and analyzing the features of the GCAT and Ontario type microarrays in the Dahlquist Lab.
-
-See also [[Dahlquist:DNA Microarray Protocol]] and [[Dahlquist:Microarray Data Analysis Workflow]] pages.
-
-[http://www.openwetware.org/images/8/88/GenePix.pdf GenePix Pro 6.0 Software Manual]
-
-=== Scanner Settings ===
+### Scanner Settings
 
 [[Image:Dahlquist_GenePixPro_versioninfo_20150506.jpg]]
 * Version information for the GenePix Pro software used to scan chips in the Dahlquist Lab.
@@ -36,7 +30,7 @@ See also [[Dahlquist:DNA Microarray Protocol]] and [[Dahlquist:Microarray Data A
 * Save images to this folder as "Single-image TIFF Files (*.tif)".  Do  '''not''' use TIFF LZW compression (lossless).
 ** Name files with a Date prefix and Barcode prefix.
 
-=== Gridding and Generating Intensity Data ===
+### Gridding and Generating Intensity Data
 
 * Launch GenPix Pro 6.1 (select Analysis Only)
 * On the right hand side of the screen, select the File icon
@@ -63,7 +57,7 @@ See also [[Dahlquist:DNA Microarray Protocol]] and [[Dahlquist:Microarray Data A
 * On the right hand side of the screen, select the icon that looks like a table of data (it says B, C, R at the top of it)
 * Click on the File icon on the right hand side and select, Save Results As, and save your results as type "GenePix Pro Files (*.gpr)".  Save a JPEG image containing all analyzed features.
 
-=== Generating an Array Quality Report ===
+### Generating an Array Quality Report
  
 * Launch GenePix Pro 6.1 (select Analysis Only)
 * On the right hand side of the screen, select the File icon
@@ -92,19 +86,6 @@ See also [[Dahlquist:DNA Microarray Protocol]] and [[Dahlquist:Microarray Data A
 * Name the file: ChipBarcode#_yyyymmdd 
 * The PDF file will either open on its own or you need to open it from the file you saved it to
 
-<!--
-== Looking at the raw data ==
-
-* We will look at the raw data for two genes of interest, ''SWI4'' (which should have been deleted in this strain), and ''NSR1'', which is a gene known to be induced by cold shock.
-* Open your results file from the first section of this protocol in Microsoft Excel
-* To find the data for ''NSR1'', first go to the [http://www.yeastgenome.org/cgi-bin/locus.fpl?locus=NSR1 ''NSR1'' page at the ''Saccharomyces'' Gene Database] to learn what the systematic name (ID) for ''NSR1'' is.
-* Then search for this ID in your Excel spreadsheet
-* This will tell you the block, row, and column where the ''NSR1'' spot occurs and you can look for it in GenePix Pro.
-* Repeat with ''SWI4'' ([http://www.yeastgenome.org/cgi-bin/locus.fpl?locus=SWI4 ''SWI4'' page at the ''Saccharomyces'' Gene Database])
-* We are expecting that ''NSR1'' should be expressed and that ''SWI4'' should not because it has been deleted from the yeast genome.  Is this the case?
--->
-
-== Next Steps ==
+### Next Steps
 
 * Go to the [[Dahlquist:Microarray_Data_Analysis_Workflow | Microarray Data Analysis Workflow]] page for the next steps.
-)
