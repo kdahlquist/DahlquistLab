@@ -73,7 +73,7 @@ This protocol describes the procedure for normalizing the microarray data for th
 #### Preparing the Excel Workbook
 
 - For the statistical analysis, we will begin with the file `GCAT_and_Ontario_Between_Array_Normalization.csv` that you generated in the previous step.
-- Open this file in Excel and Save As an Excel Workbook `*.xlsx.  It is a good idea to add your initials and the date (yyyymmdd) to the filename as well.
+- Open this file in Excel and Save As an Excel Workbook `*.xlsx`.  It is a good idea to add your initials and the date (yyyymmdd) to the filename as well.
 - Rename the worksheet with the data "Master_Sheet".
   - Type the header "ID" in cell A1.
   - Insert a new column after column A and name it "Standard Name".  Column B will contain the common names for the genes on the microarray.
