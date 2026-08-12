@@ -22,17 +22,16 @@ This page shows the Microarray Data Analysis Workflow used in the Dahlquist Lab 
 ### Steps 1-3: Generating Log<sub>2</sub> Ratios with GenePix Pro
 
 - The protocol for gridding and generating the intensity (log<sub>2</sub> ratio) data with GenePix Pro 6.1 is found on [this page](https://github.com/kdahlquist/DahlquistLab/blob/master/documents/protocols/GenePix-Pro-Software-Protocol.md). 
-* This protocol will generate a `*.gpr` file for each chip which is then fed into the normalization protocol below.
-* To bypass this step, you can download the `*.gpr` files from the NCBI GEO repository  [series GSE83656](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE83656).  Click [this link](https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE83656&format=file) to begin the download of a 154.9 Mb compressed file called "GSE83656_RAW.tar".
+- This protocol will generate a `*.gpr` file for each chip which is then fed into the normalization protocol below.
+- To bypass this step, you can download the `*.gpr` files from the NCBI GEO repository  [series GSE83656](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE83656).  Click [this link](https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE83656&format=file) to begin the download of a 154.9 Mb compressed file called "GSE83656_RAW.tar".
 
 ### Steps 4-5: Within- and Between-chip Normalization
 
-* The protocol supplants the one found on [[Dahlquist:Microarray_Data_Processing_in_R | this page]]. 
-* The scripts and accessory files required to run the normalization are archived on the [https://github.com/kdahlquist/DahlquistLab/tree/master/normalization Dahlquist Lab GitHub Repository].
+The scripts and accessory files required to run the normalization are archived on the [Dahlquist Lab GitHub Repository normalization directory](https://github.com/kdahlquist/DahlquistLab/tree/master/normalization).
 
-=== Installing R x64 v3.1.0 and the limma v3.20.1 package ===
+#### Installing R x64 v3.1.0 and the limma v3.20.1 package
 
-The following protocol was developed to normalize GCAT and Ontario DNA microarray chip data from the Dahlquist Lab using the R Statistical Software and the limma package (part of the [http://www.bioconductor.org Bioconductor Project]).  
+The following protocol was developed to normalize GCAT and Ontario DNA microarray chip data from the Dahlquist Lab using the R Statistical Software and the limma package (part of the [Bioconductor Project](http://www.bioconductor.org).  
 
 '''''Note that if R x64 v3.1.0 and the limma v3.20.1 package are already installed on your computer, you can proceed to the next section.'''''
 * The normalization procedure has been verified to work with the 64-bit (x64) version 3.1.0 of R released in April 2014 ([http://cran.r-project.org/bin/windows/base/old/3.1.0/ link to download site]) and and version 3.20.1 of the limma package ([https://github.com/kdahlquist/DahlquistLab/blob/master/normalization/Limma_3.20.1.zip?raw=true direct link to download zipped file]]) on the Windows 7 platform.  
