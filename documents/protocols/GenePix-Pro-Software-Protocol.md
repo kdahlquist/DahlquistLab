@@ -59,32 +59,32 @@ This page shows the hardware settings and protocol for finding and analyzing the
 
 ### Generating an Array Quality Report
  
-* Launch GenePix Pro 6.1 (select Analysis Only)
-* On the right hand side of the screen, select the File icon
-* File > Open Results
-* Select the desired file
-* Select Report tab at the top of the screen
-* On the left side of the screen, under Navigate, select the back arrow or home icon
-* Select Array Quality Control
-* Adjust Vital Statistic Thresholds values to:
- Quality Control Limits
- Median signal to background > 2.5
- Mean of Median background < 500
- Median Signal to Noise	> 4
- Median % >B + 1 StdDev	> 90
- Feature variation < 0.5
- Background Variation < 1.2
- Features with Saturated pixels	< 3.3%
- Not Found < 18%
- Bad Features < 7%
-* Select Start
-* Select Show Printable Version
-* File > Print
-* Under Select Printer > Select Adobe PDF
-* Select Print
-* Save on the Desktop
-* Name the file: ChipBarcode#_yyyymmdd 
-* The PDF file will either open on its own or you need to open it from the file you saved it to
+- Launch GenePix Pro 6.1 (select Analysis Only)
+- On the right hand side of the screen, select the File icon
+- File > Open Results
+- Select the desired file
+- Select Report tab at the top of the screen
+- On the left side of the screen, under Navigate, select the back arrow or home icon
+- Select Array Quality Control
+- Adjust Vital Statistic Thresholds values to:
+  - Quality Control Limits
+    - Median signal to background > 2.5
+    - Mean of Median background < 500
+    - Median Signal to Noise	> 4
+    - Median % >B + 1 StdDev	> 90
+    - Feature variation < 0.5
+    - Background Variation < 1.2
+    - Features with Saturated pixels	< 3.3%
+    - Not Found < 18%
+    - Bad Features < 7%
+- Select Start
+- Select Show Printable Version
+- File > Print
+- Under Select Printer > Select Adobe PDF
+- Select Print
+- Save on the Desktop
+- Name the file: ChipBarcode#_yyyymmdd 
+- The PDF file will either open on its own or you need to open it from the file you saved it to
 
 ### Next Steps
 
