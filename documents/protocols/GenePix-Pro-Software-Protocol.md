@@ -43,9 +43,9 @@ This page shows the hardware settings and protocol for finding and analyzing the
   - Zoom in so that you can see the entire top block of grids on your screen
 - On the right hand side of the screen, select the File icon
   - Select Load Array List
-  - For the "Ontario" chips, select the file [https://github.com/kdahlquist/DahlquistLab/raw/master/GEO_submission/Ontario_Y6.4Kv7.GAL Ontario_Y6.4Kv7.GAL]
-  - For the "GCAT" chips, select the file [https://github.com/kdahlquist/DahlquistLab/raw/master/GEO_submission/yeast_GCAT_gal.gal yeast_GCAT_gal.gal].
-    - To download this file, right-click on the link and select "Save link as..." from the context menu that appears.
+    - For the "Ontario" chips, select the file (Ontario_Y6.4Kv7.GAL)[https://github.com/kdahlquist/DahlquistLab/raw/master/GEO_submission/Ontario_Y6.4Kv7.GAL].
+    - For the "GCAT" chips, select the file (yeast_GCAT_gal.gal)[https://github.com/kdahlquist/DahlquistLab/raw/master/GEO_submission/yeast_GCAT_gal.gal].
+    - To download these files, right-click on the link and select "Save link as..." from the context menu that appears.
   - Click the Open button
 - Using the icon that has an arrow and a square, drag the grids so that they are approximately aligned with the top block of spots
   - Note that the .gal file for the GCAT chips only has grids for one half of the array, so this process will have to be performed twice, once for the top set of spots and once for the bottom set of spots on the chip.
