@@ -92,81 +92,79 @@ This protocol describes the procedure for normalizing the microarray data for th
 
 The purpose of the witin-stain ANOVA test is to determine if any genes had a gene expression change that was significantly different than zero at _*any*_ timepoint.
 
-# Create a new worksheet, naming it either "(STRAIN)_ANOVA" as appropriate.  For example, you might call yours "wt_ANOVA" or "dHAP4_ANOVA" 
-# Copy the first three columns containing the "MasterIndex", "ID", and "Standard Name" from the "Master_Sheet" worksheet for your strain and paste it into your new worksheet.  Copy the columns containing the data for your strain and paste it into your new worksheet.
-# At the top of the first column to the right of your data, create five column headers of the form (STRAIN)_AvgLogFC_(TIME) where (STRAIN) is your strain designation and (TIME) is 15, 30, etc.
-# In the cell below the (STRAIN)_AvgLogFC_t15 header, type <code>=AVERAGE(</code> 
-# Then highlight all the data in row 2 associated with (STRAIN) and t15, press the closing paren key (shift 0),and press the "enter" key.
-# This cell now contains the average of the log fold change data from the first gene at t=15 minutes.
-# Click on this cell and position your cursor at the bottom right corner. You should see your cursor change to a thin black plus sign (not a chubby white one). When it does, double click, and the formula will magically be copied to the entire column of 6188 other genes.
-# Repeat steps (4) through (8) with the t30, t60, t90, and the t120 data.
-# Now in the first empty column to the right of the (STRAIN)_AvgLogFC_t120 calculation, create the column header (STRAIN)_ss_HO.
-# In the first cell below this header, type <code>=SUMSQ(</code>
-# Highlight all the LogFC data in row 2 for your (STRAIN) (but not the AvgLogFC), press the closing paren key (shift 0),and press the "enter" key. 
-# In the next empty column to the right of (STRAIN)_ss_HO, create the column headers (STRAIN)_ss_(TIME) as in (3).
-# Make a note of how many data points you have at each time point for your strain.  For most of the strains, it will be 4, but for dHAP4 t90 or t120, it will be "3", and for the wild type it will be "4" or "5".  Count carefully. Also, make a note of the total number of data points. Again, for most strains, this will be 20, but for example, dHAP4, this number will be 18, and for wt it should be 23 (double-check).
-# In the first cell below the header (STRAIN)_ss_t15, type <code>=SUMSQ(<range of cells for logFC_t15>)-COUNTA(<range of cells for logFC_t15>)*<AvgLogFC_t15>^2</code> and hit enter.
-#* The phrase <range of cells for logFC_t15> should be replaced by the data range associated with t15. 
-#* The <code>COUNTA</code> function counts the number of cells with data points in the range specified (i.e., it doesn't count cells with missing values). 
-#* The phrase <AvgLogFC_t15> should be replaced by the cell number in which you computed the AvgLogFC for t15, and the "^2" squares that value. 
-#* Upon completion of this single computation, use the Step (7) trick to copy the formula throughout the column.
-# Repeat this computation for the t30 through t120 data points.  Again, be sure to get the data for each time point, type the right number of data points, and get the average from the appropriate cell for each time point, and copy the formula to the whole column for each computation.
-# In the first column to the right of (STRAIN)_ss_t120, create the column header (STRAIN)_SS_full.
-# In the first row below this header, type <code>=sum(<range of cells containing "ss" for each timepoint>)</code> and hit enter.
-# In the next two columns to the right, create the headers (STRAIN)_Fstat and (STRAIN)_p-value.
-# Recall the number of data points from (13): call that total n.
-# In the first cell of the (STRAIN)_Fstat column, type <code>=((n-5)/5)*(<(STRAIN)_ss_HO>-<(STRAIN)_SS_full>)/<(STRAIN)_SS_full></code> and hit enter.  
-#* Don't actually type the n but instead use the number from (13). Also note that "5" is the number of timepoints and the dSWI4 strain has 4 timepoints (it is missing t15).
-#* Replace the phrase (STRAIN)_ss_HO with the cell designation.
-#* Replace the phrase <(STRAIN)_SS_full> with the cell designation. 
-#* Copy to the whole column.
-# In the first cell below the (STRAIN)_p-value header, type <code>=FDIST(<(STRAIN)_Fstat>,5,n-5)</code> replacing the phrase <(STRAIN)_Fstat> with the cell designation and the "n" as in (13) with the number of data points total. (Again, note that the number of timepoints is actually "4" for the dSWI4 strain).  Copy to the whole column.
-# Before we move on to the next step, we will perform a quick sanity check to see if we did all of these computations correctly.
-#*  Click on cell A1 and click on the Data tab.  Select the Filter icon (looks like a funnel). Little drop-down arrows should appear at the top of each column. This will enable us to filter the data according to criteria we set.
-#* Click on the drop-down arrow on your (STRAIN)_p-value column. Select "Number Filters". In the window that appears, set a criterion that will filter your data so that the p value has to be less than 0.05. 
-#* Excel will now only display the rows that correspond to data meeting that filtering criterion.  A number will appear in the lower left hand corner of the window giving you the number of rows that meet that criterion.  We will check our results with each other to make sure that the computations were performed correctly.
+1. Create a new worksheet, naming it either "(STRAIN)_ANOVA" as appropriate.  For example, you might call yours "wt_ANOVA" or "dHAP4_ANOVA" 
+2. Copy the first three columns containing the "MasterIndex", "ID", and "Standard Name" from the "Master_Sheet" worksheet for your strain and paste it into your new worksheet.  Copy the columns containing the data for your strain and paste it into your new worksheet.
+3. At the top of the first column to the right of your data, create five column headers of the form (STRAIN)_AvgLogFC_(TIME) where (STRAIN) is your strain designation and (TIME) is 15, 30, etc.
+4. In the cell below the (STRAIN)_AvgLogFC_t15 header, type <code>=AVERAGE(</code> 
+5. Then highlight all the data in row 2 associated with (STRAIN) and t15, press the closing paren key (shift 0),and press the "enter" key.
+6. This cell now contains the average of the log fold change data from the first gene at t=15 minutes.
+7. Click on this cell and position your cursor at the bottom right corner. You should see your cursor change to a thin black plus sign (not a chubby white one). When it does, double click, and the formula will magically be copied to the entire column of 6188 other genes.
+8. Repeat steps (4) through (7) with the t30, t60, t90, and the t120 data.
+9. Now in the first empty column to the right of the (STRAIN)_AvgLogFC_t120 calculation, create the column header (STRAIN)_ss_HO.
+10. In the first cell below this header, type <code>=SUMSQ(</code>
+11. Highlight all the LogFC data in row 2 for your (STRAIN) (but not the AvgLogFC), press the closing paren key (shift 0),and press the "enter" key. 
+12. In the next empty column to the right of (STRAIN)_ss_HO, create the column headers (STRAIN)_ss_(TIME) as in (3).
+13. Make a note of how many data points you have at each time point for your strain.  For most of the strains, it will be 4, but for dHAP4 t90 or t120, it will be "3", and for the wild type it will be "4" or "5".  Count carefully. Also, make a note of the total number of data points. Again, for most strains, this will be 20, but for example, dHAP4, this number will be 18, and for wt it should be 23 (double-check).
+14. In the first cell below the header (STRAIN)_ss_t15, type <code>=SUMSQ(<range of cells for logFC_t15>)-COUNTA(<range of cells for logFC_t15>)*<AvgLogFC_t15>^2</code> and hit enter.
+- The phrase <range of cells for logFC_t15> should be replaced by the data range associated with t15.
+- The <code>COUNTA</code> function counts the number of cells with data points in the range specified (i.e., it doesn't count cells with missing values).
+- The phrase <AvgLogFC_t15> should be replaced by the cell number in which you computed the AvgLogFC for t15, and the "^2" squares that value.
+- Upon completion of this single computation, use the Step (7) trick to copy the formula throughout the column.
+15. Repeat this computation for the t30 through t120 data points.  Again, be sure to get the data for each time point, type the right number of data points, and get the average from the appropriate cell for each time point, and copy the formula to the whole column for each computation.
+16. In the first column to the right of (STRAIN)_ss_t120, create the column header (STRAIN)_SS_full.
+17. In the first row below this header, type <code>=sum(<range of cells containing "ss" for each timepoint>)</code> and hit enter.
+18. In the next two columns to the right, create the headers (STRAIN)_Fstat and (STRAIN)_p-value.
+19. Recall the number of data points from (13): call that total n.
+20. In the first cell of the (STRAIN)_Fstat column, type <code>=((n-5)/5)*(<(STRAIN)_ss_HO>-<(STRAIN)_SS_full>)/<(STRAIN)_SS_full></code> and hit enter.  
+- Don't actually type the n but instead use the number from (13). Also note that "5" is the number of timepoints and the dSWI4 strain has 4 timepoints (it is missing t15).
+- Replace the phrase (STRAIN)_ss_HO with the cell designation.
+- Replace the phrase <(STRAIN)_SS_full> with the cell designation.
+- Copy to the whole column.
+21. In the first cell below the (STRAIN)_p-value header, type <code>=FDIST(<(STRAIN)_Fstat>,5,n-5)</code> replacing the phrase <(STRAIN)_Fstat> with the cell designation and the "n" as in (13) with the number of data points total. (Again, note that the number of timepoints is actually "4" for the dSWI4 strain).  Copy to the whole column.
+22. Before we move on to the next step, we will perform a quick sanity check to see if we did all of these computations correctly.
+- Click on cell A1 and click on the Data tab.  Select the Filter icon (looks like a funnel). Little drop-down arrows should appear at the top of each column. This will enable us to filter the data according to criteria we set.
+-  Click on the drop-down arrow on your (STRAIN)_p-value column. Select "Number Filters". In the window that appears, set a criterion that will filter your data so that the p value has to be less than 0.05. 
+-  Excel will now only display the rows that correspond to data meeting that filtering criterion.  A number will appear in the lower left hand corner of the window giving you the number of rows that meet that criterion.  We will check our results with each other to make sure that the computations were performed correctly.
 
-==== Calculate the Bonferroni and p value Correction ====
+##### Calculate the Bonferroni and p value Correction
 
-# Now we will perform adjustments to the p value to correct for the [https://xkcd.com/882/ multiple testing problem].  Label the next two columns to the right with the same label, (STRAIN)_Bonferroni_p-value.
-# Type the equation <code>=<(STRAIN)_p-value>*6189</code>, Upon completion of this single computation, use the Step (10) trick to copy the formula throughout the column.
-# Replace any corrected p value that is greater than 1 by the number 1 by typing the following formula into the first cell below the second (STRAIN)_Bonferroni_p-value header: <code>=IF(<STRAIN_Bonferroni_p-value>1,1,<STRAIN_Bonferroni_p-value>)</code>.  Replace <STRAIN_Bonferroni_p-value> with the cell designation where that value was computed.  Use the Step (10) trick to copy the formula throughout the column.
+1. Now we will perform adjustments to the p value to correct for the [https://xkcd.com/882/ multiple testing problem].  Label the next two columns to the right with the same label, (STRAIN)_Bonferroni_p-value.
+2. Type the equation <code>=<(STRAIN)_p-value>*6189</code>, Upon completion of this single computation, use the Step (10) trick to copy the formula throughout the column.
+3. Replace any corrected p value that is greater than 1 by the number 1 by typing the following formula into the first cell below the second (STRAIN)_Bonferroni_p-value header: <code>=IF(<STRAIN_Bonferroni_p-value>1,1,<STRAIN_Bonferroni_p-value>)</code>.  Replace <STRAIN_Bonferroni_p-value> with the cell designation where that value was computed.  Use the Step (10) trick to copy the formula throughout the column.
 
-==== Calculate the Benjamini & Hochberg p value Correction ====
+##### Calculate the Benjamini & Hochberg p value Correction
 
-# Insert a new worksheet named "(STRAIN)_ANOVA_B-H".
-# Copy and paste the "MasterIndex", "ID", and "Standard Name" columns from your previous worksheet into the first two columns of the new worksheet. 
-# For the following, use Paste special > Paste values.  Copy your unadjusted p values from your ANOVA worksheet and paste it into Column D.
-# Select all of columns A, B, C, and D. Sort by ascending values on Column D. Click the sort button from A to Z on the toolbar, in the window that appears, sort by column D, smallest to largest.
-# Type the header "Rank" in cell E1.  We will create a series of numbers in ascending order from 1 to 6189 in this column.  This is the p value rank, smallest to largest.  Type "1" into cell E2 and "2" into cell E3. Select both cells E2 and E3. Double-click on the plus sign on the lower right-hand corner of your selection to fill the column with a series of numbers from 1 to 6189.
-# Now you can calculate the Benjamini and Hochberg p value correction. Type (STRAIN)_B-H_p-value in cell F1. Type the following formula in cell F2: <code>=(D2*6189)/E2</code> and press enter. Copy that equation to the entire column.
-# Type "STRAIN_B-H_p-value" into cell G1. 
-# Type the following formula into cell G2: <code>=IF(F2>1,1,F2)</code> and press enter. Copy that equation to the entire column. 
-# Select columns A through G.  Now sort them by your MasterIndex in Column A in ascending order.
-# Copy column G and use Paste special > Paste values to paste it into the next column on the right of your ANOVA sheet.
+1. Insert a new worksheet named "(STRAIN)_ANOVA_B-H".
+2. Copy and paste the "MasterIndex", "ID", and "Standard Name" columns from your previous worksheet into the first two columns of the new worksheet. 
+3. For the following, use Paste special > Paste values.  Copy your unadjusted p values from your ANOVA worksheet and paste it into Column D.
+4. Select all of columns A, B, C, and D. Sort by ascending values on Column D. Click the sort button from A to Z on the toolbar, in the window that appears, sort by column D, smallest to largest.
+5. Type the header "Rank" in cell E1.  We will create a series of numbers in ascending order from 1 to 6189 in this column.  This is the p value rank, smallest to largest.  Type "1" into cell E2 and "2" into cell E3. Select both cells E2 and E3. Double-click on the plus sign on the lower right-hand corner of your selection to fill the column with a series of numbers from 1 to 6189.
+6. Now you can calculate the Benjamini and Hochberg p value correction. Type (STRAIN)_B-H_p-value in cell F1. Type the following formula in cell F2: <code>=(D2*6189)/E2</code> and press enter. Copy that equation to the entire column.
+7. Type "STRAIN_B-H_p-value" into cell G1. 
+8. Type the following formula into cell G2: <code>=IF(F2>1,1,F2)</code> and press enter. Copy that equation to the entire column. 
+9. Select columns A through G.  Now sort them by your MasterIndex in Column A in ascending order.
+10. Copy column G and use Paste special > Paste values to paste it into the next column on the right of your ANOVA sheet.
 
-* '''''Upload the .xlsx file that you have just created to LionShare.'''''  Send Dr. Dahlquist an e-mail with the link to the file.
-
-==== Sanity Check: Number of genes significantly changed ====
+##### Sanity Check: Number of genes significantly changed
 
 Before we move on to further analysis of the data, we want to perform a more extensive sanity check to make sure that we performed our data analysis correctly.  We are going to find out the number of genes that are significantly changed at various p value cut-offs.
 
-* Go to your (STRAIN)_ANOVA worksheet.
-* Select row 1 (the row with your column headers) and select the menu item Data > Filter > Autofilter (The funnel icon on the Data tab).  Little drop-down arrows should appear at the top of each column.  This will enable us to filter the data according to criteria we set.
-* Click on the drop-down arrow for the unadjusted p value.  Set a criterion that will filter your data so that the p value has to be less than 0.05.
-** '''''How many genes have p < 0.05?  and what is the percentage (out of 6189)?'''''
-** '''''How many genes have p < 0.01? and what is the percentage (out of 6189)?'''''
-** '''''How many genes have p < 0.001? and what is the percentage (out of 6189)?'''''
-** '''''How many genes have p < 0.0001? and what is the percentage (out of 6189)?'''''
-* When we use a p value cut-off of p < 0.05, what we are saying is that you would have seen a gene expression change that deviates this far from zero by chance less than 5% of the time.
-* We have just performed 6189 hypothesis tests.  Another way to state what we are seeing with p < 0.05 is that we would expect to see this a gene expression change for at least one of the timepoints by chance in about 5% of our tests, or 309 times.  Since we have more than 309 genes that pass this cut off, we know that some genes are significantly changed.  However, we don't know ''which'' ones.  To apply a more stringent criterion to our p values, we performed the Bonferroni and Benjamini and Hochberg corrections to these unadjusted p values.  The Bonferroni correction is very stringent.  The Benjamini-Hochberg correction is less stringent.  To see this relationship, filter your data to determine the following:
-** '''''How many genes are p < 0.05 for the Bonferroni-corrected p value? and what is the percentage (out of 6189)?'''''
-** '''''How many genes are p < 0.05 for the Benjamini and Hochberg-corrected p value? and what is the percentage (out of 6189)?'''''
-* In summary, the p value cut-off should not be thought of as some magical number at which data becomes "significant".  Instead, it is a moveable confidence level.  If we want to be very confident of our data, use a small p value cut-off.  If we are OK with being less confident about a gene expression change and want to include more genes in our analysis, we can use a larger p value cut-off.  
-* Comparing results with known data:  the expression of the gene ''NSR1'' (ID: YGR159C)is known to be induced by cold shock. '''''Find ''NSR1'' in your dataset.  What is its unadjusted, Bonferroni-corrected, and B-H-corrected p values?  What is its average Log fold change at each of the timepoints in the experiment?'''''  Note that the average Log fold change is what we called "STRAIN)_AvgLogFC_(TIME)" in step 3 of the ANOVA analysis. 
-* We will compare the numbers we get between the wild type strain and the other strains studied, organized as a table.  Use this [[Media: BIOL398-04_S15_sample_p-value_slide.pptx | sample PowerPoint slide]] to see how your table should be formatted.
+- Go to your (STRAIN)_ANOVA worksheet.
+- Select row 1 (the row with your column headers) and select the menu item Data > Filter > Autofilter (The funnel icon on the Data tab).  Little drop-down arrows should appear at the top of each column.  This will enable us to filter the data according to criteria we set.
+- Click on the drop-down arrow for the unadjusted p value.  Set a criterion that will filter your data so that the p value has to be less than 0.05.
+  - '''''How many genes have p < 0.05?  and what is the percentage (out of 6189)?'''''
+  -  '''''How many genes have p < 0.01? and what is the percentage (out of 6189)?'''''
+  -  '''''How many genes have p < 0.001? and what is the percentage (out of 6189)?'''''
+  -  '''''How many genes have p < 0.0001? and what is the percentage (out of 6189)?'''''
+- When we use a p value cut-off of p < 0.05, what we are saying is that you would have seen a gene expression change that deviates this far from zero by chance less than 5% of the time.
+- We have just performed 6189 hypothesis tests.  Another way to state what we are seeing with p < 0.05 is that we would expect to see this a gene expression change for at least one of the timepoints by chance in about 5% of our tests, or 309 times.  Since we have more than 309 genes that pass this cut off, we know that some genes are significantly changed.  However, we don't know ''which'' ones.  To apply a more stringent criterion to our p values, we performed the Bonferroni and Benjamini and Hochberg corrections to these unadjusted p values.  The Bonferroni correction is very stringent.  The Benjamini-Hochberg correction is less stringent.  To see this relationship, filter your data to determine the following:
+  - '''''How many genes are p < 0.05 for the Bonferroni-corrected p value? and what is the percentage (out of 6189)?'''''
+  - '''''How many genes are p < 0.05 for the Benjamini and Hochberg-corrected p value? and what is the percentage (out of 6189)?'''''
+- In summary, the p value cut-off should not be thought of as some magical number at which data becomes "significant".  Instead, it is a moveable confidence level.  If we want to be very confident of our data, use a small p value cut-off.  If we are OK with being less confident about a gene expression change and want to include more genes in our analysis, we can use a larger p value cut-off.  
+- Comparing results with known data:  the expression of the gene ''NSR1'' (ID: YGR159C)is known to be induced by cold shock. '''''Find ''NSR1'' in your dataset.  What is its unadjusted, Bonferroni-corrected, and B-H-corrected p values?  What is its average Log fold change at each of the timepoints in the experiment?'''''  Note that the average Log fold change is what we called "STRAIN)_AvgLogFC_(TIME)" in step 3 of the ANOVA analysis. 
+- We will compare the numbers we get between the wild type strain and the other strains studied, organized as a table.  Use this [[Media: BIOL398-04_S15_sample_p-value_slide.pptx | sample PowerPoint slide]] to see how your table should be formatted.
 
-=== Modified t test for each timepoint ===
+#### Modified t test for each timepoint
 
 In the analysis above we performed an ANOVA to determine if any genes had a gene expression change that was significantly different than zero at '''''any''''' timepoint.  Now we will perform a modified t test to determine if any genes had a gene expression change that was significantly different than zero at '''''each''''' timepoint.  You will perform your analysis on the same strain that you did above, adding these calculations to the same Excel workbook.
 
