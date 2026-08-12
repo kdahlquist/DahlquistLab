@@ -58,7 +58,7 @@ This protocol describes the procedure for normalizing the microarray data for th
   - Wait while R processes your files.
 - When the processing has finished, you will find three files called `GCAT_and_Ontario_Unnormalized.csv`, `GCAT_and_Ontario_Within_Array_Normalization.csv`, and `GCAT_and_Ontario_Between_Array_Normalization.csv`.  The latter file is the one that you will need going forward.
   - Save back-ups of these files.
-  - Note that the GCAT_and_Ontario_Within_Array_Normalization.csv file is the source of, and should be identical to the processed data submitted to NCBI GEO as [series GSE83656](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE83656).
+  - Note that the `GCAT_and_Ontario_Within_Array_Normalization.csv` file is the source of, and should be identical to the processed data submitted to NCBI GEO as [series GSE83656](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE83656).
 
 #### Visualizing the Normalized Data
 
