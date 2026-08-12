@@ -123,8 +123,8 @@ The purpose of the witin-stain ANOVA test is to determine if any genes had a gen
 21. In the first cell below the (STRAIN)_p-value header, type <code>=FDIST(<(STRAIN)_Fstat>,5,n-5)</code> replacing the phrase <(STRAIN)_Fstat> with the cell designation and the "n" as in (13) with the number of data points total. (Again, note that the number of timepoints is actually "4" for the dSWI4 strain).  Copy to the whole column.
 22. Before we move on to the next step, we will perform a quick sanity check to see if we did all of these computations correctly.
 - Click on cell A1 and click on the Data tab.  Select the Filter icon (looks like a funnel). Little drop-down arrows should appear at the top of each column. This will enable us to filter the data according to criteria we set.
--  Click on the drop-down arrow on your (STRAIN)_p-value column. Select "Number Filters". In the window that appears, set a criterion that will filter your data so that the p value has to be less than 0.05. 
--  Excel will now only display the rows that correspond to data meeting that filtering criterion.  A number will appear in the lower left hand corner of the window giving you the number of rows that meet that criterion.  We will check our results with each other to make sure that the computations were performed correctly.
+- Click on the drop-down arrow on your (STRAIN)_p-value column. Select "Number Filters". In the window that appears, set a criterion that will filter your data so that the p value has to be less than 0.05. 
+- Excel will now only display the rows that correspond to data meeting that filtering criterion.  A number will appear in the lower left hand corner of the window giving you the number of rows that meet that criterion.  We will check our results with each other to make sure that the computations were performed correctly.
 
 ##### Calculate the Bonferroni and p value Correction
 
@@ -168,71 +168,69 @@ Before we move on to further analysis of the data, we want to perform a more ext
 
 In the analysis above we performed an ANOVA to determine if any genes had a gene expression change that was significantly different than zero at '''''any''''' timepoint.  Now we will perform a modified t test to determine if any genes had a gene expression change that was significantly different than zero at '''''each''''' timepoint.  You will perform your analysis on the same strain that you did above, adding these calculations to the same Excel workbook.
 
-* Insert a new worksheet into your Excel workbook and name it "(STRAIN)_ttest", e.g., "wt_ttest" or "dHAP4_ttest".
-* Go back to the "Master_Sheet" worksheet for your strain.  Copy the first three columns containing the "MasterIndex", "ID", and "Standard Name" from the "Master_Sheet" worksheet for your strain and paste it into your new worksheet.  Copy the columns containing the data for your strain and paste it into your new worksheet.
-* Go to the empty columns to the right on your worksheet.  Create new column headings in the top cells to label the average log fold changes that you will compute.  Name them with the pattern <dHAP4>_<AvgLogFC>_<tx> where you use the appropriate text within the <> and where x is the time.  For example, "dHAP4_AvgLogFC_t15".
-* Compute the average log fold change for the replicates for each timepoint by typing the equation:
+- Insert a new worksheet into your Excel workbook and name it "(STRAIN)_ttest", e.g., "wt_ttest" or "dHAP4_ttest".
+- Go back to the "Master_Sheet" worksheet for your strain.  Copy the first three columns containing the "MasterIndex", "ID", and "Standard Name" from the "Master_Sheet" worksheet for your strain and paste it into your new worksheet.  Copy the columns containing the data for your strain and paste it into your new worksheet.
+- Go to the empty columns to the right on your worksheet.  Create new column headings in the top cells to label the average log fold changes that you will compute.  Name them with the pattern <dHAP4>_<AvgLogFC>_<tx> where you use the appropriate text within the <> and where x is the time.  For example, "dHAP4_AvgLogFC_t15".
+- Compute the average log fold change for the replicates for each timepoint by typing the equation:
  =AVERAGE(''range of cells in the row for that timepoint'')
 into the second cell below the column heading.  For example, your equation might read 
  =AVERAGE(C2:F2)
 Copy this equation and paste it into the rest of the column.  
-* Create the equation for the rest of the timepoints and paste it into their respective columns.  ''Note that you can save yourself some time by completing the first equation for all of the averages and then copy and paste all the columns at once.''
-* Go to the empty columns to the right on your worksheet.  Create new column headings in the top cells to label the T statistic that you will compute.  Name them with the pattern <dHAP4>_<Tstat>_<tx> where you use the appropriate text within the <> and where x is the time.  For example, "dHAP4_Tstat_t15".  You will now compute a T statistic that tells you whether the normalized average log fold change is significantly different than 0 (no change in expression).  Enter the equation into the second cell below the column heading:  
+- Create the equation for the rest of the timepoints and paste it into their respective columns.  ''Note that you can save yourself some time by completing the first equation for all of the averages and then copy and paste all the columns at once.''
+- Go to the empty columns to the right on your worksheet.  Create new column headings in the top cells to label the T statistic that you will compute.  Name them with the pattern <dHAP4>_<Tstat>_<tx> where you use the appropriate text within the <> and where x is the time.  For example, "dHAP4_Tstat_t15".  You will now compute a T statistic that tells you whether the normalized average log fold change is significantly different than 0 (no change in expression).  Enter the equation into the second cell below the column heading:  
  =AVERAGE(''range of cells'')/(STDEV(''range of cells'')/SQRT(''number of replicates''))
 For example, your equation might read:
  =AVERAGE(C2:F2)/(STDEV(C2:F2)/SQRT(4))
 (NOTE: in this case the number of replicates is 4.  Be careful that you are using the correct number of parentheses.)  Copy the equation and paste it into all rows in that column. Create the equation for the rest of the timepoints and paste it into their respective columns.  ''Note that you can save yourself some time by completing the first equation for all of the T statistics and then copy and paste all the columns at once.''
-* Go to the empty columns to the right on your worksheet.  Create new column headings in the top cells to label the P value that you will compute.  Name them with the pattern <dHAP4>_<Pval>_<tx> where you use the appropriate text within the <> and where x is the time.  For example, "dHAP4_Pval_t15".  In the cell below the label, enter the equation:  
+- Go to the empty columns to the right on your worksheet.  Create new column headings in the top cells to label the P value that you will compute.  Name them with the pattern <dHAP4>_<Pval>_<tx> where you use the appropriate text within the <> and where x is the time.  For example, "dHAP4_Pval_t15".  In the cell below the label, enter the equation:  
  =TDIST(ABS(''cell containing T statistic''),''degrees of freedom'',2)
 For example, your equation might read:
  =TDIST(ABS(AE2),3,2)
 The number of degrees of freedom is the number of replicates minus one.  Copy the equation and paste it into all rows in that column.
-* As with the ANOVA, we encounter the multiple testing problem here as well.
+- As with the ANOVA, we encounter the multiple testing problem here as well.
 
-==== Bonferroni Correction ====
+##### Bonferroni Correction
 
-# Now we will perform adjustments to the p value to correct for the multiple testing problem.  Label the columns to the right with the label, (STRAIN)_Bonferroni-Pval_tx (do this twice in a row).
-# Type the equation <code>=<(STRAIN)_Pval_tx>*6189</code>, Upon completion of this single computation, use the trick to copy the formula throughout the column.
-# Replace any corrected p value that is greater than 1 by the number 1 by typing the following formula into the first cell below the second (STRAIN)_Bonferroni-Pval_tx header: <code>=IF(r2>1,1,r2)</code>.  Use the trick to copy the formula throughout the column.
+1. Now we will perform adjustments to the p value to correct for the multiple testing problem.  Label the columns to the right with the label, (STRAIN)_Bonferroni-Pval_tx (do this twice in a row).
+2. Type the equation <code>=<(STRAIN)_Pval_tx>*6189</code>, Upon completion of this single computation, use the trick to copy the formula throughout the column.
+3. Replace any corrected p value that is greater than 1 by the number 1 by typing the following formula into the first cell below the second (STRAIN)_Bonferroni-Pval_tx header: <code>=IF(r2>1,1,r2)</code>.  Use the trick to copy the formula throughout the column.
 
-==== Benjamini & Hochberg Correction ====
+##### Benjamini & Hochberg Correction
 
-# Insert a new worksheet named "(STRAIN)_ttest_B-H".  You will need to perform the procedure below for the p values for each timepoint.  Do them individually one at a time to avoid confusion.
-# Copy and paste the "MasterIndex", "ID", and "Standard Name" columns from your previous worksheet into the first two columns of the new worksheet. 
-# For the following, use Paste special > Paste values.  Copy your unadjusted p values from the first timepoint from your ttest worksheet and paste it into Column D.
-# Select all of columns A, B, C, and D. Sort by ascending values on Column D. Click the sort button from A to Z on the toolbar, in the window that appears, sort by column D, smallest to largest.
-# Type the header "Rank" in cell E1.  We will create a series of numbers in ascending order from 1 to 6189 in this column.  This is the p value rank, smallest to largest.  Type "1" into cell E2 and "2" into cell E3. Select both cells E2 and E3. Double-click on the plus sign on the lower right-hand corner of your selection to fill the column with a series of numbers from 1 to 6189.
-# Now you can calculate the Benjamini and Hochberg p value correction. Type (STRAIN)_B-H_Pval_tx in cell F1. Type the following formula in cell F2: <code>=(D2*6189)/E2</code> and press enter. Copy that equation to the entire column.
-# Type "STRAIN_B-H_Pval_tx" into cell G1. 
-# Type the following formula into cell G2: <code>=IF(F2>1,1,F2)</code> and press enter. Copy that equation to the entire column. 
-# Select columns A through G.  Now sort them by your MasterIndex in Column A in ascending order.
-# Copy column G and use Paste special > Paste values to paste it into the next column on the right of your ttest sheet.
+1. Insert a new worksheet named "(STRAIN)_ttest_B-H".  You will need to perform the procedure below for the p values for each timepoint.  Do them individually one at a time to avoid confusion.
+2. Copy and paste the "MasterIndex", "ID", and "Standard Name" columns from your previous worksheet into the first two columns of the new worksheet. 
+3. For the following, use Paste special > Paste values.  Copy your unadjusted p values from the first timepoint from your ttest worksheet and paste it into Column D.
+4. Select all of columns A, B, C, and D. Sort by ascending values on Column D. Click the sort button from A to Z on the toolbar, in the window that appears, sort by column D, smallest to largest.
+5. Type the header "Rank" in cell E1.  We will create a series of numbers in ascending order from 1 to 6189 in this column.  This is the p value rank, smallest to largest.  Type "1" into cell E2 and "2" into cell E3. Select both cells E2 and E3. Double-click on the plus sign on the lower right-hand corner of your selection to fill the column with a series of numbers from 1 to 6189.
+6. Now you can calculate the Benjamini and Hochberg p value correction. Type (STRAIN)_B-H_Pval_tx in cell F1. Type the following formula in cell F2: <code>=(D2*6189)/E2</code> and press enter. Copy that equation to the entire column.
+7. Type "STRAIN_B-H_Pval_tx" into cell G1. 
+8. Type the following formula into cell G2: <code>=IF(F2>1,1,F2)</code> and press enter. Copy that equation to the entire column. 
+9. Select columns A through G.  Now sort them by your MasterIndex in Column A in ascending order.
+10. Copy column G and use Paste special > Paste values to paste it into the next column on the right of your ttest sheet.
 
-* '''''Upload the .xlsx file that you have just created to LionShare.'''''  Note that when you upload your file, you should check the box to "Overwrite file if it already exists."  This will then replace your previous version of your file with the updated one containing today's calculations.  Send Dr. Dahlquist an e-mail with the link to the file (e-mail kdahlquist at lmu dot edu).
+##### Sanity Check
 
-==== Sanity Check ====
+- We will also perform the "sanity check" as follows:
+  - '''''Determine how many genes have a p value < 0.05 at each timepoint.'''''
+  - '''''Keeping the "Pval" filter at p < 0.05, How many have an average log fold change of > 0.25 and p < 0.05 at each timepoint? How many have an average log fold change of < -0.25 and p < 0.05 at each timepoint? (These log fold change cut-offs represent about a 20% fold change in expression.)'''''
+  - How many genes have B&H corrected p < 0.05?
+  - How many genes have a Bonferroni corrected p < 0.05?
+  - Use this [[Media: BIOL398-04_S15_sample_p-value_slide.pptx | sample PowerPoint slide]] to see how your table should be formatted.
 
-* We will also perform the "sanity check" as follows:
-** '''''Determine how many genes have a p value < 0.05 at each timepoint.'''''
-**  '''''Keeping the "Pval" filter at p < 0.05, How many have an average log fold change of > 0.25 and p < 0.05 at each timepoint? How many have an average log fold change of < -0.25 and p < 0.05 at each timepoint? (These log fold change cut-offs represent about a 20% fold change in expression.)'''''
-** How many genes have B&H corrected p < 0.05?
-** How many genes have a Bonferroni corrected p < 0.05?
-** Use this [[Media: BIOL398-04_S15_sample_p-value_slide.pptx | sample PowerPoint slide]] to see how your table should be formatted.
-
-=== Between-strain ANOVA ===
+#### Between-strain ANOVA
 
 The detailed description of how this is done can be found on [[Dahlquist:Modified_ANOVA_and_p_value_Corrections_for_Microarray_Data#Comparing_Significant_Changes_in_Expression_Between_Two_Strains | this page.]] A brief version of the protocol appears below.
 
-* All two strain comparisons were performed in MATLAB using the script [[Media:Two_strain_compare_corrected_20140813_3pm.zip | Two_strain_compare_corrected_20140813_3pm.zip (within a zip file)]]:
-** Download the zipped script file, extract it to the folder that contains your Excel file with the worksheet named "Master_Sheet".  (The script and Excel file must be in the same folder to work.)
-** Launch MATLAB version 2014b.
-** In MATLAB, you will need to navigate to the folder containing the script and the Excel file.
-*** Near the top of the page, you will see a a field that contains the path to the working directory.  Just to the left of it, there is an icon that looks like a folder opening with a green down arrow.  Click on this icon to open a dialog box where you can choose your folder containing the script and Excel file.
-*** Once you have selected your folder, the left-hand pane should display the contents of that folder.  To open the MATLAB script, you can double-click on it from that pane.  The code for the script will appear in the center pane.
-* You will need to make a few edits to the code, depending on which strain comparison you want to make.
-** For the first block of code, the user must input the name of the Excel file (<code>*.xls or .xlsx</code>) to be imported as the variable "filename", the sheet from which the data will be imported as the variable "sheetname", and the two strains that will be compared as the variables "strain1" and "strain2".
-*** MATLAB will read either .xls or .xlsx
-*** Also note that this script will not work for any comparison involving dSWI4 because it has been hard-coded to expect 5 timepoints instead of 4.
+- All two strain comparisons were performed in MATLAB using the script [[Media:Two_strain_compare_corrected_20140813_3pm.zip | Two_strain_compare_corrected_20140813_3pm.zip (within a zip file)]]:
+  -  Download the zipped script file, extract it to the folder that contains your Excel file with the worksheet named "Master_Sheet".  (The script and Excel file must be in the same folder to work.)
+  -  Launch MATLAB version 2014b.
+  -  In MATLAB, you will need to navigate to the folder containing the script and the Excel file.
+    - Near the top of the page, you will see a a field that contains the path to the working directory.  Just to the left of it, there is an icon that looks like a folder opening with a green down arrow.  Click on this icon to open a dialog box where you can choose your folder containing the script and Excel file.
+    - Once you have selected your folder, the left-hand pane should display the contents of that folder.  To open the MATLAB script, you can double-click on it from that pane.  The code for the script will appear in the center pane.
+- You will need to make a few edits to the code, depending on which strain comparison you want to make.
+  - For the first block of code, the user must input the name of the Excel file (<code>*.xls or .xlsx</code>) to be imported as the variable "filename", the sheet from which the data will be imported as the variable "sheetname", and the two strains that will be compared as the variables "strain1" and "strain2".
+    - MATLAB will read either .xls or .xlsx
+    - Also note that this script will not work for any comparison involving dSWI4 because it has been hard-coded to expect 5 timepoints instead of 4.
 
  %% User must input filename, sheetname, and strains for comparison
  filename = 'GCAT_and_Ontario_Final_Normalized_Data.xls'; % Name of input file
@@ -244,69 +242,65 @@ The detailed description of how this is done can be found on [[Dahlquist:Modifie
  % % compare with the first strain.
  strain2    = 'dZAP1'; %Here should be wt, dCIN5, dGLN3, dHAP4, dHMO1, dZAP1, or Spar
 
-* The user does not have to modify any of the code from here on.
-* The next two lines of code ask the user whether or not they would like to see plots for each gene with an unadjusted p-value < 0.05. If the user does want to see these plots, they enter "1". If they would not like to see these plots, the user enters "0".  When prompted, enter a "1" to see the plots displayed.
+- The user does not have to modify any of the code from here on.
+- The next two lines of code ask the user whether or not they would like to see plots for each gene with an unadjusted p-value < 0.05. If the user does want to see these plots, they enter "1". If they would not like to see these plots, the user enters "0".  When prompted, enter a "1" to see the plots displayed.
  
  disp('Do you want to view plots for each gene with an unadjusted p-value < 0.05?')
  graph = input('If yes, enter "1". If no, enter "0". ');
 
-* Plots will show for all genes with p < 0.05, which could be hundreds.  If you want, you can save individual plots from the graph window, they do not save automatically.  Press any key to display the next plot.  The script will not finish and output the results files until all of the plots have been viewed.
-* Because MATLAB version 2014b has switched to the OpenGL graphics library, the plots look weird at this point.
+- Plots will show for all genes with p < 0.05, which could be hundreds.  If you want, you can save individual plots from the graph window, they do not save automatically.  Press any key to display the next plot.  The script will not finish and output the results files until all of the plots have been viewed.
+- Because MATLAB version 2014b has switched to the OpenGL graphics library, the plots look weird at this point.
 
-== Step 7-8: Clustering and GO Term Enrichment with stem ==
+### Step 7-8: Clustering and GO Term Enrichment with stem
 
-# '''Prepare your microarray data file for loading into STEM.'''
-#* Insert a new worksheet into your Excel workbook, and name it "(STRAIN)_stem".
-#* Select all of the data from your "(STRAIN)_ANOVA" worksheet and Paste special > paste values into your "(STRAIN)_stem" worksheet.
-#** Your leftmost column should have the column header "MasterIndex".  Rename this column to "SPOT".  Column B should be named "ID".  Rename this column to "Gene Symbol".  Delete the column named "StandardName".
-#** Filter the data on the B-H corrected p value to be > 0.05 (that's '''greater than''' in this case).
-#*** Once the data has been filtered, select all of the rows (except for your header row) and delete the rows by right-clicking and choosing "Delete Row" from the context menu.  Undo the filter.  This ensures that we will cluster only the genes with a "significant" change in expression and not the noise.
-#** Delete all of the data columns '''''EXCEPT''''' for the Average Log Fold change columns for each timepoint (for example, wt_AvgLogFC_t15, etc.).
-#** Rename the data columns with just the time and units (for example, 15m, 30m, etc.).
-#** Save your work.  Then use ''Save As'' to save this spreadsheet as Text (Tab-delimited) (*.txt).  Click OK to the warnings and close your file.
-#*** Note that you should turn on the file extensions if you have not already done so.
-# '''Now download and extract the STEM software.'''  [http://www.cs.cmu.edu/~jernst/stem/ Click here to go to the STEM web site].
-#* Click on the [http://www.andrew.cmu.edu/user/zivbj/stemreg.html download link], register, and download the <code>stem.zip</code> file to your Desktop.
-#* Unzip the file.  In Seaver 120, you can right click on the file icon and select the menu item ''7-zip > Extract Here''.
-#* This will create a folder called <code>stem</code>.  Inside the folder, double-click on the <code>stem.jar</code> to launch the STEM program.
-<!--#** In Seaver 120, we encountered an issue where the program would not launch on the Windows XP machines due to a lack of memory. (Even though the computers have been upgraded to Windows 7, do this to launch the program.)  To get around this problem, launch STEM from the command line.
-#*** Go to the start menu and click on ''Programs > Accessories > Command Prompt''.
-#*** You will need to navigate to the directory (folder) in which the STEM program resides.  If you followed the instructions above and extracted the stem folder to the Desktop, type the following:  <code>cd Desktop\stem</code>  and press "Enter".
-#*** To launch the program then type:  <code>java -mx512M -jar stem.jar -d defaults.txt</code>  and press "Enter".  This will launch the program with less memory allocated to it.-->
-# '''Running STEM'''
-## In section 1 (Expression Data Info) of the the main STEM interface window, click on the ''Browse...'' button to navigate to and select your file.
-##* Click on the radio button ''No normalization/add 0''.
-##* Check the box next to ''Spot IDs included in the data file''.
-## In section 2 (Gene Info) of the main STEM interface window, select ''Saccharomyces cerevisiae (SGD)'', from the drop-down menu for Gene Annotation Source.  Select ''No cross references'', from the Cross Reference Source drop-down menu.  Select ''No Gene Locations'' from the Gene Location Source drop-down menu.
-## In section 3 (Options) of the main STEM interface window, make sure that the Clustering Method says "STEM Clustering Method" and do not change the defaults for Maximum Number of Model Profiles or Maximum Unit Change in Model Profiles between Time Points.
-## In section 4 (Execute) click on the yellow Execute button to run STEM.
-# '''Viewing and Saving STEM Results'''
-## A new window will open called "All STEM Profiles (1)".  Each box corresponds to a model expression profile.  Colored profiles have a statistically significant number of genes assigned; they are arranged in order from most to least significant p value.  Profiles with the same color belong to the same cluster of profiles.  The number in each box is simply an ID number for the profile.
-##* Click on the button that says "Interface Options...".  At the bottom of the Interface Options window that appears below where it says "X-axis scale should be:", click on the radio button that says "Based on real time".  Then close the Interface Options window.
-##*Take a screenshot of this window (on a PC, simultaneously press the <code>Alt</code> and <code>PrintScreen</code> buttons to save the view in the active window to the clipboard) and paste it into a PowerPoint presentation to save your figures.
-## Click on each of the SIGNIFICANT profiles (the colored ones) to open a window showing a more detailed plot containing all of the genes in that profile.
-##* Take a screenshot of each of the individual profile windows and save the images in your PowerPoint presentation.
-##* At the bottom of each profile window, there are two yellow buttons "Profile Gene Table" and "Profile GO Table".  For each of the profiles, click on the "Profile Gene Table" button to see the list of genes belonging to the profile.  In the window that appears, click on the "Save Table" button and save the file to your desktop.  Make your filename descriptive of the contents, e.g. "wt_profile#_genelist.txt", where you replace the number symbol with the actual profile number.
-##** Upload these files to [http://lionshare.lmu.edu LionShare] and e-mail a link to Dr. Dahlquist.  (It will be easier to [[BIOL398-04/S15:Help#Compressing_Files_with_7-Zip | zip all the files together]] and upload them as one file).
-##* For each of the significant profiles, click on the "Profile GO Table" to see the list of Gene Ontology terms belonging to the profile.  In the window that appears, click on the "Save Table" button and save the file to your desktop.  Make your filename descriptive of the contents, e.g. "wt_profile#_GOlist.txt", where you use "wt", "dGLN3", etc. to indicate the dataset and where you replace the number symbol with the actual profile number.  At this point you have saved all of the primary data from the STEM software and it's time to interpret the results!
-##** Upload these files to [http://lionshare.lmu.edu LionShare] and e-mail a link to Dr. Dahlquist. (It will be easier to [[BIOL398-04/S15:Help#Compressing_Files_with_7-Zip | zip all the files together]] and upload them as one file).
-# '''Analyzing and Interpreting STEM Results'''
-## Select '''''one''''' of the profiles you saved in the previous step for further intepretation of the data.  I suggest that you choose one that has a pattern of up- or down-regulated genes at the early (first three) timepoints.  You and your partner will choose the '''''same''''' profile so that you can compare your results between the two strains.  Answer the following:
-##* '''''Why did you select this profile?  In other words, why was it interesting to you?'''''
-##* '''''How many genes belong to this profile?'''''
-##* '''''How many genes were expected to belong to this profile?'''''
-##* '''''What is the p value for the enrichment of genes in this profile?'''''  Bear in mind that we just finished computing p values to determine whether each individual gene had a significant change in gene expression at each time point.  This p value determines whether the number of genes that show this particular expression profile across the time points is significantly more than expected.
-##* Open the GO list file you saved for this profile in Excel.  This list shows all of the Gene Ontology terms that are associated with genes that fit this profile.  Select the third row and then choose from the menu Data > Filter > Autofilter.  Filter on the "p-value" column to show only GO terms that have a p value of < 0.05.  '''''How many GO terms are associated with this profile at p < 0.05?'''''  The GO list also has a column called "Corrected p-value".  This correction is needed because the software has performed thousands of significance tests.  Filter on the "Corrected p-value" column to show only GO terms that have a corrected p value of < 0.05.  '''''How many GO terms are associated with this profile with a corrected p value < 0.05?'''''
-##* Select 10 Gene Ontology terms from your filtered list (either p < 0.05 or corrected p < 0.05).  
-##** Since you and your partner are going to compare the results from each strain for the same cluster, you can either:
-##*** Choose the same 10 terms that are in common between strains.
-##*** Choose 10 terms that are different between the strains (5 or so from each).
-##*** Choose some that are the same and some that are different.
-##**'''''Look up the definitions for each of the terms at [http://geneontology.org http://geneontology.org].  For your final lab report, you will discuss the biological interpretation of these GO terms.  In other words, why does the cell react to cold shock by changing the expression of genes associated with these GO terms?  Also, what does this have to do with HAP4 being deleted?'''''
-##** To easily look up the definitions, go to [http://geneontology.org http://geneontology.org].
-##** Copy and paste the GO ID (e.g. GO:0044848) into the search field at the upper left of the page called "Search GO Data".
-##** In the [http://amigo.geneontology.org/amigo/medial_search?q=GO%3A0044848 results] page, click on the button that says "Link to detailed information about <term>, in this case "biological phase"". 
-##** The definition will be on the next results page, e.g. [http://amigo.geneontology.org/amigo/term/GO:0044848 here].
+1. '''Prepare your microarray data file for loading into STEM.'''
+- Insert a new worksheet into your Excel workbook, and name it "(STRAIN)_stem".
+- Select all of the data from your "(STRAIN)_ANOVA" worksheet and Paste special > paste values into your "(STRAIN)_stem" worksheet.
+  - Your leftmost column should have the column header "MasterIndex".  Rename this column to "SPOT".  Column B should be named "ID".  Rename this column to "Gene Symbol".  Delete the column named "StandardName".
+  - Filter the data on the B-H corrected p value to be > 0.05 (that's '''greater than''' in this case).
+    - Once the data has been filtered, select all of the rows (except for your header row) and delete the rows by right-clicking and choosing "Delete Row" from the context menu.  Undo the filter.  This ensures that we will cluster only the genes with a "significant" change in expression and not the noise.
+  - Delete all of the data columns '''''EXCEPT''''' for the Average Log Fold change columns for each timepoint (for example, wt_AvgLogFC_t15, etc.).
+  - Rename the data columns with just the time and units (for example, 15m, 30m, etc.).
+  - Save your work.  Then use ''Save As'' to save this spreadsheet as Text (Tab-delimited) (*.txt).  Click OK to the warnings and close your file.
+    - Note that you should turn on the file extensions if you have not already done so.
+2. '''Now download and extract the STEM software.'''  [http://www.cs.cmu.edu/~jernst/stem/ Click here to go to the STEM web site].
+- Click on the [http://www.andrew.cmu.edu/user/zivbj/stemreg.html download link], register, and download the <code>stem.zip</code> file to your Desktop.
+- Unzip the file.  In Seaver 120, you can right click on the file icon and select the menu item ''7-zip > Extract Here''.
+- This will create a folder called <code>stem</code>.  Inside the folder, double-click on the <code>stem.jar</code> to launch the STEM program.
+3. '''Running STEM'''
+- In section 1 (Expression Data Info) of the the main STEM interface window, click on the ''Browse...'' button to navigate to and select your file.
+  - Click on the radio button ''No normalization/add 0''.
+  - Check the box next to ''Spot IDs included in the data file''.
+- In section 2 (Gene Info) of the main STEM interface window, select ''Saccharomyces cerevisiae (SGD)'', from the drop-down menu for Gene Annotation Source.  Select ''No cross references'', from the Cross Reference Source drop-down menu.  Select ''No Gene Locations'' from the Gene Location Source drop-down menu.
+- In section 3 (Options) of the main STEM interface window, make sure that the Clustering Method says "STEM Clustering Method" and do not change the defaults for Maximum Number of Model Profiles or Maximum Unit Change in Model Profiles between Time Points.
+- In section 4 (Execute) click on the yellow Execute button to run STEM.
+4. '''Viewing and Saving STEM Results'''
+- A new window will open called "All STEM Profiles (1)".  Each box corresponds to a model expression profile.  Colored profiles have a statistically significant number of genes assigned; they are arranged in order from most to least significant p value.  Profiles with the same color belong to the same cluster of profiles.  The number in each box is simply an ID number for the profile.
+  - Click on the button that says "Interface Options...".  At the bottom of the Interface Options window that appears below where it says "X-axis scale should be:", click on the radio button that says "Based on real time".  Then close the Interface Options window.
+  - Take a screenshot of this window (on a PC, simultaneously press the <code>Alt</code> and <code>PrintScreen</code> buttons to save the view in the active window to the clipboard) and paste it into a PowerPoint presentation to save your figures.
+- Click on each of the SIGNIFICANT profiles (the colored ones) to open a window showing a more detailed plot containing all of the genes in that profile.
+  - Take a screenshot of each of the individual profile windows and save the images in your PowerPoint presentation.
+  - At the bottom of each profile window, there are two yellow buttons "Profile Gene Table" and "Profile GO Table".  For each of the profiles, click on the "Profile Gene Table" button to see the list of genes belonging to the profile.  In the window that appears, click on the "Save Table" button and save the file to your desktop.  Make your filename descriptive of the contents, e.g. "wt_profile#_genelist.txt", where you replace the number symbol with the actual profile number.
+    - Upload these files to [http://lionshare.lmu.edu LionShare] and e-mail a link to Dr. Dahlquist.  (It will be easier to [[BIOL398-04/S15:Help#Compressing_Files_with_7-Zip | zip all the files together]] and upload them as one file).
+  - For each of the significant profiles, click on the "Profile GO Table" to see the list of Gene Ontology terms belonging to the profile.  In the window that appears, click on the "Save Table" button and save the file to your desktop.  Make your filename descriptive of the contents, e.g. "wt_profile#_GOlist.txt", where you use "wt", "dGLN3", etc. to indicate the dataset and where you replace the number symbol with the actual profile number.  At this point you have saved all of the primary data from the STEM software and it's time to interpret the results!
+    - Upload these files to [http://lionshare.lmu.edu LionShare] and e-mail a link to Dr. Dahlquist. (It will be easier to [[BIOL398-04/S15:Help#Compressing_Files_with_7-Zip | zip all the files together]] and upload them as one file).
+5. '''Analyzing and Interpreting STEM Results'''
+- Select '''''one''''' of the profiles you saved in the previous step for further intepretation of the data.  I suggest that you choose one that has a pattern of up- or down-regulated genes at the early (first three) timepoints.  You and your partner will choose the '''''same''''' profile so that you can compare your results between the two strains.  Answer the following:
+  - '''''Why did you select this profile?  In other words, why was it interesting to you?'''''
+  - '''''How many genes belong to this profile?'''''
+  - '''''How many genes were expected to belong to this profile?'''''
+  - '''''What is the p value for the enrichment of genes in this profile?'''''  Bear in mind that we just finished computing p values to determine whether each individual gene had a significant change in gene expression at each time point.  This p value determines whether the number of genes that show this particular expression profile across the time points is significantly more than expected.
+  - Open the GO list file you saved for this profile in Excel.  This list shows all of the Gene Ontology terms that are associated with genes that fit this profile.  Select the third row and then choose from the menu Data > Filter > Autofilter.  Filter on the "p-value" column to show only GO terms that have a p value of < 0.05.  '''''How many GO terms are associated with this profile at p < 0.05?'''''  The GO list also has a column called "Corrected p-value".  This correction is needed because the software has performed thousands of significance tests.  Filter on the "Corrected p-value" column to show only GO terms that have a corrected p value of < 0.05.  '''''How many GO terms are associated with this profile with a corrected p value < 0.05?'''''
+  - Select 10 Gene Ontology terms from your filtered list (either p < 0.05 or corrected p < 0.05).  
+    - Since you and your partner are going to compare the results from each strain for the same cluster, you can either:
+    - Choose the same 10 terms that are in common between strains.
+    - Choose 10 terms that are different between the strains (5 or so from each).
+    - Choose some that are the same and some that are different.
+  - '''''Look up the definitions for each of the terms at [http://geneontology.org http://geneontology.org].  For your final lab report, you will discuss the biological interpretation of these GO terms.  In other words, why does the cell react to cold shock by changing the expression of genes associated with these GO terms?  Also, what does this have to do with HAP4 being deleted?'''''
+    - To easily look up the definitions, go to [http://geneontology.org http://geneontology.org].
+    - Copy and paste the GO ID (e.g. GO:0044848) into the search field at the upper left of the page called "Search GO Data".
+    - In the [http://amigo.geneontology.org/amigo/medial_search?q=GO%3A0044848 results] page, click on the button that says "Link to detailed information about <term>, in this case "biological phase"". 
+    - The definition will be on the next results page, e.g. [http://amigo.geneontology.org/amigo/term/GO:0044848 here].
 
 ### Provenance
 
