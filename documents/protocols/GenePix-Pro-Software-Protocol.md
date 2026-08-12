@@ -1,4 +1,4 @@
-## GenePix Pro Software Protocol (originally posted on [this page](https://openwetware.org/wiki/Dahlquist:GenePix_Pro_Software_Protocol))
+## GenePix Pro Software Protocol
 
 This page shows the hardware settings and protocol for finding and analyzing the features of the GCAT and Ontario type microarrays after completing this [DNA Microarray Protocol](https://dx.doi.org/10.17504/protocols.io.3byl4mjojlo5/v1). This protocol was used in the Dahlquist Lab at Loyola Marymount University for the DNA microarray hybridizations reported in [GEO Series GSE83656](https://ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE83656).
 
@@ -88,4 +88,7 @@ This page shows the hardware settings and protocol for finding and analyzing the
 
 ### Next Steps
 
-* Go to the [[Dahlquist:Microarray_Data_Analysis_Workflow | Microarray Data Analysis Workflow]] page for the next steps.
+* Go to the Microarray Data Analysis Workflow page for the next steps.
+
+### Provenance
+This protocol was originally posted on the Dahlquist Lab OpenWetWare wiki on [this page](https://openwetware.org/wiki/Dahlquist:GenePix_Pro_Software_Protocol).
