@@ -91,4 +91,4 @@ This page shows the hardware settings and protocol for finding and analyzing the
 * Go to the Microarray Data Analysis Workflow page for the next steps.
 
 ### Provenance
-This protocol was originally posted on the Dahlquist Lab OpenWetWare wiki on [this page](https://openwetware.org/wiki/Dahlquist:GenePix_Pro_Software_Protocol).
+This protocol was originally posted on the Dahlquist Lab OpenWetWare wiki on [this page](https://openwetware.org/wiki/Dahlquist:GenePix_Pro_Software_Protocol), and has been reproduced here with slight formatting modifications.
