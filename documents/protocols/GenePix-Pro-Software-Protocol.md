@@ -27,7 +27,7 @@ This page shows the hardware settings and protocol for finding and analyzing the
   - Automatic Image Registration: Max translation 10 pixels.
 - Saving scanned images:
   - Create a folder on the C: drive called "MicroarrayData_yyyymmdd" where yyyymmdd is the current date.
-  - Save images to this folder as "Single-image TIFF Files (*.tif)".  Do  '''not''' use TIFF LZW compression (lossless).
+  - Save images to this folder as "Single-image TIFF Files (*.tif)".  Do  **not** use TIFF LZW compression (lossless).
   - Name files with a Date prefix and Barcode prefix.
 
 ### Gridding and Generating Intensity Data
