@@ -32,30 +32,30 @@ This page shows the hardware settings and protocol for finding and analyzing the
 
 ### Gridding and Generating Intensity Data
 
-* Launch GenPix Pro 6.1 (select Analysis Only)
-* On the right hand side of the screen, select the File icon
-** Select File > Open Images
-** Navigate to the folder containing your .tif images
-** Hold down the Control key while clicking to select both the 532 and 635 wavelength files
-** Click on the Open button
-* Use the brightness and contrast sliders on the upper left hand side to adjust your image to see all of the spots
-* You can use the magnifying glass icon to zoom in on an area of the image, and the magnifying glass return icon to go back to the whole chip image
-** Zoom in so that you can see the entire top block of grids on your screen
-* On the right hand side of the screen, select the File icon
-** Select Load Array List
-** For the "Ontario" chips, select the file [https://github.com/kdahlquist/DahlquistLab/raw/master/GEO_submission/Ontario_Y6.4Kv7.GAL Ontario_Y6.4Kv7.GAL]
-** For the "GCAT" chips, select the file [https://github.com/kdahlquist/DahlquistLab/raw/master/GEO_submission/yeast_GCAT_gal.gal yeast_GCAT_gal.gal].
-*** To download this file, right-click on the link and select "Save link as..." from the context menu that appears.
-** Click the Open button
-* Using the icon that has an arrow and a square, drag the grids so that they are approximately aligned with the top block of spots
-** Note that the .gal file for the GCAT chips only has grids for one half of the array, so this process will have to be performed twice, once for the top set of spots and once for the bottom set of spots on the chip.
-** Click on the icon that looks like a compass, or a circle with cross-hairs, and select Find Array, Find All blocks, Align Features
-*** Alternately, you can do this in three steps by:
-**** Click on the icon that looks like a compass, or a circle with cross-hairs, and select Find Array
-**** Click on the icon again, and select Find All Blocks
-**** Click on the icon again, and select Align Features in All Blocks
-* On the right hand side of the screen, select the icon that looks like a table of data (it says B, C, R at the top of it)
-* Click on the File icon on the right hand side and select, Save Results As, and save your results as type "GenePix Pro Files (*.gpr)".  Save a JPEG image containing all analyzed features.
+- Launch GenPix Pro 6.1 (select Analysis Only)
+- On the right hand side of the screen, select the File icon
+  - Select File > Open Images
+  - Navigate to the folder containing your .tif images
+  - Hold down the Control key while clicking to select both the 532 and 635 wavelength files
+  - Click on the Open button
+- Use the brightness and contrast sliders on the upper left hand side to adjust your image to see all of the spots
+- You can use the magnifying glass icon to zoom in on an area of the image, and the magnifying glass return icon to go back to the whole chip image
+  - Zoom in so that you can see the entire top block of grids on your screen
+- On the right hand side of the screen, select the File icon
+  - Select Load Array List
+  - For the "Ontario" chips, select the file [https://github.com/kdahlquist/DahlquistLab/raw/master/GEO_submission/Ontario_Y6.4Kv7.GAL Ontario_Y6.4Kv7.GAL]
+  - For the "GCAT" chips, select the file [https://github.com/kdahlquist/DahlquistLab/raw/master/GEO_submission/yeast_GCAT_gal.gal yeast_GCAT_gal.gal].
+    - To download this file, right-click on the link and select "Save link as..." from the context menu that appears.
+  - Click the Open button
+- Using the icon that has an arrow and a square, drag the grids so that they are approximately aligned with the top block of spots
+  - Note that the .gal file for the GCAT chips only has grids for one half of the array, so this process will have to be performed twice, once for the top set of spots and once for the bottom set of spots on the chip.
+  - Click on the icon that looks like a compass, or a circle with cross-hairs, and select Find Array, Find All blocks, Align Features
+    - Alternately, you can do this in three steps by:
+      - Click on the icon that looks like a compass, or a circle with cross-hairs, and select Find Array
+      - Click on the icon again, and select Find All Blocks
+      - Click on the icon again, and select Align Features in All Blocks
+- On the right hand side of the screen, select the icon that looks like a table of data (it says B, C, R at the top of it)
+- Click on the File icon on the right hand side and select, Save Results As, and save your results as type "GenePix Pro Files (*.gpr)".  Save a JPEG image containing all analyzed features.
 
 ### Generating an Array Quality Report
  
