@@ -2,72 +2,30 @@
 
 This page shows the Microarray Data Analysis Workflow used in the Dahlquist Lab at Loyola Marymount University to analyze the data from for the DNA microarray hybridizations reported in [GEO Series GSE83656](https://ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE83656).
 
-https://openwetware.org/wiki/Dahlquist:Microarray_Data_Analysis_Workflow
+### Summary of steps for microarray data analysis
+1. Quantitate the fluorescence signal in each spot (GenePix Pro)
+2. Calculate the ratio of red/green fluorescence (GenePix Pro)
+3. Log transform the ratios (GenePix Pro)
+4. Normalize the ratios on each microarray slide (within-chip normalization)
+5. Normalize the ratios for a set of slides in an experiment (between-chip normalization)
+6. Perform statistical analysis on the ratios:
+  - Within-strain ANOVA
+  - Modified t test for each timepoint
+  - Between-strain ANOVA
+  - Benjamini & Hochberg and Bonferroni p value corrections for the above three tests
+  - "Sanity Check" on above three tests
+7. Pattern finding algorithms (clustering with stem)
+8. Gene Ontology term enrichment analysis (on clusters with stem)
+9. Determining candidate transcription factors and gene regulatory network (YEASTRACT)
+10. Dynamical modeling with [GRNmap](http://kdahlquist.github.io/GRNmap/); visualization with [GRNsight](http://dondi.github.io/GRNsight/)
 
-This is the most current version of the data analysis protocol for the Dahlquist Lab microarray data.  
-* To access the version that was used during Week 1 of [[Dahlquist:SURP 2015 Schedule | SURP 2015]], follow [http://www.openwetware.org/index.php?title=Dahlquist:Microarray_Data_Analysis_Workflow&oldid=892074 this link].
-* During [[Dahlquist:SURP_2019_Schedule | SURP 2019]], we are validating that each section of these instructions is up-to-date.  A comment will be made to the code of each section as it is validated.
-* This workflow is used with a DNA microarray dataset submitted to the NCBI GEO repository as [https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE83656 series GSE83656].
+### Steps 1-3: Generating Log<sub>2</sub> Ratios with GenePix Pro
 
-'''Summary of steps for microarray data analysis'''
-#Quantitate the fluorescence signal in each spot (GenePix Pro)
-#Calculate the ratio of red/green fluorescence (GenePix Pro)
-#Log transform the ratios (GenePix Pro)
-#Normalize the ratios on each microarray slide (within-chip normalization)
-#Normalize the ratios for a set of slides in an experiment (between-chip normalization)
-#Perform statistical analysis on the ratios
-#* Within-strain ANOVA
-#* Modified t test for each timepoint
-#* Between-strain ANOVA
-#* Benjamini & Hochberg and Bonferroni p value corrections for the above three tests
-#* "Sanity Check" on above three tests
-#Pattern finding algorithms (clustering with stem)
-#Gene Ontology term enrichment analysis (on clusters with stem or on gene sets with MAPPFinder)
-#Pathway analysis (GenMAPP)
-#Determining candidate transcription factors and gene regulatory network (YEASTRACT)
-#Dynamical modeling with [http://kdahlquist.github.io/GRNmap/ GRNmap]; visualization with [http://dondi.github.io/GRNsight/ GRNsight]
+- The protocol for gridding and generating the intensity (log2 ratio) data with GenePix Pro 6.1 is found on [this page](https://github.com/kdahlquist/DahlquistLab/blob/master/documents/protocols/GenePix-Pro-Software-Protocol.md). 
+* This protocol will generate a `*.gpr` file for each chip which is then fed into the normalization protocol below.
+* To bypass this step, you can download the `*.gpr` files from the NCBI GEO repository  [series GSE83656] (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE83656).  Click [this link](https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE83656&format=file) to begin the download of a 154.9 Mb compressed file called "GSE83656_RAW.tar".
 
-== Before you begin... ==
-
-You will record all of the manipulations of the data in an electronic lab notebook stored on this wiki.  Please see the [[Dahlquist:Wiki_Checklist | Wiki Checklist]] page for more details on how to do this. <!--Wiki Checklist page updated 5/23/19 by Kam Dahlquist-->
-
-=== Viewing File Extensions ===
-<!--Updated 5/23/19 by Kam Dahlquist -->
-* The Windows 7 and Windows 10 operating systems defaults to hiding file extensions.  To turn them back on, do the following: [[Image:FolderOptions.jpg|right|Folder Options window]]
-* In Windows 7, do the following:
-*# Go to the Start menu and select "Control Panel".
-*# In the window that appears, search for "Folder Options" in the search field in the upper right hand corner.
-*# Click on "Folder Options" in the main window.
-*# When the Folder Options window appears, click on the View tab.
-*# Uncheck the box for "Hide extensions for known file types".
-*# Click the OK button.
-* In Windows 10, do the following:
-*# Go to Cortana (the search function), a circle icon to the right of the start menu and search for "File Explorer Options".
-*# Open File Explorer Options in the search results.
-*# When the File Explorer Options window appears, click on the View tab.
-*# Uncheck the box for "Hide extensions for known file types".
-*# Click the OK button.
-* Note that the computers in the Seaver 120 computer lab and other labs on campus are are set to erase all custom user settings and restore the defaults once they have been restarted, so you will probably have to turn on file extensions multiple times when using the lab computers.  The Dahlquist Lab computers do not erase the settings, so this step only needs to be performed once.
-
-=== Set Your Browser to Prompt You for the Location to Save your Downloaded Files ===
-
-* In Mozilla Firefox, open the Options window.
-** Select the radio button that says "Always ask me where to save files".
-** You could also change the default "Save files to" location to your Desktop, so that will be the first choice when it prompts you where to save the file.  (You will have to temporarily deselect the radio button to do this and then reselect it when you are done.
-** Click OK to save your changes.
-* In Google Chrome, open the Settings window.
-** Click on the link at the bottom of the page that says "Advanced Settings".
-** Check the box that says "Ask where to save each file before downloading".
-** You could also change the default Download location to your Desktop, so that will be the first choice when it prompts you where to save the file.
-** Your settings are automatically saved.
-
-== Steps 1-3: Generating Log2 Ratios with GenePix Pro ==
-
-* The protocol for gridding and generating the intensity (log2 ratio) data with GenePix Pro 6.1 is found on [[Dahlquist:GenePix_Pro_Software_Protocol | this page]]. 
-* This protocol will generate a <code>*.gpr</code> file for each chip which is then fed into the normalization protocol below.
-* To bypass this step, you can download the <code>*.gpr</code> files from the NCBI GEO repository [https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE83656 series GSE83656].  Click [https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE83656&format=file this link] to begin the download of a 154.9 Mb compressed file called "GSE83656_RAW.tar".
-
-== Steps 4-5: Within- and Between-chip Normalization ==
+### Steps 4-5: Within- and Between-chip Normalization
 
 * The protocol supplants the one found on [[Dahlquist:Microarray_Data_Processing_in_R | this page]]. 
 * The scripts and accessory files required to run the normalization are archived on the [https://github.com/kdahlquist/DahlquistLab/tree/master/normalization Dahlquist Lab GitHub Repository].
@@ -352,3 +310,7 @@ The detailed description of how this is done can be found on [[Dahlquist:Modifie
 ##** Copy and paste the GO ID (e.g. GO:0044848) into the search field at the upper left of the page called "Search GO Data".
 ##** In the [http://amigo.geneontology.org/amigo/medial_search?q=GO%3A0044848 results] page, click on the button that says "Link to detailed information about <term>, in this case "biological phase"". 
 ##** The definition will be on the next results page, e.g. [http://amigo.geneontology.org/amigo/term/GO:0044848 here].
+
+### Provenance
+
+https://openwetware.org/wiki/Dahlquist:Microarray_Data_Analysis_Workflow
