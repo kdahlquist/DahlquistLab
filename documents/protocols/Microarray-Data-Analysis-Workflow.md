@@ -21,9 +21,9 @@ This page shows the Microarray Data Analysis Workflow used in the Dahlquist Lab 
 
 ### Steps 1-3: Generating Log<sub>2</sub> Ratios with GenePix Pro
 
-- The protocol for gridding and generating the intensity (log2 ratio) data with GenePix Pro 6.1 is found on [this page](https://github.com/kdahlquist/DahlquistLab/blob/master/documents/protocols/GenePix-Pro-Software-Protocol.md). 
+- The protocol for gridding and generating the intensity (log<sub>2</sub> ratio) data with GenePix Pro 6.1 is found on [this page](https://github.com/kdahlquist/DahlquistLab/blob/master/documents/protocols/GenePix-Pro-Software-Protocol.md). 
 * This protocol will generate a `*.gpr` file for each chip which is then fed into the normalization protocol below.
-* To bypass this step, you can download the `*.gpr` files from the NCBI GEO repository  [series GSE83656] (https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE83656).  Click [this link](https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE83656&format=file) to begin the download of a 154.9 Mb compressed file called "GSE83656_RAW.tar".
+* To bypass this step, you can download the `*.gpr` files from the NCBI GEO repository  [series GSE83656](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE83656).  Click [this link](https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE83656&format=file) to begin the download of a 154.9 Mb compressed file called "GSE83656_RAW.tar".
 
 ### Steps 4-5: Within- and Between-chip Normalization
 
