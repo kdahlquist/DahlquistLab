@@ -23,7 +23,7 @@ This page shows the Microarray Data Analysis Workflow used in the Dahlquist Lab 
 
 - The protocol for gridding and generating the intensity (log<sub>2</sub> ratio) data with GenePix Pro 6.1 is found on [this page](https://github.com/kdahlquist/DahlquistLab/blob/master/documents/protocols/GenePix-Pro-Software-Protocol.md). 
 - This protocol will generate a `*.gpr` file for each chip which is then fed into the normalization protocol below.
-- To bypass this step, you can download the `*.gpr` files from the NCBI GEO repository  [series GSE83656](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE83656).  Click [this link](https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE83656&format=file) to begin the download of a 154.9 Mb compressed file called "GSE83656_RAW.tar".
+- To bypass this step, you can download the `*.gpr` files from the NCBI GEO repository  [series GSE83656](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE83656).  Click [this link](https://www.ncbi.nlm.nih.gov/geo/download/?acc=GSE83656&format=file) to begin the download of a 154.9 Mb compressed file called `GSE83656_RAW.tar`.
 
 ### Steps 4-5: Within- and Between-chip Normalization
 
@@ -31,7 +31,7 @@ The scripts and accessory files required to run the normalization are archived o
 
 #### Installing R x64 v3.1.0 and the limma v3.20.1 package
 
-The following protocol was developed to normalize GCAT and Ontario DNA microarray chip data from the Dahlquist Lab using the R Statistical Software and the limma package (part of the [Bioconductor Project](http://www.bioconductor.org).  
+The following protocol was developed to normalize GCAT and Ontario DNA microarray chip data from the Dahlquist Lab using the R Statistical Software and the limma package (part of the [Bioconductor Project](http://www.bioconductor.org)).  
 
 _Note that if R x64 v3.1.0 and the limma v3.20.1 package are already installed on your computer, you can proceed to the next section._
 - The normalization procedure has been verified to work with the 64-bit (x64) version 3.1.0 of R released in April 2014 ([link to download site](http://cran.r-project.org/bin/windows/base/old/3.1.0/) and and version 3.20.1 of the limma package [direct link to download zipped file](https://github.com/kdahlquist/DahlquistLab/blob/master/normalization/Limma_3.20.1.zip?raw=true) on the Windows 7 platform.
@@ -46,34 +46,34 @@ This protocol describes the procedure for normalizing the microarray data for th
 
 - Create a folder to store your files for the microarray analysis procedure.
 - Download the zipped file that contains the `.gpr` files and save it to this folder (or move it if it saved in a different folder).
-  - Unzip this file using [http://www.7-zip.org/download.html 7-zip].  Right-click on the file and select the menu item, "7-zip > Extract Here".
+  - Unzip this file using [7-zip](http://www.7-zip.org/download.html).  Right-click on the file and select the menu item, "7-zip > Extract Here".
 - Download the following files by right-clicking on the link and choosing the menu item "Save Link As..."
-  - Download the [https://github.com/kdahlquist/DahlquistLab/raw/master/normalization/GCAT_Targets_20160616.csv GCAT_Targets_20160616.csv] file and [https://github.com/kdahlquist/DahlquistLab/raw/master/normalization/Ontario_Targets_wt-dCIN5-dGLN3-dHAP4-dHMO1-dSWI4-dZAP1_20160616.csv Ontario_Targets_wt-dCIN5-dGLN3-dHAP4-dHMO1-dSWI4-dZAP1_20160616.csv] file and save them to this folder (or move them if they saved to a different folder).
-  - Download the [https://github.com/kdahlquist/DahlquistLab/raw/master/normalization/GCAT-and-Ontario_normalization_script.R GCAT-and-Ontario_normalization_script.R] script and save (or move) it to this folder.
-  - Download the [https://github.com/kdahlquist/DahlquistLab/raw/master/normalization/generate_MA_and_box_plots.R generate_MA_and_box_plots.R] script and save (or move) it to this folder.
-  - ''Note that the filenames for the GCAT and Ontario Targets files and the strains are hardcoded into the normalization script.  They can be modified for use with other data by modifying the appropriate lines in the script.''
+  - Download the [GCAT_Targets_20160616.csv](https://github.com/kdahlquist/DahlquistLab/raw/master/normalization/GCAT_Targets_20160616.csv) file and [Ontario_Targets_wt-dCIN5-dGLN3-dHAP4-dHMO1-dSWI4-dZAP1_20160616.csv](https://github.com/kdahlquist/DahlquistLab/raw/master/normalization/Ontario_Targets_wt-dCIN5-dGLN3-dHAP4-dHMO1-dSWI4-dZAP1_20160616.csv) file and save them to this folder (or move them if they saved to a different folder).
+  - Download the [GCAT-and-Ontario_normalization_script.R](https://github.com/kdahlquist/DahlquistLab/raw/master/normalization/GCAT-and-Ontario_normalization_script.R) script and save (or move) it to this folder.
+  - Download the [generate_MA_and_box_plots.R](https://github.com/kdahlquist/DahlquistLab/raw/master/normalization/generate_MA_and_box_plots.R) script and save (or move) it to this folder.
+  - _Note that the filenames for the GCAT and Ontario Targets files and the strains are hardcoded into the normalization script.  They can be modified for use with other data by modifying the appropriate lines in the script._
 - Launch R x64 3.1.0 (make sure you are using the 64-bit version). 
-- Change the directory to the folder containing the targets file and the <code>*.gpr</code> files for the chips by selecting the menu item File > Change dir... and clicking on the appropriate directory.  You will need to click on the + sign to drill down to the right directory.  Once you have selected it, click OK.
-- In R, select the menu item File > Source R code..., and select the GCAT-and-Ontario_normalization_script.R script.
+- Change the directory to the folder containing the targets file and the `*.gpr` files for the chips by selecting the menu item File > Change dir... and clicking on the appropriate directory.  You will need to click on the + sign to drill down to the right directory.  Once you have selected it, click OK.
+- In R, select the menu item File > Source R code..., and select the `GCAT-and-Ontario_normalization_script.R` script.
   - Wait while R processes your files.
-- When the processing has finished, you will find three files called GCAT_and_Ontario_Unnormalized.csv, GCAT_and_Ontario_Within_Array_Normalization.csv, GCAT_and_Ontario_Between_Array_Normalization.csv.  The latter file is the one that you will need going forward.
+- When the processing has finished, you will find three files called `GCAT_and_Ontario_Unnormalized.csv`, `GCAT_and_Ontario_Within_Array_Normalization.csv`, and `GCAT_and_Ontario_Between_Array_Normalization.csv`.  The latter file is the one that you will need going forward.
   - Save back-ups of these files.
   - Note that the GCAT_and_Ontario_Within_Array_Normalization.csv file is the source of, and should be identical to the processed data submitted to NCBI GEO as [series GSE83656](https://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE83656).
 
 #### Visualizing the Normalized Data
 
-- Immediately after running the normalization script, select the menu item File > Source R code..., and select the generate_MA_and_box_plots.R script.
+- Immediately after running the normalization script, select the menu item File > Source R code..., and select the `generate_MA_and_box_plots.R` script.
   - Wait while R processes your files.  You will see the individual plots being created in a new window.  R will save them automatically to the same folder that contains the data and scripts.
     - The box plots for each strain (comparison of the before, after within- and after between-chip normalization in the same file) are saved under the name of the strain, e.g., dCIN5.jpg.
     - The MA plots are saved under a name for the individual chip, e.g., dCIN5_LogFC_t15-1.jpg, and show the plots both before and after normalization.
 - Zip the files of the plots together and save back-up copies of them.
 
-== Step 6: Statistical Analysis ==
+### Step 6: Statistical Analysis
 
-=== Preparing the Excel Workbook ===
+#### Preparing the Excel Workbook
 
-* For the statistical analysis, we will begin with the file "GCAT_and_Ontario_Between_Array_Normalization.csv" that you generated in the previous step.
-* Open this file in Excel and Save As an Excel Workbook <code>*.xlsx</code>.  It is a good idea to add your initials and the date (yyyymmdd) to the filename as well.
+* For the statistical analysis, we will begin with the file `GCAT_and_Ontario_Between_Array_Normalization.csv` that you generated in the previous step.
+* Open this file in Excel and Save As an Excel Workbook `*.xlsx.  It is a good idea to add your initials and the date (yyyymmdd) to the filename as well.
 * Rename the worksheet with the data "Master_Sheet".
 ** Type the header "ID" in cell A1.
 ** Insert a new column after column A and name it "Standard Name".  Column B will contain the common names for the genes on the microarray.
@@ -88,9 +88,9 @@ This protocol describes the procedure for normalizing the microarray data for th
 *** Select the menu item Find/Replace and Find all cells with "NA" and replace them with a single space character.  Record how many replacements were made to your electronic lab notebook.  Save your work.
 * This will be the starting point for our statistical analysis below.
 
-=== Within-strain ANOVA ===
+#### Within-strain ANOVA
 
-The purpose of the witin-stain ANOVA test is to determine if any genes had a gene expression change that was significantly different than zero at '''''any''''' timepoint.
+The purpose of the witin-stain ANOVA test is to determine if any genes had a gene expression change that was significantly different than zero at _*any*_ timepoint.
 
 # Create a new worksheet, naming it either "(STRAIN)_ANOVA" as appropriate.  For example, you might call yours "wt_ANOVA" or "dHAP4_ANOVA" 
 # Copy the first three columns containing the "MasterIndex", "ID", and "Standard Name" from the "Master_Sheet" worksheet for your strain and paste it into your new worksheet.  Copy the columns containing the data for your strain and paste it into your new worksheet.
@@ -145,7 +145,7 @@ The purpose of the witin-stain ANOVA test is to determine if any genes had a gen
 # Select columns A through G.  Now sort them by your MasterIndex in Column A in ascending order.
 # Copy column G and use Paste special > Paste values to paste it into the next column on the right of your ANOVA sheet.
 
-* '''''Upload the .xlsx file that you have just created to LionShare.'''''  Send Dr. Dahlquist an e-mail with the link to the file (e-mail kdahlquist at lmu dot edu).
+* '''''Upload the .xlsx file that you have just created to LionShare.'''''  Send Dr. Dahlquist an e-mail with the link to the file.
 
 ==== Sanity Check: Number of genes significantly changed ====
 
