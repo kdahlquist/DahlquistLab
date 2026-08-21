@@ -91,7 +91,7 @@ This protocol describes the procedure for normalizing the microarray data for th
 
 #### Within-strain ANOVA
 
-The purpose of the witin-stain ANOVA test is to determine if any genes had a gene expression change that was significantly different than zero at _*any*_ timepoint.
+The purpose of the within-strain ANOVA test is to determine if any genes had a gene expression change that was significantly different than zero at _*any*_ timepoint.
 
 1. Create a new worksheet, naming it either "(STRAIN)_ANOVA" as appropriate.  For example, you might call yours "wt_ANOVA" or "dHAP4_ANOVA" 
 2. Copy the first three columns containing the "MasterIndex", "ID", and "Standard Name" from the "Master_Sheet" worksheet for your strain and paste it into your new worksheet.  Copy the columns containing the data for your strain and paste it into your new worksheet.
