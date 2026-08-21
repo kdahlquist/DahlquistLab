@@ -77,8 +77,9 @@ This protocol describes the procedure for normalizing the microarray data for th
 - Rename the worksheet with the data "Master_Sheet".
   - Type the header "ID" in cell A1.
   - Insert a new column after column A and name it "Standard Name".  Column B will contain the common names for the genes on the microarray.
-    -  Copy the entire column of IDs from Column A.
-    - Paste the names into the "Value" field of the [http://www.yeastract.com/formorftogene.php ORF List <-> Gene List] tool in [http://www.yeastract.com YEASTRACT]. Then, click on the "Transform" button.
+    - Copy the entire column of IDs from Column A.
+    - Paste the names into the "Value" field of the [ORF List <-> Gene List tool](http://www.yeastract.com/formorftogene.php) at [YEASTRACT](http://www.yeastract.com)
+    - Then, click on the "Transform" button.
     - Select all of the names in the "Gene Name" column of the resulting table.
     - Copy and paste these names into column B of the <code>*.xlsx</code> file. Save your work.
   - Insert a new column on the very left and name it "MasterIndex".  We will create a numerical index of genes so that we can always sort them back into the same order.
