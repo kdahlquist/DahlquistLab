@@ -1,0 +1,22 @@
+# version: e114_eg62_p19_9dc92ac8
+# date: 2026-10-27T22:30:55.971Z
+# organism: scerevisiae
+# all results: false
+# ordered: false
+# no iea: false
+# sources: GO:MF,GO:BP,GO:CC,KEGG,REAC,WP,TF,MIRNA,HPA,CORUM,HP
+# combined: false
+# numeric ns: ENTREZGENE_ACC
+# domain scope: annotated
+# measure underrepresentation: false
+# significance threshold method: g_SCS
+# user threshold: 0.05
+# no evidences: false
+# query genes included: query_1<YBL005W-A,YDL106C,YDR033W,YDR098C,YDR164C,YDR168W,YDR258C,YDR319C,YDR428C,YDR478W,YEL019C,YER051W,YGL079W,YGL100W,YGL185C,YGL225W,YGR001C,YGR117C,YGR284C,YHR023W,YHR055C,YIL144W,YJL034W,YJL097W,YJR011C,YJR069C,YJR075W,YKR055W,YKR070W,YLL024C,YLR066W,YLR216C,YLR217W,YLR288C,YLR399C,YML019W,YML036W,YMR051C,YMR132C,YMR193W,YMR244W,YMR264W,YNL056W,YOL159C,YOR027W,YOR164C,YOR225W,YOR265W,YOR319W,YPR065W>
+# query genes not included: YCRX01W
+# query genes duplicates: none
+"source","term_name","term_id","highlighted","adjusted_p_value","negative_log10_of_adjusted_p_value","term_size","query_size","intersection_size","effective_domain_size","intersections"
+"GO:MF","heat shock protein binding","GO:0031072","true","0.014353957810644621","1.8430283345862974","28","48","4","6584","YDR168W,YJL034W,YLL024C,YOR027W"
+"GO:BP","establishment of protein localization to endoplasmic reticulum","GO:0072599","true","0.016487406975559886","1.7828476417937205","48","48","5","6570","YJL034W,YLL024C,YLR066W,YMR264W,YOR164C"
+"GO:BP","protein folding","GO:0006457","true","0.03026931142129646","1.518997458439948","132","48","7","6570","YDR168W,YDR258C,YJL034W,YLL024C,YLR216C,YOR027W,YOR265W"
+"KEGG","Protein export","KEGG:03060","false","0.04981354542650515","1.3026525467163115","31","19","3","2248","YJL034W,YLR066W,YOR164C"
