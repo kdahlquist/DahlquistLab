@@ -1,0 +1,20 @@
+# version: e114_eg62_p19_9dc92ac8
+# date: 2026-11-03T22:40:16.544Z
+# organism: scerevisiae
+# all results: false
+# ordered: false
+# no iea: false
+# sources: GO:MF,GO:BP,GO:CC,KEGG,REAC,WP,TF,MIRNA,HPA,CORUM,HP
+# combined: false
+# numeric ns: ENTREZGENE_ACC
+# domain scope: annotated
+# measure underrepresentation: false
+# significance threshold method: g_SCS
+# user threshold: 0.05
+# no evidences: false
+# query genes included: query_1<YBR108W,YBR155W,YBR300C,YCL059C,YCR064C,YDR044W,YDR116C,YDR337W,YDR361C,YDR494W,YDR497C,YER086W,YER107C,YER156C,YFL003C,YFL019C,YFL049W,YGL077C,YGL122C,YGR048W,YGR049W,YGR051C,YGR143W,YGR147C,YGR231C,YHR081W,YHR151C,YIL040W,YIL097W,YIL103W,YIR007W,YIR009W,YKL009W,YKL021C,YKR002W,YKR030W,YLL012W,YLL030C,YLR090W,YLR146C,YLR191W,YLR433C,YMR108W,YMR223W,YMR265C,YMR290C,YNL107W,YNL169C,YNL191W,YNL240C,YNL299W,YOL027C,YOL163W,YOR023C,YOR052C,YOR175C,YOR237W,YOR376W,YPL043W,YPL088W,YPL093W,YPL101W,YPL185W,YPL235W,YPR050C,YPR167C>
+# query genes not included: YCR103C
+# query genes duplicates: none
+"source","term_name","term_id","highlighted","adjusted_p_value","negative_log10_of_adjusted_p_value","term_size","query_size","intersection_size","effective_domain_size","intersections"
+"WP","Phospholipid biosynthesis ","WP:WP5201","false","0.003803579094654203","2.4198075482495796","15","8","3","843","YGL077C,YNL169C,YOR175C"
+"WP","Isoleucine biosynthesis","WP:WP250","false","0.02535643708692802","1.5959117705928811","7","8","2","843","YER086W,YMR108W"
