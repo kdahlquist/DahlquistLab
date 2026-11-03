@@ -1,0 +1,19 @@
+# version: e114_eg62_p19_9dc92ac8
+# date: 2026-11-03T22:53:28.715Z
+# organism: scerevisiae
+# all results: false
+# ordered: false
+# no iea: false
+# sources: GO:MF,GO:BP,GO:CC,KEGG,REAC,WP,TF,MIRNA,HPA,CORUM,HP
+# combined: false
+# numeric ns: ENTREZGENE_ACC
+# domain scope: annotated
+# measure underrepresentation: false
+# significance threshold method: g_SCS
+# user threshold: 0.05
+# no evidences: false
+# query genes included: query_1<YAR031W,YBL019W,YBL097W,YBR070C,YBR184W,YBR189W,YBR236C,YBR264C,YCL056C,YDL179W,YDR034C,YDR506C,YDR517W,YEL016C,YEL075W-A,YER016W,YER115C,YER116C,YFR054C,YGL134W,YGL136C,YGL155W,YGR011W,YGR115C,YGR157W,YGR213C,YHL049C,YHR022C,YHR153C,YIL043C,YIR029W,YJR033C,YJR061W,YJR147W,YKR004C,YLR126C,YLR128W,YLR265C,YLR361C,YLR404W,YML051W,YML101C-A,YMR078C,YNL046W,YOR124C>
+# query genes not included: YIL167W
+# query genes duplicates: none
+"source","term_name","term_id","highlighted","adjusted_p_value","negative_log10_of_adjusted_p_value","term_size","query_size","intersection_size","effective_domain_size","intersections"
+"GO:MF","phosphodiesterase I activity","GO:0004528","true","0.043180738528556854","1.3647099341154025","3","45","2","6584","YBL019W,YEL016C"
