@@ -1,0 +1,35 @@
+WT,P-value,dCIN5,p-value,dZAP1,p-value,dGLN3,p-value,dSWI4,p-value,dHMO1,p-value,dHAP4,p-value
+RNA binding,3.89E-22,RNA binding,3.72E-17,RNA binding,3.27E-19,ribosome biogenesis,2.90E-46,RNA biosynthetic process,7.25E-09,N/A,N/A,nucleolus,2.67E-43
+"catalytic activity, acting on RNA",1.59E-10,"catalytic activity, acting on RNA",1.44E-11,"catalytic activity, acting on RNA",2.26E-13,nucleolus,3.37E-45,nucleus,5.93E-07,,,ribosome biogenesis,1.29E-32
+N-methyltransferase activity,6.03E-03,N-methyltransferase activity,0.003868,nucleotydyltransferase activity,0.023284,RNA binding,9.61E-19,RNA binding,0.000872,,,RNA biosynthetic process,7.38E-32
+ribonucleoprotein complex binding,8.92E-03,ribosome biogenesis ,4.66E-46,ribosome biogenesis ,2.91E-52,RNA modification,2.76E-17,preribosome,0.001738,,,RNA binding,4.42E-09
+pentose transmembrane transporter activity,0.01106,RNA modification,4.43E-16,RNA modification,2.00E-19,"catalytic activity, acting on RNA",1.72E-08,"catalytic activity, acting on RNA",0.02322,,,"catalytic activity, acting on RNA",7.46E-08
+nucleolus,2.76E-72,RNA surveillance,0.000582,DNA-templated transcription,0.001119,fructose transmembrane transporter activity,0.000317,U2-type spliceosomal complex,0.030132,,,D-glucose transmembrane transporter activity,3.01E-07
+organellar ribosome,1.59E-03,DNA-templated transcription termination,0.00091,nuclear polyadenylation-dependent mRNA catabolic process,0.002571,fructose transmembrane transporter,0.000436,sno(s)RNA 3'-end processing,0.032469,,,carbohydrate import across plasma membrane,5.74E-06
+endoribonuclease complex,2.18E-03,CUT catabolic process,0.009923,transcription initiation at RNA polymerase I promoter,0.011274,import across plasma membrane,0.000441,,,,,CUT catabolic process,0.028153875
+ribosome biogenesis ,2.57E-64,nuclear polyadenylation-dependent mRNA catabolyic process,0.017532,nuclear polyadenylation-dependent rRNA catabolic process,0.037778,carbohydrate:proton symporter activity,0.029505,,,,,,
+nuclear polyadenylation-dependent mRNA catabolic process,1.99E-05,nuclear -transcribed mRNA catabolic process 3'-5' exonucleolytic nonsense-mediated decay,0.032375,protein dephosphorylation,0.043348,"nuclear-transcribed mRNA catbolic process, 3'-5' exonucleolytic nonsense-mediated decay",0.039509,,,,,,
+nuclear -transcribed mRNA catabolic process 3'-5' exonucleolytic nonsense-mediated decay,1.11E-04,nucleolus,3.36E-48,nucleolus,1.99E-59,,,,,,,,
+pentose transmembrane transport,3.40E-02,,,tRNA methyltransferase complex,0.017857,,,,,,,,
+CUT catabolic process,3.76E-02,,,RNA polymerase III complex,0.021346,,,,,,,,
+mitochondrial translation,4.85E-02,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+,,,,,,,,,,,,,
+ONLY IN WT,,,,,,,,,,,,,
+ONLY IN dCIN5,,,,,,,,,,,,,
+ONLY IN dZAP1,,,,,,,,,,,,,
+ONLY IN dGLN3,,,,,,,,,,,,,
+ONLY IN dSWI4,,,,,,,,,,,,,
+ONLY IN dHAP4,,,,,,,,,,,,,
